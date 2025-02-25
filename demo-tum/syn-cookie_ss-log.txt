@@ -1,0 +1,1476 @@
+[11:50:29.851] [bmv2] [D] [thread 386793] Adding interface veth0 as port 0
+[11:50:29.909] [bmv2] [D] [thread 386793] Adding interface veth2 as port 1
+[11:50:29.957] [bmv2] [D] [thread 386793] Adding interface veth4 as port 2
+[11:50:29.997] [bmv2] [D] [thread 386793] Adding interface veth6 as port 3
+[11:50:30.041] [bmv2] [D] [thread 386793] Adding interface veth8 as port 4
+[11:50:30.089] [bmv2] [D] [thread 386793] Adding interface veth10 as port 5
+[11:50:30.145] [bmv2] [D] [thread 386793] Adding interface veth12 as port 6
+[11:50:30.185] [bmv2] [D] [thread 386793] Adding interface veth14 as port 7
+[11:50:30.231] [bmv2] [I] [thread 386793] Starting Thrift server on port 9090
+[11:50:30.231] [bmv2] [I] [thread 386793] Thrift server was started
+[11:52:02.236] [bmv2] [D] [thread 386970] Adding interface veth0 as port 0
+[11:52:02.293] [bmv2] [D] [thread 386970] Adding interface veth2 as port 1
+[11:52:02.334] [bmv2] [D] [thread 386970] Adding interface veth4 as port 2
+[11:52:02.381] [bmv2] [D] [thread 386970] Adding interface veth6 as port 3
+[11:52:02.445] [bmv2] [D] [thread 386970] Adding interface veth8 as port 4
+[11:52:02.485] [bmv2] [D] [thread 386970] Adding interface veth10 as port 5
+[11:52:02.537] [bmv2] [D] [thread 386970] Adding interface veth12 as port 6
+[11:52:02.573] [bmv2] [D] [thread 386970] Adding interface veth14 as port 7
+[11:52:02.611] [bmv2] [I] [thread 386970] Starting Thrift server on port 9090
+[11:52:02.612] [bmv2] [I] [thread 386970] Thrift server was started
+[11:56:00.785] [bmv2] [D] [thread 387151] Adding interface veth0 as port 0
+[11:56:00.845] [bmv2] [D] [thread 387151] Adding interface veth2 as port 1
+[11:56:00.897] [bmv2] [D] [thread 387151] Adding interface veth4 as port 2
+[11:56:00.937] [bmv2] [D] [thread 387151] Adding interface veth6 as port 3
+[11:56:01.001] [bmv2] [D] [thread 387151] Adding interface veth8 as port 4
+[11:56:01.053] [bmv2] [D] [thread 387151] Adding interface veth10 as port 5
+[11:56:01.101] [bmv2] [D] [thread 387151] Adding interface veth12 as port 6
+[11:56:01.141] [bmv2] [D] [thread 387151] Adding interface veth14 as port 7
+[11:56:01.189] [bmv2] [I] [thread 387151] Starting Thrift server on port 9090
+[11:56:01.189] [bmv2] [I] [thread 387151] Thrift server was started
+[11:57:31.686] [bmv2] [D] [thread 387293] Adding interface veth0 as port 0
+[11:57:31.729] [bmv2] [D] [thread 387293] Adding interface veth2 as port 1
+[11:57:31.770] [bmv2] [D] [thread 387293] Adding interface veth4 as port 2
+[11:57:31.821] [bmv2] [D] [thread 387293] Adding interface veth6 as port 3
+[11:57:31.869] [bmv2] [D] [thread 387293] Adding interface veth8 as port 4
+[11:57:31.925] [bmv2] [D] [thread 387293] Adding interface veth10 as port 5
+[11:57:31.957] [bmv2] [D] [thread 387293] Adding interface veth12 as port 6
+[11:57:31.993] [bmv2] [D] [thread 387293] Adding interface veth14 as port 7
+[11:57:32.048] [bmv2] [I] [thread 387293] Starting Thrift server on port 9090
+[11:57:32.048] [bmv2] [I] [thread 387293] Thrift server was started
+[11:58:14.924] [bmv2] [D] [thread 387421] Adding interface veth0 as port 0
+[11:58:14.994] [bmv2] [D] [thread 387421] Adding interface veth2 as port 1
+[11:58:15.033] [bmv2] [D] [thread 387421] Adding interface veth4 as port 2
+[11:58:15.073] [bmv2] [D] [thread 387421] Adding interface veth6 as port 3
+[11:58:15.117] [bmv2] [D] [thread 387421] Adding interface veth8 as port 4
+[11:58:15.157] [bmv2] [D] [thread 387421] Adding interface veth10 as port 5
+[11:58:15.194] [bmv2] [D] [thread 387421] Adding interface veth12 as port 6
+[11:58:15.241] [bmv2] [D] [thread 387421] Adding interface veth14 as port 7
+[11:58:15.292] [bmv2] [I] [thread 387421] Starting Thrift server on port 9090
+[11:58:15.292] [bmv2] [I] [thread 387421] Thrift server was started
+[12:00:31.725] [bmv2] [D] [thread 387574] Adding interface veth0 as port 0
+[12:00:31.785] [bmv2] [D] [thread 387574] Adding interface veth2 as port 1
+[12:00:31.829] [bmv2] [D] [thread 387574] Adding interface veth4 as port 2
+[12:00:31.865] [bmv2] [D] [thread 387574] Adding interface veth6 as port 3
+[12:00:31.909] [bmv2] [D] [thread 387574] Adding interface veth8 as port 4
+[12:00:31.961] [bmv2] [D] [thread 387574] Adding interface veth10 as port 5
+[12:00:32.001] [bmv2] [D] [thread 387574] Adding interface veth12 as port 6
+[12:00:32.041] [bmv2] [D] [thread 387574] Adding interface veth14 as port 7
+[12:00:32.076] [bmv2] [I] [thread 387574] Starting Thrift server on port 9090
+[12:00:32.076] [bmv2] [I] [thread 387574] Thrift server was started
+[12:00:47.824] [bmv2] [D] [thread 387712] Adding interface veth0 as port 0
+[12:00:47.893] [bmv2] [D] [thread 387712] Adding interface veth2 as port 1
+[12:00:47.949] [bmv2] [D] [thread 387712] Adding interface veth4 as port 2
+[12:00:47.985] [bmv2] [D] [thread 387712] Adding interface veth6 as port 3
+[12:00:48.030] [bmv2] [D] [thread 387712] Adding interface veth8 as port 4
+[12:00:48.073] [bmv2] [D] [thread 387712] Adding interface veth10 as port 5
+[12:00:48.121] [bmv2] [D] [thread 387712] Adding interface veth12 as port 6
+[12:00:48.178] [bmv2] [D] [thread 387712] Adding interface veth14 as port 7
+[12:00:48.237] [bmv2] [I] [thread 387712] Starting Thrift server on port 9090
+[12:00:48.240] [bmv2] [I] [thread 387712] Thrift server was started
+[12:03:46.368] [bmv2] [D] [thread 388157] Adding interface veth0 as port 0
+[12:03:46.441] [bmv2] [D] [thread 388157] Adding interface veth2 as port 1
+[12:03:46.485] [bmv2] [D] [thread 388157] Adding interface veth4 as port 2
+[12:03:46.525] [bmv2] [D] [thread 388157] Adding interface veth6 as port 3
+[12:03:46.565] [bmv2] [D] [thread 388157] Adding interface veth8 as port 4
+[12:03:46.613] [bmv2] [D] [thread 388157] Adding interface veth10 as port 5
+[12:03:46.654] [bmv2] [D] [thread 388157] Adding interface veth12 as port 6
+[12:03:46.705] [bmv2] [D] [thread 388157] Adding interface veth14 as port 7
+[12:03:46.747] [bmv2] [I] [thread 388157] Starting Thrift server on port 9090
+[12:03:46.747] [bmv2] [I] [thread 388157] Thrift server was started
+[12:07:15.046] [bmv2] [D] [thread 388471] Adding interface veth0 as port 0
+[12:07:15.097] [bmv2] [D] [thread 388471] Adding interface veth2 as port 1
+[12:07:15.145] [bmv2] [D] [thread 388471] Adding interface veth4 as port 2
+[12:07:15.189] [bmv2] [D] [thread 388471] Adding interface veth6 as port 3
+[12:07:15.229] [bmv2] [D] [thread 388471] Adding interface veth8 as port 4
+[12:07:15.265] [bmv2] [D] [thread 388471] Adding interface veth10 as port 5
+[12:07:15.313] [bmv2] [D] [thread 388471] Adding interface veth12 as port 6
+[12:07:15.349] [bmv2] [D] [thread 388471] Adding interface veth14 as port 7
+[12:07:15.391] [bmv2] [I] [thread 388471] Starting Thrift server on port 9090
+[12:07:15.391] [bmv2] [I] [thread 388471] Thrift server was started
+[12:08:15.978] [bmv2] [D] [thread 388693] Adding interface veth0 as port 0
+[12:08:16.021] [bmv2] [D] [thread 388693] Adding interface veth2 as port 1
+[12:08:16.069] [bmv2] [D] [thread 388693] Adding interface veth4 as port 2
+[12:08:16.109] [bmv2] [D] [thread 388693] Adding interface veth6 as port 3
+[12:08:16.165] [bmv2] [D] [thread 388693] Adding interface veth8 as port 4
+[12:08:16.217] [bmv2] [D] [thread 388693] Adding interface veth10 as port 5
+[12:08:16.249] [bmv2] [D] [thread 388693] Adding interface veth12 as port 6
+[12:08:16.305] [bmv2] [D] [thread 388693] Adding interface veth14 as port 7
+[12:08:16.359] [bmv2] [I] [thread 388693] Starting Thrift server on port 9090
+[12:08:16.359] [bmv2] [I] [thread 388693] Thrift server was started
+[12:09:17.212] [bmv2] [D] [thread 388829] Adding interface veth0 as port 0
+[12:09:17.261] [bmv2] [D] [thread 388829] Adding interface veth2 as port 1
+[12:09:17.309] [bmv2] [D] [thread 388829] Adding interface veth4 as port 2
+[12:09:17.349] [bmv2] [D] [thread 388829] Adding interface veth6 as port 3
+[12:09:17.397] [bmv2] [D] [thread 388829] Adding interface veth8 as port 4
+[12:09:17.453] [bmv2] [D] [thread 388829] Adding interface veth10 as port 5
+[12:09:17.517] [bmv2] [D] [thread 388829] Adding interface veth12 as port 6
+[12:09:17.577] [bmv2] [D] [thread 388829] Adding interface veth14 as port 7
+[12:09:17.625] [bmv2] [I] [thread 388829] Starting Thrift server on port 9090
+[12:09:17.626] [bmv2] [I] [thread 388829] Thrift server was started
+[12:10:15.561] [bmv2] [D] [thread 388985] Adding interface veth0 as port 0
+[12:10:15.601] [bmv2] [D] [thread 388985] Adding interface veth2 as port 1
+[12:10:15.653] [bmv2] [D] [thread 388985] Adding interface veth4 as port 2
+[12:10:15.706] [bmv2] [D] [thread 388985] Adding interface veth6 as port 3
+[12:10:15.757] [bmv2] [D] [thread 388985] Adding interface veth8 as port 4
+[12:10:15.802] [bmv2] [D] [thread 388985] Adding interface veth10 as port 5
+[12:10:15.849] [bmv2] [D] [thread 388985] Adding interface veth12 as port 6
+[12:10:15.897] [bmv2] [D] [thread 388985] Adding interface veth14 as port 7
+[12:10:15.939] [bmv2] [I] [thread 388985] Starting Thrift server on port 9090
+[12:10:15.939] [bmv2] [I] [thread 388985] Thrift server was started
+[12:11:55.083] [bmv2] [D] [thread 389143] Adding interface veth0 as port 0
+[12:11:55.137] [bmv2] [D] [thread 389143] Adding interface veth2 as port 1
+[12:11:55.185] [bmv2] [D] [thread 389143] Adding interface veth4 as port 2
+[12:11:55.225] [bmv2] [D] [thread 389143] Adding interface veth6 as port 3
+[12:11:55.270] [bmv2] [D] [thread 389143] Adding interface veth8 as port 4
+[12:11:55.318] [bmv2] [D] [thread 389143] Adding interface veth10 as port 5
+[12:11:55.357] [bmv2] [D] [thread 389143] Adding interface veth12 as port 6
+[12:11:55.414] [bmv2] [D] [thread 389143] Adding interface veth14 as port 7
+[12:11:55.470] [bmv2] [I] [thread 389143] Starting Thrift server on port 9090
+[12:11:55.470] [bmv2] [I] [thread 389143] Thrift server was started
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_act': act - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'MyIngress.connections': NoAction - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[12:11:57.480] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[12:11:57.481] [bmv2] [D] [thread 389199] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[12:11:57.483] [bmv2] [D] [thread 389199] simple_switch target has been notified of a config swap
+[12:11:57.487] [bmv2] [I] [thread 389208] Received packet of length 100 on port 1: ee30ca9d1e00eecd007e7000080045000056000100004006afd2c0a800250a01000104d20050000000000000000050022000c3b00000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Processing packet received on port 1
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser 'parser': start
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Extracting header 'ethernet'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser state 'start': key is 0800
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Bytes parsed: 14
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Extracting header 'ipv4'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Bytes parsed: 34
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Extracting header 'tcp'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Bytes parsed: 54
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Checksum 'cksum_1': computed 0xafd2 - actual 0xafd2
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Parser 'parser': end
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Pipeline 'ingress': start
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Applying table 'tbl_act'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Looking up key:
+
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Table 'tbl_act': miss
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Action entry is act - 
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Action act
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Primitive (no source info)
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Looking up key:
+
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] hash(base=0, max=65535) = 3099
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] hash(base=0, max=65535) = 2819
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00000c1b
+
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Action entry is NoAction - 
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Action NoAction
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Applying table 'tbl_proxy572'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Looking up key:
+
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Table 'tbl_proxy572': miss
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Action entry is proxy572 - 
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Action proxy572
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Looking up key:
+
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(252) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(253) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(257) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(258) Primitive hdr.ethernet.dstAddr = srcMAC
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(259) Primitive hdr.ethernet.srcAddr = dstMAC
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(267) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(270) Primitive hdr.ipv4.srcAddr = serverAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(271) Primitive hdr.ipv4.dstAddr = clientAddr
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(275) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(276) Primitive hdr.tcp.dstPort = clientPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(277) Primitive hdr.tcp.srcPort = serverPort
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(284) Primitive hdr.tcp.syn = 1
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(285) Primitive hdr.tcp.ack = 1
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(288) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(307) Primitive clientIPAddress
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(308) Primitive clientPortNum
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(309) Primitive time
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(304) Primitive hash(hash_value, ...
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] hash(base=0, max=26) = 17
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(319) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : c0a80025
+
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Action entry is MyIngress.drop - 
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Action MyIngress.drop
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Looking up key:
+
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[12:11:57.488] [bmv2] [T] [thread 389209] [0.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Pipeline 'ingress': end
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Egress port is 511
+[12:11:57.488] [bmv2] [D] [thread 389209] [0.0] [cxt 0] Dropping packet at the end of ingress
+[12:13:50.651] [bmv2] [D] [thread 389322] Adding interface veth0 as port 0
+[12:13:50.698] [bmv2] [D] [thread 389322] Adding interface veth2 as port 1
+[12:13:50.746] [bmv2] [D] [thread 389322] Adding interface veth4 as port 2
+[12:13:50.789] [bmv2] [D] [thread 389322] Adding interface veth6 as port 3
+[12:13:50.845] [bmv2] [D] [thread 389322] Adding interface veth8 as port 4
+[12:13:50.897] [bmv2] [D] [thread 389322] Adding interface veth10 as port 5
+[12:13:50.937] [bmv2] [D] [thread 389322] Adding interface veth12 as port 6
+[12:13:51.002] [bmv2] [D] [thread 389322] Adding interface veth14 as port 7
+[12:13:51.045] [bmv2] [I] [thread 389322] Starting Thrift server on port 9090
+[12:13:51.047] [bmv2] [I] [thread 389322] Thrift server was started
+[12:13:53.056] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_act': act - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'MyIngress.connections': NoAction - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[12:13:53.057] [bmv2] [D] [thread 389370] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[12:13:53.058] [bmv2] [D] [thread 389370] simple_switch target has been notified of a config swap
+[12:13:53.062] [bmv2] [I] [thread 389379] Received packet of length 100 on port 1: ee30ca9d1e00eecd007e7000080045000056000100004006afd2c0a800250a01000104d20050000000000000000050022000c3b00000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Processing packet received on port 1
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser 'parser': start
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Extracting header 'ethernet'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser state 'start': key is 0800
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Bytes parsed: 14
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Extracting header 'ipv4'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Bytes parsed: 34
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Extracting header 'tcp'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Bytes parsed: 54
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Checksum 'cksum_1': computed 0xafd2 - actual 0xafd2
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Parser 'parser': end
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Pipeline 'ingress': start
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Applying table 'tbl_act'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Looking up key:
+
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Table 'tbl_act': miss
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Action entry is act - 
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Action act
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Primitive (no source info)
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Looking up key:
+
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] hash(base=0, max=65535) = 3099
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] hash(base=0, max=65535) = 2819
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00000c1b
+
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Action entry is NoAction - 
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Action NoAction
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Applying table 'tbl_proxy572'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Looking up key:
+
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Table 'tbl_proxy572': miss
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Action entry is proxy572 - 
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Action proxy572
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Looking up key:
+
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(252) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(253) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(257) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(258) Primitive hdr.ethernet.dstAddr = srcMAC
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(259) Primitive hdr.ethernet.srcAddr = dstMAC
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(267) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(270) Primitive hdr.ipv4.srcAddr = serverAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(271) Primitive hdr.ipv4.dstAddr = clientAddr
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(275) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(276) Primitive hdr.tcp.dstPort = clientPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(277) Primitive hdr.tcp.srcPort = serverPort
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(284) Primitive hdr.tcp.syn = 1
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(285) Primitive hdr.tcp.ack = 1
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(288) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(307) Primitive clientIPAddress
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(308) Primitive clientPortNum
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(309) Primitive time
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(304) Primitive hash(hash_value, ...
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] hash(base=0, max=26) = 17
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(319) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : c0a80025
+
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Action entry is MyIngress.drop - 
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Action MyIngress.drop
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Looking up key:
+
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[12:13:53.063] [bmv2] [T] [thread 389380] [0.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Pipeline 'ingress': end
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Egress port is 511
+[12:13:53.063] [bmv2] [D] [thread 389380] [0.0] [cxt 0] Dropping packet at the end of ingress
+[12:14:15.127] [bmv2] [D] [thread 389466] Adding interface veth0 as port 0
+[12:14:15.165] [bmv2] [D] [thread 389466] Adding interface veth2 as port 1
+[12:14:15.213] [bmv2] [D] [thread 389466] Adding interface veth4 as port 2
+[12:14:15.257] [bmv2] [D] [thread 389466] Adding interface veth6 as port 3
+[12:14:15.297] [bmv2] [D] [thread 389466] Adding interface veth8 as port 4
+[12:14:15.337] [bmv2] [D] [thread 389466] Adding interface veth10 as port 5
+[12:14:15.381] [bmv2] [D] [thread 389466] Adding interface veth12 as port 6
+[12:14:15.429] [bmv2] [D] [thread 389466] Adding interface veth14 as port 7
+[12:14:15.483] [bmv2] [I] [thread 389466] Starting Thrift server on port 9090
+[12:14:15.483] [bmv2] [I] [thread 389466] Thrift server was started
+[12:14:17.482] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_act': act - 
+[12:14:17.482] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[12:14:17.482] [bmv2] [D] [thread 389515] Set default default entry for table 'MyIngress.connections': NoAction - 
+[12:14:17.482] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[12:14:17.483] [bmv2] [D] [thread 389515] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[12:14:17.484] [bmv2] [D] [thread 389515] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[12:14:17.485] [bmv2] [D] [thread 389515] simple_switch target has been notified of a config swap
+[12:14:17.489] [bmv2] [I] [thread 389524] Received packet of length 100 on port 1: ee30ca9d1e00eecd007e7000080045000056000100004006afd2c0a800250a01000104d20050000000000000000050022000c3b00000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[12:14:17.489] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Processing packet received on port 1
+[12:14:17.489] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser 'parser': start
+[12:14:17.489] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:14:17.489] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Extracting header 'ethernet'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser state 'start': key is 0800
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Bytes parsed: 14
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Extracting header 'ipv4'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Bytes parsed: 34
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Extracting header 'tcp'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Bytes parsed: 54
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Checksum 'cksum_1': computed 0xafd2 - actual 0xafd2
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Parser 'parser': end
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Pipeline 'ingress': start
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Applying table 'tbl_act'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Looking up key:
+
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Table 'tbl_act': miss
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Action entry is act - 
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Action act
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Primitive (no source info)
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Looking up key:
+
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] hash(base=0, max=65535) = 3099
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] hash(base=0, max=65535) = 2819
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00000c1b
+
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Action entry is NoAction - 
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Action NoAction
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Applying table 'tbl_proxy572'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Looking up key:
+
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Table 'tbl_proxy572': miss
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Action entry is proxy572 - 
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Action proxy572
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Looking up key:
+
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(252) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(253) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(257) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(258) Primitive hdr.ethernet.dstAddr = srcMAC
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(259) Primitive hdr.ethernet.srcAddr = dstMAC
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(267) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(270) Primitive hdr.ipv4.srcAddr = serverAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(271) Primitive hdr.ipv4.dstAddr = clientAddr
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(275) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(276) Primitive hdr.tcp.dstPort = clientPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(277) Primitive hdr.tcp.srcPort = serverPort
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(284) Primitive hdr.tcp.syn = 1
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(285) Primitive hdr.tcp.ack = 1
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(288) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(307) Primitive clientIPAddress
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(308) Primitive clientPortNum
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(309) Primitive time
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(304) Primitive hash(hash_value, ...
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] hash(base=0, max=26) = 17
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(319) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : c0a80025
+
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Action entry is MyIngress.drop - 
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Action MyIngress.drop
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Looking up key:
+
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[12:14:17.490] [bmv2] [T] [thread 389525] [0.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Pipeline 'ingress': end
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Egress port is 511
+[12:14:17.490] [bmv2] [D] [thread 389525] [0.0] [cxt 0] Dropping packet at the end of ingress
+[12:33:07.101] [bmv2] [D] [thread 390216] Adding interface veth0 as port 0
+[12:33:07.161] [bmv2] [D] [thread 390216] Adding interface veth2 as port 1
+[12:33:07.221] [bmv2] [D] [thread 390216] Adding interface veth4 as port 2
+[12:33:07.265] [bmv2] [D] [thread 390216] Adding interface veth6 as port 3
+[12:33:07.309] [bmv2] [D] [thread 390216] Adding interface veth8 as port 4
+[12:33:07.357] [bmv2] [D] [thread 390216] Adding interface veth10 as port 5
+[12:33:07.405] [bmv2] [D] [thread 390216] Adding interface veth12 as port 6
+[12:33:07.445] [bmv2] [D] [thread 390216] Adding interface veth14 as port 7
+[12:33:07.503] [bmv2] [I] [thread 390216] Starting Thrift server on port 9090
+[12:33:07.503] [bmv2] [I] [thread 390216] Thrift server was started
+[12:33:15.183] [bmv2] [D] [thread 390319] Adding interface veth0 as port 0
+[12:33:15.241] [bmv2] [D] [thread 390319] Adding interface veth2 as port 1
+[12:33:15.297] [bmv2] [D] [thread 390319] Adding interface veth4 as port 2
+[12:33:15.345] [bmv2] [D] [thread 390319] Adding interface veth6 as port 3
+[12:33:15.389] [bmv2] [D] [thread 390319] Adding interface veth8 as port 4
+[12:33:15.433] [bmv2] [D] [thread 390319] Adding interface veth10 as port 5
+[12:33:15.474] [bmv2] [D] [thread 390319] Adding interface veth12 as port 6
+[12:33:15.525] [bmv2] [D] [thread 390319] Adding interface veth14 as port 7
+[12:33:15.567] [bmv2] [I] [thread 390319] Starting Thrift server on port 9090
+[12:33:15.568] [bmv2] [I] [thread 390319] Thrift server was started
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_act': act - 
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'MyIngress.connections': NoAction - 
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[12:33:17.567] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[12:33:17.568] [bmv2] [D] [thread 390386] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[12:33:17.570] [bmv2] [D] [thread 390386] simple_switch target has been notified of a config swap
+[12:33:17.574] [bmv2] [I] [thread 390395] Received packet of length 100 on port 1: ee30ca9d1e00eecd007e7000080045000056000100004006afd2c0a800250a01000104d20050000000000000000050022000c3b00000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Processing packet received on port 1
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser 'parser': start
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Extracting header 'ethernet'
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser state 'start': key is 0800
+[12:33:17.574] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Bytes parsed: 14
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Extracting header 'ipv4'
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[12:33:17.574] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Bytes parsed: 34
+[12:33:17.574] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Extracting header 'tcp'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Bytes parsed: 54
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Checksum 'cksum_1': computed 0xafd2 - actual 0xafd2
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Parser 'parser': end
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Pipeline 'ingress': start
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Applying table 'tbl_act'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Looking up key:
+
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Table 'tbl_act': miss
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Action entry is act - 
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Action act
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Primitive (no source info)
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Looking up key:
+
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] hash(base=0, max=65535) = 3099
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] hash(base=0, max=65535) = 2819
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00000c1b
+
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Action entry is NoAction - 
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Action NoAction
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Applying table 'tbl_proxy572'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Looking up key:
+
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Table 'tbl_proxy572': miss
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Action entry is proxy572 - 
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Action proxy572
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Looking up key:
+
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(252) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(253) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(257) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(258) Primitive hdr.ethernet.dstAddr = srcMAC
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(259) Primitive hdr.ethernet.srcAddr = dstMAC
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(267) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(270) Primitive hdr.ipv4.srcAddr = serverAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(271) Primitive hdr.ipv4.dstAddr = clientAddr
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(275) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(276) Primitive hdr.tcp.dstPort = clientPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(277) Primitive hdr.tcp.srcPort = serverPort
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(284) Primitive hdr.tcp.syn = 1
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(285) Primitive hdr.tcp.ack = 1
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(288) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(307) Primitive clientIPAddress
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(308) Primitive clientPortNum
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(309) Primitive time
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(304) Primitive hash(hash_value, ...
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] hash(base=0, max=26) = 17
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(319) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : c0a80025
+
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Action entry is MyIngress.drop - 
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Action MyIngress.drop
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Looking up key:
+
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[12:33:17.575] [bmv2] [T] [thread 390396] [0.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Pipeline 'ingress': end
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Egress port is 511
+[12:33:17.575] [bmv2] [D] [thread 390396] [0.0] [cxt 0] Dropping packet at the end of ingress
+[12:37:04.036] [bmv2] [D] [thread 390659] Adding interface veth0 as port 0
+[12:37:04.105] [bmv2] [D] [thread 390659] Adding interface veth2 as port 1
+[12:37:04.161] [bmv2] [D] [thread 390659] Adding interface veth4 as port 2
+[12:37:04.201] [bmv2] [D] [thread 390659] Adding interface veth6 as port 3
+[12:37:04.241] [bmv2] [D] [thread 390659] Adding interface veth8 as port 4
+[12:37:04.281] [bmv2] [D] [thread 390659] Adding interface veth10 as port 5
+[12:37:04.329] [bmv2] [D] [thread 390659] Adding interface veth12 as port 6
+[12:37:04.370] [bmv2] [D] [thread 390659] Adding interface veth14 as port 7
+[12:37:04.415] [bmv2] [I] [thread 390659] Starting Thrift server on port 9090
+[12:37:04.416] [bmv2] [I] [thread 390659] Thrift server was started
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_act': act - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'MyIngress.connections': NoAction - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[12:37:06.439] [bmv2] [D] [thread 390714] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[12:37:06.441] [bmv2] [D] [thread 390714] simple_switch target has been notified of a config swap
+[12:37:06.445] [bmv2] [I] [thread 390723] Received packet of length 100 on port 1: ee30ca9d1e00eecd007e7000080045000056000100004006afd2c0a800250a01000104d20050000000000000000050022000c3b00000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Processing packet received on port 1
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser 'parser': start
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Extracting header 'ethernet'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser state 'start': key is 0800
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Bytes parsed: 14
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Extracting header 'ipv4'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Bytes parsed: 34
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Extracting header 'tcp'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Bytes parsed: 54
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Checksum 'cksum_1': computed 0xafd2 - actual 0xafd2
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Parser 'parser': end
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Pipeline 'ingress': start
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Applying table 'tbl_act'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Looking up key:
+
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Table 'tbl_act': miss
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Action entry is act - 
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Action act
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Primitive (no source info)
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Looking up key:
+
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[12:37:06.445] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[12:37:06.445] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] hash(base=0, max=65535) = 3099
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] hash(base=0, max=65535) = 2819
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00000c1b
+
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Action entry is NoAction - 
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Action NoAction
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Applying table 'tbl_proxy572'
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Looking up key:
+
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Table 'tbl_proxy572': miss
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Action entry is proxy572 - 
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Action proxy572
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Looking up key:
+
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(252) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(253) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(257) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(258) Primitive hdr.ethernet.dstAddr = srcMAC
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(259) Primitive hdr.ethernet.srcAddr = dstMAC
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(267) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(270) Primitive hdr.ipv4.srcAddr = serverAddr
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(271) Primitive hdr.ipv4.dstAddr = clientAddr
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(275) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(276) Primitive hdr.tcp.dstPort = clientPort
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(277) Primitive hdr.tcp.srcPort = serverPort
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(284) Primitive hdr.tcp.syn = 1
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(285) Primitive hdr.tcp.ack = 1
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(288) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(307) Primitive clientIPAddress
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(308) Primitive clientPortNum
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(309) Primitive time
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(304) Primitive hash(hash_value, ...
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] hash(base=0, max=26) = 17
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(319) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : c0a80025
+
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Action entry is MyIngress.drop - 
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Action MyIngress.drop
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Looking up key:
+
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[12:37:06.446] [bmv2] [T] [thread 390724] [0.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Pipeline 'ingress': end
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Egress port is 511
+[12:37:06.446] [bmv2] [D] [thread 390724] [0.0] [cxt 0] Dropping packet at the end of ingress
+[12:48:27.323] [bmv2] [D] [thread 390989] Adding interface veth0 as port 0
+[12:48:27.374] [bmv2] [D] [thread 390989] Adding interface veth2 as port 1
+[12:48:27.425] [bmv2] [D] [thread 390989] Adding interface veth4 as port 2
+[12:48:27.477] [bmv2] [D] [thread 390989] Adding interface veth6 as port 3
+[12:48:27.529] [bmv2] [D] [thread 390989] Adding interface veth8 as port 4
+[12:48:27.573] [bmv2] [D] [thread 390989] Adding interface veth10 as port 5
+[12:48:27.633] [bmv2] [D] [thread 390989] Adding interface veth12 as port 6
+[12:48:27.677] [bmv2] [D] [thread 390989] Adding interface veth14 as port 7
+[12:48:27.748] [bmv2] [I] [thread 390989] Starting Thrift server on port 9090
+[12:48:27.749] [bmv2] [I] [thread 390989] Thrift server was started
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_act': act - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'MyIngress.connections': NoAction - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[12:48:29.677] [bmv2] [D] [thread 391037] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[12:48:29.679] [bmv2] [D] [thread 391037] simple_switch target has been notified of a config swap
+[12:48:29.683] [bmv2] [I] [thread 391048] Received packet of length 100 on port 1: ee30ca9d1e00eecd007e7000080045000056000100004006afd2c0a800250a01000104d20050000000000000000050022000c3b00000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Processing packet received on port 1
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser 'parser': start
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Extracting header 'ethernet'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser state 'start': key is 0800
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Bytes parsed: 14
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Extracting header 'ipv4'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Bytes parsed: 34
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Extracting header 'tcp'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Bytes parsed: 54
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Checksum 'cksum_1': computed 0xafd2 - actual 0xafd2
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Parser 'parser': end
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Pipeline 'ingress': start
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Applying table 'tbl_act'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Looking up key:
+
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Table 'tbl_act': miss
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Action entry is act - 
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Action act
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Primitive (no source info)
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Looking up key:
+
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] hash(base=0, max=65535) = 3099
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] hash(base=0, max=65535) = 2819
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00000c1b
+
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Action entry is NoAction - 
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Action NoAction
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Applying table 'tbl_proxy572'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Looking up key:
+
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Table 'tbl_proxy572': miss
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Action entry is proxy572 - 
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Action proxy572
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Looking up key:
+
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(252) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(253) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(257) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(258) Primitive hdr.ethernet.dstAddr = srcMAC
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(259) Primitive hdr.ethernet.srcAddr = dstMAC
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(267) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(270) Primitive hdr.ipv4.srcAddr = serverAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(271) Primitive hdr.ipv4.dstAddr = clientAddr
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(275) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(276) Primitive hdr.tcp.dstPort = clientPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(277) Primitive hdr.tcp.srcPort = serverPort
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(284) Primitive hdr.tcp.syn = 1
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(285) Primitive hdr.tcp.ack = 1
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(288) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(307) Primitive clientIPAddress
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(308) Primitive clientPortNum
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(309) Primitive time
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(304) Primitive hash(hash_value, ...
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] hash(base=0, max=26) = 17
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(319) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : c0a80025
+
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Action entry is MyIngress.drop - 
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Action MyIngress.drop
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Looking up key:
+
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[12:48:29.684] [bmv2] [T] [thread 391049] [0.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Pipeline 'ingress': end
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Egress port is 511
+[12:48:29.684] [bmv2] [D] [thread 391049] [0.0] [cxt 0] Dropping packet at the end of ingress
+[17:52:05.106] [bmv2] [D] [thread 398934] Adding interface veth0 as port 0
+[17:52:05.153] [bmv2] [D] [thread 398934] Adding interface veth2 as port 1
+[17:52:05.205] [bmv2] [D] [thread 398934] Adding interface veth4 as port 2
+[17:52:05.253] [bmv2] [D] [thread 398934] Adding interface veth6 as port 3
+[17:52:05.297] [bmv2] [D] [thread 398934] Adding interface veth8 as port 4
+[17:52:05.349] [bmv2] [D] [thread 398934] Adding interface veth10 as port 5
+[17:52:05.389] [bmv2] [D] [thread 398934] Adding interface veth12 as port 6
+[17:52:05.441] [bmv2] [D] [thread 398934] Adding interface veth14 as port 7
+[17:52:05.491] [bmv2] [I] [thread 398934] Starting Thrift server on port 9090
+[17:52:05.491] [bmv2] [I] [thread 398934] Thrift server was started
+[17:52:13.653] [bmv2] [D] [thread 399040] Adding interface veth0 as port 0
+[17:52:13.717] [bmv2] [D] [thread 399040] Adding interface veth2 as port 1
+[17:52:13.761] [bmv2] [D] [thread 399040] Adding interface veth4 as port 2
+[17:52:13.805] [bmv2] [D] [thread 399040] Adding interface veth6 as port 3
+[17:52:13.865] [bmv2] [D] [thread 399040] Adding interface veth8 as port 4
+[17:52:13.909] [bmv2] [D] [thread 399040] Adding interface veth10 as port 5
+[17:52:13.949] [bmv2] [D] [thread 399040] Adding interface veth12 as port 6
+[17:52:13.997] [bmv2] [D] [thread 399040] Adding interface veth14 as port 7
+[17:52:14.056] [bmv2] [I] [thread 399040] Starting Thrift server on port 9090
+[17:52:14.056] [bmv2] [I] [thread 399040] Thrift server was started
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_act': act - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'MyIngress.connections': NoAction - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[17:52:16.052] [bmv2] [D] [thread 399108] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[17:52:16.054] [bmv2] [D] [thread 399108] simple_switch target has been notified of a config swap
+[17:53:17.514] [bmv2] [D] [thread 399222] Adding interface veth0 as port 0
+[17:53:17.561] [bmv2] [D] [thread 399222] Adding interface veth2 as port 1
+[17:53:17.609] [bmv2] [D] [thread 399222] Adding interface veth4 as port 2
+[17:53:17.657] [bmv2] [D] [thread 399222] Adding interface veth6 as port 3
+[17:53:17.701] [bmv2] [D] [thread 399222] Adding interface veth8 as port 4
+[17:53:17.741] [bmv2] [D] [thread 399222] Adding interface veth10 as port 5
+[17:53:17.789] [bmv2] [D] [thread 399222] Adding interface veth12 as port 6
+[17:53:17.833] [bmv2] [D] [thread 399222] Adding interface veth14 as port 7
+[17:53:17.885] [bmv2] [I] [thread 399222] Starting Thrift server on port 9090
+[17:53:17.886] [bmv2] [I] [thread 399222] Thrift server was started
+[17:58:06.657] [bmv2] [D] [thread 399467] Adding interface veth0 as port 0
+[17:58:06.697] [bmv2] [D] [thread 399467] Adding interface veth2 as port 1
+[17:58:06.753] [bmv2] [D] [thread 399467] Adding interface veth4 as port 2
+[17:58:06.797] [bmv2] [D] [thread 399467] Adding interface veth6 as port 3
+[17:58:06.849] [bmv2] [D] [thread 399467] Adding interface veth8 as port 4
+[17:58:06.889] [bmv2] [D] [thread 399467] Adding interface veth10 as port 5
+[17:58:06.949] [bmv2] [D] [thread 399467] Adding interface veth12 as port 6
+[17:58:07.017] [bmv2] [D] [thread 399467] Adding interface veth14 as port 7
+[17:58:07.061] [bmv2] [I] [thread 399467] Starting Thrift server on port 9090
+[17:58:07.061] [bmv2] [I] [thread 399467] Thrift server was started
+[18:04:36.655] [bmv2] [D] [thread 399670] Adding interface veth0 as port 0
+[18:04:36.725] [bmv2] [D] [thread 399670] Adding interface veth2 as port 1
+[18:04:36.761] [bmv2] [D] [thread 399670] Adding interface veth4 as port 2
+[18:04:36.801] [bmv2] [D] [thread 399670] Adding interface veth6 as port 3
+[18:04:36.853] [bmv2] [D] [thread 399670] Adding interface veth8 as port 4
+[18:04:36.905] [bmv2] [D] [thread 399670] Adding interface veth10 as port 5
+[18:04:36.958] [bmv2] [D] [thread 399670] Adding interface veth12 as port 6
+[18:04:36.997] [bmv2] [D] [thread 399670] Adding interface veth14 as port 7
+[18:04:37.045] [bmv2] [I] [thread 399670] Starting Thrift server on port 9090
+[18:04:37.046] [bmv2] [I] [thread 399670] Thrift server was started
+[18:06:13.959] [bmv2] [D] [thread 399804] Adding interface veth0 as port 0
+[18:06:14.017] [bmv2] [D] [thread 399804] Adding interface veth2 as port 1
+[18:06:14.061] [bmv2] [D] [thread 399804] Adding interface veth4 as port 2
+[18:06:14.109] [bmv2] [D] [thread 399804] Adding interface veth6 as port 3
+[18:06:14.169] [bmv2] [D] [thread 399804] Adding interface veth8 as port 4
+[18:06:14.213] [bmv2] [D] [thread 399804] Adding interface veth10 as port 5
+[18:06:14.261] [bmv2] [D] [thread 399804] Adding interface veth12 as port 6
+[18:06:14.301] [bmv2] [D] [thread 399804] Adding interface veth14 as port 7
+[18:06:14.352] [bmv2] [I] [thread 399804] Starting Thrift server on port 9090
+[18:06:14.352] [bmv2] [I] [thread 399804] Thrift server was started
+[18:06:35.447] [bmv2] [D] [thread 399910] Adding interface veth0 as port 0
+[18:06:35.485] [bmv2] [D] [thread 399910] Adding interface veth2 as port 1
+[18:06:35.529] [bmv2] [D] [thread 399910] Adding interface veth4 as port 2
+[18:06:35.590] [bmv2] [D] [thread 399910] Adding interface veth6 as port 3
+[18:06:35.637] [bmv2] [D] [thread 399910] Adding interface veth8 as port 4
+[18:06:35.706] [bmv2] [D] [thread 399910] Adding interface veth10 as port 5
+[18:06:35.757] [bmv2] [D] [thread 399910] Adding interface veth12 as port 6
+[18:06:35.805] [bmv2] [D] [thread 399910] Adding interface veth14 as port 7
+[18:06:35.856] [bmv2] [I] [thread 399910] Starting Thrift server on port 9090
+[18:06:35.856] [bmv2] [I] [thread 399910] Thrift server was started
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_act': act - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'MyIngress.connections': NoAction - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_proxy570': proxy570 - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_proxy572': proxy572 - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_proxy599': proxy599 - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_proxy608': proxy608 - 
+[18:06:37.808] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_proxy622': proxy622 - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[18:06:37.809] [bmv2] [D] [thread 399958] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[18:06:37.810] [bmv2] [D] [thread 399958] simple_switch target has been notified of a config swap
+[18:06:37.814] [bmv2] [I] [thread 399967] Received packet of length 100 on port 1: 00aabbccddee000000000101080045000056000100004006649e0a0001010a00010304d20050000000000000000050022000787c0000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Processing packet received on port 1
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser 'parser': start
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Extracting header 'ethernet'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser state 'start': key is 0800
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Bytes parsed: 14
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Extracting header 'ipv4'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Bytes parsed: 34
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Extracting header 'tcp'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Bytes parsed: 54
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Checksum 'cksum_1': computed 0x649e - actual 0x649e
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Parser 'parser': end
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Pipeline 'ingress': start
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Applying table 'tbl_act'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Looking up key:
+
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Table 'tbl_act': miss
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Action entry is act - 
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Action act
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Primitive (no source info)
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Looking up key:
+
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] hash(base=0, max=65535) = 52508
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] hash(base=0, max=65535) = 9533
+[18:06:37.814] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[18:06:37.814] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000cd1c
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Action entry is NoAction - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Action NoAction
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Applying table 'tbl_proxy572'
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Table 'tbl_proxy572': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Action entry is proxy572 - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Action proxy572
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[18:06:37.815] [bmv2] [I] [thread 399967] Received packet of length 100 on port 3: 00aabbccddee000000000303080045000056000100004006649e0a0001030a000101005004d2000000000000000050122000786c0000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(252) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(253) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(257) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(258) Primitive hdr.ethernet.dstAddr = srcMAC
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(259) Primitive hdr.ethernet.srcAddr = dstMAC
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(267) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(270) Primitive hdr.ipv4.srcAddr = serverAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(271) Primitive hdr.ipv4.dstAddr = clientAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(275) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(276) Primitive hdr.tcp.dstPort = clientPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(277) Primitive hdr.tcp.srcPort = serverPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(284) Primitive hdr.tcp.syn = 1
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(285) Primitive hdr.tcp.ack = 1
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(288) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(307) Primitive clientIPAddress
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(308) Primitive clientPortNum
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(309) Primitive time
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(304) Primitive hash(hash_value, ...
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] hash(base=0, max=26) = 21
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(319) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Action entry is MyIngress.drop - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Action MyIngress.drop
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[18:06:37.815] [bmv2] [T] [thread 399968] [0.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Pipeline 'ingress': end
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Egress port is 511
+[18:06:37.815] [bmv2] [D] [thread 399968] [0.0] [cxt 0] Dropping packet at the end of ingress
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Processing packet received on port 3
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser 'parser': start
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Extracting header 'ethernet'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser state 'start': key is 0800
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Bytes parsed: 14
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Extracting header 'ipv4'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Bytes parsed: 34
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Extracting header 'tcp'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Bytes parsed: 54
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Checksum 'cksum_1': computed 0x649e - actual 0x649e
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Verified checksum 'cksum_1': passed
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Parser 'parser': end
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Pipeline 'ingress': start
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_act'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_act': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is act - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action act
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Primitive (no source info)
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action MyIngress.compute_connection_hash
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] hash(base=0, max=65535) = 9533
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] hash(base=0, max=65535) = 52508
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'MyIngress.connections'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000253d
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'MyIngress.connections': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is NoAction - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action NoAction
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_proxy572'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_proxy572': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is proxy572 - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action proxy572
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(593) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is false
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(610) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 1 && hdr.tcp.psh == 0" (node_19) is true
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_compute_cookie_value'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_compute_cookie_value': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is MyIngress.compute_cookie_value - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action MyIngress.compute_cookie_value
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(335) Primitive if
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(336) Primitive clientIPAddress = hdr.ipv4.dstAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(337) Primitive clientPortNum = hdr.tcp.dstPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(335) Primitive if
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(350) Primitive clientIPAddress
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(351) Primitive clientPortNum
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(352) Primitive time
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(347) Primitive hash(hash_value, ...
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] hash(base=0, max=26) = 21
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(362) Primitive meta.cookieValue =tempSeqS | (bit<32>)hash_value
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_compute_connection_hash_0'
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_compute_connection_hash_0': miss
+[18:06:37.815] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action MyIngress.compute_connection_hash
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[18:06:37.815] [bmv2] [I] [thread 399967] Received packet of length 100 on port 1: 00aabbccddee000000000101080045000056000100004006649e0a0001010a00010304d20050000000000000000050102000786e0000000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[18:06:37.815] [bmv2] [T] [thread 399968] [1.0] [cxt 0] hash(base=0, max=65535) = 9533
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] hash(base=0, max=65535) = 52508
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_send_digest_connection'
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_send_digest_connection': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is MyIngress.send_digest_connection - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action MyIngress.send_digest_connection
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(208) Primitive meta.seq_digest.type = 2
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(209) Primitive meta.seq_digest.connection_hash = meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(210) Primitive meta.seq_digest.seqNo = meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(211) Primitive meta.seq_digest.connection_hash_rev = meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(212) Primitive meta.seq_digest.seqNo_rev = meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(214) Primitive meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(214) Primitive meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(214) Primitive meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(214) Primitive meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(214) Primitive meta
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(214) Primitive digest(1, meta.seq_digest)
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_create_ack_response'
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_create_ack_response': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is MyIngress.create_ack_response - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action MyIngress.create_ack_response
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(432) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(433) Primitive hdr.ethernet.dstAddr = srcMAC
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(434) Primitive hdr.ethernet.srcAddr = dstMAC
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(437) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(439) Primitive hdr.ipv4.srcAddr = serverAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(440) Primitive hdr.ipv4.dstAddr = clientAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(444) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(445) Primitive hdr.tcp.dstPort = clientPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(446) Primitive hdr.tcp.srcPort = serverPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(452) Primitive hdr.tcp.syn = 0
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(453) Primitive hdr.tcp.ack = 1
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(454) Primitive hdr.tcp.psh = 0
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(457) Primitive bit <32> serverSeq = hdr.tcp.seqNo
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(459) Primitive hdr.tcp.seqNo = serverAck
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(462) Primitive hdr.tcp.ackNo = serverSeq + 1
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Condition "node_27" (node_27) is false
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(627) Condition "hdr.ipv4.isValid()" (node_28) is true
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000103
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'MyIngress.ipv4_lpm': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is MyIngress.drop - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action MyIngress.drop
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] Action MyIngress.compute_tcp_length
+[18:06:37.816] [bmv2] [T] [thread 399968] [1.0] [cxt 0] proxy.p4(411) Primitive meta.tcpLength = tcpLength
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Pipeline 'ingress': end
+[18:06:37.816] [bmv2] [T] [thread 399968] Learning sample for list id 1
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Egress port is 511
+[18:06:37.816] [bmv2] [D] [thread 399968] [1.0] [cxt 0] Dropping packet at the end of ingress
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Processing packet received on port 1
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser 'parser': start
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Extracting header 'ethernet'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser state 'start': key is 0800
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Bytes parsed: 14
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Extracting header 'ipv4'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Bytes parsed: 34
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Extracting header 'tcp'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Bytes parsed: 54
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Checksum 'cksum_1': computed 0x649e - actual 0x649e
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Verified checksum 'cksum_1': passed
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Parser 'parser': end
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Pipeline 'ingress': start
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Applying table 'tbl_act'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Table 'tbl_act': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Action entry is act - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Action act
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Primitive (no source info)
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(564) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Action MyIngress.compute_connection_hash
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(229) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(230) Primitive hdr.ipv4.srcAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(231) Primitive hdr.ipv4.dstAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(232) Primitive hdr.tcp.srcPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(233) Primitive hdr.tcp.dstPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(234) Primitive hdr.ipv4.protocol
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(230) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] hash(base=0, max=65535) = 52508
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(236) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(237) Primitive hdr.ipv4.dstAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(238) Primitive hdr.ipv4.srcAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(239) Primitive hdr.tcp.dstPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(240) Primitive hdr.tcp.srcPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(241) Primitive hdr.ipv4.protocol
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(237) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] hash(base=0, max=65535) = 9533
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Applying table 'MyIngress.connections'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000cd1c
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Table 'MyIngress.connections': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Action entry is NoAction - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Action NoAction
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Applying table 'tbl_proxy572'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Table 'tbl_proxy572': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Action entry is proxy572 - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Action proxy572
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(572) Primitive meta.is_connection_established = 0
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(576) Condition "meta.is_connection_established == 1" (node_8) is false
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(581) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(593) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is true
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Applying table 'tbl_validate_syn_cookie'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Table 'tbl_validate_syn_cookie': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Action entry is MyIngress.validate_syn_cookie - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Action MyIngress.validate_syn_cookie
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(377) Primitive hdr.ipv4.srcAddr
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(378) Primitive hdr.tcp.srcPort
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(379) Primitive time
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(374) Primitive hash(hash_value, ...
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] hash(base=0, max=26) = 21
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(393) Primitive if
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(396) Primitive meta.is_valid_cookie = 0
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(597) Condition "meta.is_valid_cookie == 1" (node_14) is false
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Applying table 'tbl_drop'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Table 'tbl_drop': miss
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Action entry is MyIngress.drop - 
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Action MyIngress.drop
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(184) Primitive mark_to_drop(standard_metadata)
+[18:06:37.816] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Applying table 'tbl_proxy608'
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Looking up key:
+
+[18:06:37.816] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Table 'tbl_proxy608': miss
+[18:06:37.817] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Action entry is proxy608 - 
+[18:06:37.817] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Action proxy608
+[18:06:37.817] [bmv2] [T] [thread 399968] [2.0] [cxt 0] proxy.p4(608) Primitive return
+[18:06:37.817] [bmv2] [T] [thread 399968] [2.0] [cxt 0] Condition "node_27" (node_27) is true
+[18:06:37.817] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Pipeline 'ingress': end
+[18:06:37.817] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Egress port is 511
+[18:06:37.817] [bmv2] [D] [thread 399968] [2.0] [cxt 0] Dropping packet at the end of ingress
+[18:06:38.816] [bmv2] [T] [thread 399964] Sending learning notification for list id 1 (buffer id 0)
