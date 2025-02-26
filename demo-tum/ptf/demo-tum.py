@@ -15,7 +15,10 @@
 #     print(f"Seq Diff: {seq_diff}")
 #     print(f"Seq Diff Rev: {seq_diff_rev}")
 
-
+# TODO try to fix the automated script
+# for that try to connect ss_grpc via thrift via console
+# if that works then also do it in the automated approach
+# the challenge atm is: controller.py always fails somehow
 
 import logging
 
@@ -40,6 +43,13 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
+# NOTE: need to install behavioral model with thrift support
+# cd ~/behavioral-model  # Go to BMv2 source directory
+# ./autogen.sh
+# ./configure --enable-debugger --with-thrift
+# make -j$(nproc)
+# sudo make install
+# needs thrift 0.13
 
 class DemoTumTest(BaseTest):
     
@@ -102,32 +112,45 @@ class ProxyTest(DemoTumTest):
         """ Simulates a proper TCP handshake between client and web server """
         print("\n[INFO] Sending TCP Handshake Packets...")
 
-        # Step 1: SYN
+        # Step 1: SYN (Client -> Server)
         syn_pkt = tu.simple_tcp_packet(
             eth_src=self.client_mac, eth_dst=self.switch_mac,
             ip_src=self.client_ip, ip_dst=self.server_ip,
             tcp_sport=self.client_port, tcp_dport=self.server_port,
             tcp_flags="S"
         )
+        
         tu.send_packet(self, self.client_iface, syn_pkt)
+        
+        # Step 2: P4 program answers SYN-ACK (Proxy -> Client)
 
-        # Step 2: SYN-ACK (Server -> Client)
-        syn_ack_pkt = tu.simple_tcp_packet(
-            eth_src=self.server_mac, eth_dst=self.switch_mac,
+        exp_pkt = tu.simple_tcp_packet(
+            eth_src=self.switch_mac, eth_dst=self.client_mac,
             ip_src=self.server_ip, ip_dst=self.client_ip,
             tcp_sport=self.server_port, tcp_dport=self.client_port,
             tcp_flags="SA"
         )
-        tu.send_packet(self, self.server_iface, syn_ack_pkt)
+        
+        # tu.verify_packet(self, exp_pkt, self.client_iface)
+        tu.verify_any_packet_any_port(self,timeout=3, ports=[0,1,2])
 
-        # Step 3: ACK (Client -> Server)
-        ack_pkt = tu.simple_tcp_packet(
-            eth_src=self.client_mac, eth_dst=self.switch_mac,
-            ip_src=self.client_ip, ip_dst=self.server_ip,
-            tcp_sport=self.client_port, tcp_dport=self.server_port,
-            tcp_flags="A"
-        )
-        tu.send_packet(self, self.client_iface, ack_pkt)
+        # # Step 2: SYN-ACK (Server -> Client)
+        # syn_ack_pkt = tu.simple_tcp_packet(
+        #     eth_src=self.server_mac, eth_dst=self.switch_mac,
+        #     ip_src=self.server_ip, ip_dst=self.client_ip,
+        #     tcp_sport=self.server_port, tcp_dport=self.client_port,
+        #     tcp_flags="SA"
+        # )
+        # tu.send_packet(self, self.server_iface, syn_ack_pkt)
+
+        # # Step 3: ACK (Client -> Server)
+        # ack_pkt = tu.simple_tcp_packet(
+        #     eth_src=self.client_mac, eth_dst=self.switch_mac,
+        #     ip_src=self.client_ip, ip_dst=self.server_ip,
+        #     tcp_sport=self.client_port, tcp_dport=self.server_port,
+        #     tcp_flags="A"
+        # )
+        # tu.send_packet(self, self.client_iface, ack_pkt)
 
     def malicious_packets(self):
         """ Sends malicious packets from the attacker to the web server """

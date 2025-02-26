@@ -51,36 +51,39 @@ sudo simple_switch_grpc \
      -i 0@veth0 \
      -i 1@veth2 \
      -i 2@veth4 \
-     -i 3@veth6 \
-     -i 4@veth8 \
-     -i 5@veth10 \
-     -i 6@veth12 \
-     -i 7@veth14 \
+     --thrift-port 9091 \
      --no-p4 &
 echo ""
 echo "Started simple_switch_grpc.  Waiting 2 seconds before starting PTF test ..."
 sleep 2
-
+    #  -i 3@veth6 \
+    #  -i 4@veth8 \
+    #  -i 5@veth10 \
+    #  -i 6@veth12 \
+    #  -i 7@veth14 \
 # Note that the mapping between switch port number and Linux interface
 # names is best to make it correspond with those given when starting
 # the simple_switch_grpc process.  The `ptf` process has no other way
 # of getting this mapping other than by telling it on its command
 # line.
 # source /home/tristan/p4dev-python-venv/bin/activate
+echo "Start SYN-Cookie Control Plane application"
+cd syn-cookie/p4-utils
+python3 controller.py &
+cd ../..
 
 sudo -E ${P4_EXTRA_SUDO_OPTS} $(which ptf) \
     --pypath "$P" \
     -i 0@veth1 \
     -i 1@veth3 \
     -i 2@veth5 \
-    -i 3@veth7 \
-    -i 4@veth9 \
-    -i 5@veth11 \
-    -i 6@veth13 \
-    -i 7@veth15 \
     --test-params="grpcaddr='localhost:9559';p4info='syn-cookie/p4src/proxy.p4info.txtpb';config='syn-cookie/p4src/proxy.json'" \
     --test-dir ptf
-
+    # -i 3@veth7 \
+    # -i 4@veth9 \
+    # -i 5@veth11 \
+    # -i 6@veth13 \
+    # -i 7@veth15 \
 
 echo ""
 echo "PTF test finished.  Waiting 2 seconds before killing simple_switch_grpc ..."
