@@ -45,13 +45,13 @@ p4c --target bmv2 \
 /bin/rm -f ss-log.txt
 
 sudo simple_switch_grpc \
+     --device-id 0 \
      --log-file syn-cookie_ss-log \
      --log-flush \
      --dump-packet-data 10000 \
-     -i 0@veth0 \
-     -i 1@veth2 \
-     -i 2@veth4 \
-     --thrift-port 9091 \
+     -i 1@veth0 \
+     -i 2@veth2 \
+     -i 3@veth4 \
      --no-p4 &
 echo ""
 echo "Started simple_switch_grpc.  Waiting 2 seconds before starting PTF test ..."
@@ -68,15 +68,14 @@ sleep 2
 # line.
 # source /home/tristan/p4dev-python-venv/bin/activate
 echo "Start SYN-Cookie Control Plane application"
-cd syn-cookie/p4-utils
-python3 controller.py &
-cd ../..
+python3 syn-cookie/controller-grpc.py &
+sleep 2
 
 sudo -E ${P4_EXTRA_SUDO_OPTS} $(which ptf) \
     --pypath "$P" \
-    -i 0@veth1 \
-    -i 1@veth3 \
-    -i 2@veth5 \
+    -i 1@veth1 \
+    -i 2@veth3 \
+    -i 3@veth5 \
     --test-params="grpcaddr='localhost:9559';p4info='syn-cookie/p4src/proxy.p4info.txtpb';config='syn-cookie/p4src/proxy.json'" \
     --test-dir ptf
     # -i 3@veth7 \
@@ -89,6 +88,7 @@ echo ""
 echo "PTF test finished.  Waiting 2 seconds before killing simple_switch_grpc ..."
 sleep 2
 sudo pkill --signal 9 --list-name simple_switch
+sudo pkill --signal 9 -f controller-grpc.py
 echo ""
 echo "Verifying that there are no simple_switch_grpc processes running any longer in 4 seconds ..."
 sleep 4

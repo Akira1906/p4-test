@@ -21,14 +21,16 @@
 # the challenge atm is: controller.py always fails somehow
 
 import logging
-
+import ptf.mask as mask
 import ptf
 import ptf.testutils as tu
 from ptf.base_tests import BaseTest
 import p4runtime_sh.shell as sh
 # import p4runtime_shell_utils as shu
 import ipaddress
-
+import scapy
+from scapy.all import Ether, IP, TCP
+# shu.dump_table('ipv4_lpm')
 
 ######################################################################
 # Configure logging
@@ -57,6 +59,8 @@ class DemoTumTest(BaseTest):
         # Setting up PTF dataplane
         self.dataplane = ptf.dataplane_instance
         self.dataplane.flush()
+        print("Data Plane is of type:")
+        print(type(self.dataplane))
 
         logging.debug("DemoTUM.setUp()")
         grpc_addr = tu.test_param_get("grpcaddr")
@@ -70,15 +74,17 @@ class DemoTumTest(BaseTest):
 
         sh.setup(device_id=my_dev1_id,
                 grpc_addr=grpc_addr,
-                election_id=(0, 1), # (high_32bits, lo_32bits)
-                config=sh.FwdPipeConfig(p4info_txt_fname, p4prog_binary_fname),
+                election_id=(0, 1),# (high_32bits, lo_32bits)
+                # config=sh.FwdPipeConfig(p4info_txt_fname, p4prog_binary_fname),
                 verbose=True)
         # 1. start the P4 program of the tum approach
         # 2. start the control plane python application
+        
 
     def tearDown(self):
         logging.debug("DemoTumTest.tearDown()")
         sh.teardown()
+
 
     # idea: test the application with an active control plane as integration test
 
@@ -89,10 +95,12 @@ class ProxyTest(DemoTumTest):
         
 
     def runTest(self):
-        self.client_mac = "00:00:00:00:01:01"  # h1 MAC
-        self.attacker_mac = "00:00:00:00:02:02"  # h2 MAC
-        self.server_mac = "00:00:00:00:03:03"  # h3 MAC
-        self.switch_mac = "00:aa:bb:cc:dd:ee"  # s1 MAC
+        self.client_mac = "00:00:0a:00:01:01"  # h1 MAC
+        self.attacker_mac = "00:00:0a:00:01:02"  # h2 MAC
+        self.server_mac = "00:00:0a:00:01:03"  # h3 MAC
+        self.switch_client_mac = "00:01:0a:00:01:01"  # s1 client MAC
+        self.switch_attacker_mac = "00:01:0a:00:01:02"# s1 attacker MAC
+        self.swich_server_mac = "00:01:0a:00:01:03" # s1 server MAC
 
         self.client_ip = "10.0.1.1"
         self.attacker_ip = "10.0.1.2"
@@ -107,50 +115,62 @@ class ProxyTest(DemoTumTest):
         self.server_iface = 3  # h3 -> s1
         
         self.tcp_handshake()
+    
+    def get_packet_mask(pkt):
+        pkt_mask = mask.Mask(pkt)
+
+        pkt_mask.set_do_not_care_all()
+
+        pkt_mask.set_care_packet(Ether, "src")
+        pkt_mask.set_care_packet(Ether, "dst")
+        pkt_mask.set_care_packet(IP, "src")
+        pkt_mask.set_care_packet(IP, "dst")
+        pkt_mask.set_care_packet(IP, "ttl")
+        pkt_mask.set_care_packet(TCP, "sport")
+        pkt_mask.set_care_packet(TCP, "dport")
+        pkt_mask.set_care_packet(TCP, "flags")
+        pkt_mask.set_care_packet(TCP, "seq")
+        pkt_mask.set_care_packet(TCP, "ack")
+        
+        return pkt_mask
 
     def tcp_handshake(self):
         """ Simulates a proper TCP handshake between client and web server """
         print("\n[INFO] Sending TCP Handshake Packets...")
 
         # Step 1: SYN (Client -> Server)
-        syn_pkt = tu.simple_tcp_packet(
-            eth_src=self.client_mac, eth_dst=self.switch_mac,
-            ip_src=self.client_ip, ip_dst=self.server_ip,
-            tcp_sport=self.client_port, tcp_dport=self.server_port,
-            tcp_flags="S"
+        syn_pkt = (
+            Ether(dst=self.switch_client_mac, src=self.client_mac, type=0x0800) /
+            IP(src=self.client_ip, dst=self.server_ip, ttl=64, proto=6, id=1, flags=0) /
+            TCP(sport=self.client_port, dport=self.server_port, flags="S")
         )
         
         tu.send_packet(self, self.client_iface, syn_pkt)
         
         # Step 2: P4 program answers SYN-ACK (Proxy -> Client)
 
-        exp_pkt = tu.simple_tcp_packet(
-            eth_src=self.switch_mac, eth_dst=self.client_mac,
-            ip_src=self.server_ip, ip_dst=self.client_ip,
-            tcp_sport=self.server_port, tcp_dport=self.client_port,
-            tcp_flags="SA"
+        exp_pkt = (
+            Ether(dst=self.client_mac, src=self.client_mac, type=0x0800) /
+            IP(src=self.server_ip, dst=self.client_ip, ttl=63, proto=6, id=1, flags=0) /
+            TCP(sport=self.server_port, dport=self.client_port, seq=2030043157, ack=1, flags="SA", window=8192)
+        )
+
+        pkt_mask = self.get_packet_mask(exp_pkt)
+        
+        tu.verify_packet(self, pkt_mask, self.client_iface)
+        
+        # Step 3: Correct ACK answer from the client
+        
+        ack_pkt = (
+            Ether(dst=self.client_mac, src=self.switch_client_mac, type=0x0800) /
+            IP(src=self.client_ip, dst=self.server_ip, ttl=64, proto=6, id=1, flags=0) /
+            TCP(sport=self.client_port, dport=self.server_port, flags="A", seq=1, ack=2030043158, window=8192)
         )
         
-        # tu.verify_packet(self, exp_pkt, self.client_iface)
-        tu.verify_any_packet_any_port(self,timeout=3, ports=[0,1,2])
-
-        # # Step 2: SYN-ACK (Server -> Client)
-        # syn_ack_pkt = tu.simple_tcp_packet(
-        #     eth_src=self.server_mac, eth_dst=self.switch_mac,
-        #     ip_src=self.server_ip, ip_dst=self.client_ip,
-        #     tcp_sport=self.server_port, tcp_dport=self.client_port,
-        #     tcp_flags="SA"
-        # )
-        # tu.send_packet(self, self.server_iface, syn_ack_pkt)
-
-        # # Step 3: ACK (Client -> Server)
-        # ack_pkt = tu.simple_tcp_packet(
-        #     eth_src=self.client_mac, eth_dst=self.switch_mac,
-        #     ip_src=self.client_ip, ip_dst=self.server_ip,
-        #     tcp_sport=self.client_port, tcp_dport=self.server_port,
-        #     tcp_flags="A"
-        # )
-        # tu.send_packet(self, self.client_iface, ack_pkt)
+        tu.send_packet(self, self.client_iface, ack_pkt)
+        
+        # Step 4: Handshake between Switch and Server
+        # TODO: finish this handshake and finally finish the whole test suite
 
     def malicious_packets(self):
         """ Sends malicious packets from the attacker to the web server """
