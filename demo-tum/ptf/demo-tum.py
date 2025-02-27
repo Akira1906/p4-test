@@ -20,6 +20,7 @@ import p4runtime_sh.shell as sh
 import ipaddress
 import scapy
 from scapy.all import Ether, IP, TCP, Raw
+from asyncio import sleep
 # shu.dump_table('ipv4_lpm')
 
 ######################################################################
@@ -99,8 +100,7 @@ class DemoTumTest(BaseTest):
     # but first write some unit tests, artifical but simpler 
 
 
-class ProxyTest(DemoTumTest):
-        
+class UnitTest(DemoTumTest):
 
     def runTest(self):
         self.client_mac = "00:00:0a:00:01:01"  # h1 MAC
@@ -124,6 +124,8 @@ class ProxyTest(DemoTumTest):
         
         self.tcp_handshake()
         self.valid_packet_sequence()
+        # sleep(0.1)
+        self.malicious_packets()
     
 
     def tcp_handshake(self):
@@ -243,25 +245,62 @@ class ProxyTest(DemoTumTest):
     def malicious_packets(self):
         """ Sends malicious packets from the attacker to the web server """
         print("\n[INFO] Sending Malicious Packets from Attacker...")
-
         # Malicious SYN flood attack
         for i in range(5):
-            syn_flood_pkt = tu.simple_tcp_packet(
-                eth_src=self.attacker_mac, eth_dst=self.switch_mac,
-                ip_src=self.attacker_ip, ip_dst=self.server_ip,
-                tcp_sport=self.attacker_port + i, tcp_dport=self.server_port,
-                tcp_flags="S", tcp_seq=1000 + i
+            syn_flood_pkt = (
+                Ether(dst=self.switch_attacker_mac, src=self.attacker_mac, type=0x0800) /
+                IP(src=self.attacker_ip, dst=self.server_ip, ttl=64, proto=6) /
+                TCP(sport=self.attacker_port + i, dport=self.server_port, flags="S", seq=1000 + i)
             )
             tu.send_packet(self, self.attacker_iface, syn_flood_pkt)
+            # used to verify that the packet cannot bypass the proxy
+            tu.verify_no_packet(self, syn_flood_pkt, 3)
 
         # Spoofed TCP packets
         for i in range(3):
-            spoofed_pkt = tu.simple_tcp_packet(
-                eth_src=self.attacker_mac, eth_dst=self.switch_mac,
-                ip_src="1.2.3.4", ip_dst=self.server_ip,  # Fake IP
-                tcp_sport=6666, tcp_dport=self.server_port,
-                tcp_flags="PA", tcp_seq=2000 + i, tcp_ack=999
+            spoofed_pkt = (
+                Ether(dst=self.switch_attacker_mac, src=self.attacker_mac, type=0x0800) /
+                IP(src="1.2.3.4", dst=self.server_ip, ttl=64, proto=6) /
+                TCP(sport=6666, dport=self.server_port, flags="PA", seq=2000 + i, ack=999)
             )
-            tu.send_packet(self, self.attacker_iface, spoofed_pkt)
 
+            tu.send_packet(self, self.attacker_iface, spoofed_pkt)
+            tu.verify_no_packet(self, spoofed_pkt, 3)
+
+        # HTTP GET (Attacker -> Proxy)
+        ack_pkt = (
+            Ether(dst=self.switch_client_mac, src=self.client_mac, type=0x0800) /
+            IP(src=self.client_ip, dst=self.server_ip, ttl=64, proto=6, id=1, flags=0) /
+            TCP(sport=self.client_port+1, dport=self.server_port, flags="PA", seq=1, ack=2030043158) /
+            Raw(load=b"GET /index.html HTTP/1.1\r\nHost: 10.0.1.3\r\n\r\n")
+        )
+        
+        tu.send_packet(self, self.client_iface, ack_pkt)
+        tu.verify_no_packet(self, ack_pkt, 3)
     
+class IntegrationTest(DemoTumTest):
+    # idea let a program make a tcp connection through the proxy and see whether it will be successfull or not
+    
+    def runTest(self):
+        self.client_mac = "00:00:0a:00:01:01"  # h1 MAC
+        self.attacker_mac = "00:00:0a:00:01:02"  # h2 MAC
+        self.server_mac = "00:00:0a:00:01:03"  # h3 MAC
+        self.switch_client_mac = "00:01:0a:00:01:01"  # s1 client MAC
+        self.switch_attacker_mac = "00:01:0a:00:01:02"# s1 attacker MAC
+        self.switch_server_mac = "00:01:0a:00:01:03" # s1 server MAC
+
+        self.client_ip = "10.0.1.1"
+        self.attacker_ip = "10.0.1.2"
+        self.server_ip = "10.0.1.3"
+
+        self.client_port = 1234
+        self.server_port = 81
+        self.attacker_port = 5555
+
+        self.client_iface = 1  # h1 -> s1
+        self.attacker_iface = 2  # h2 -> s1
+        self.server_iface = 3  # h3 -> s1
+        
+        self.tcp_handshake()
+        self.valid_packet_sequence()
+        self.malicious_packets()

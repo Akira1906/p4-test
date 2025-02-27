@@ -49,11 +49,6 @@ value: "\000\003"
 Added entry: 10.0.1.3/32 -> 00:00:0a:00:01:03, Port 3
 Enabling digest: learn_connection_t
 Enabling digest: learn_debug_t
-Enabled digests:
-Enabling digest: learn_connection_t
-(0, 1, 0)
-Enabling digest: learn_debug_t
-(0, 1, 0)
 Listening for digest messages via gRPC...
 Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 394698674
 list_id: 1
@@ -76,11 +71,8 @@ data {
     }
   }
 }
-timestamp: 262114192583597
+timestamp: 269869605089042
 
-[[b'\x02', b'\x9d\x9e', b'x\xff\xff\xf0', b'\x16\xe1', b'\x87\x00\x00\x10']]
-5
-2, 40350, 2030043120, 5857, 2264924176
 message type: 2, connection added with Hash: 40350, diff: 2030043120
 Adding entry to: connections
 match:
@@ -93,7 +85,6 @@ action: saveDifferenceValue
 param_id: 1
 value: "x\377\377\360"
 
-Added connection with Hash 40350 and Diff 2030043120.
 message type: 2, connection added with Hash: 5857, diff: 2264924176
 Adding entry to: connections
 match:
@@ -106,6 +97,5 @@ action: saveDifferenceValue
 param_id: 1
 value: "\207\000\000\020"
 
-Added connection with Hash 5857 and Diff 2264924176.
 CRITICAL:root:StreamChannel error, closing stream
 CRITICAL:root:P4Runtime RPC error (UNAVAILABLE): Socket closed

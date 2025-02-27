@@ -32,7 +32,7 @@ echo "P is: $P"
 #ptf --pypath "$P" --test-dir ptf --list
 #exit 0
 
-set -x
+# set -x
 p4c --target bmv2 \
     --arch v1model \
     --p4runtime-files syn-cookie/p4src/proxy.p4info.txtpb \
