@@ -18,17 +18,28 @@ class DigestController():
                  election_id=(1, 0),
                  config=sh.FwdPipeConfig(p4info_txt_fname, p4prog_binary_fname))
         print(f"Connected to {self.sw_name} via gRPC at {self.grpc_addr}")
+
         topology = {
             "h1": {"ip": "10.0.1.1", "mac": "00:00:0a:00:01:01", "port": 1},
             "h2": {"ip": "10.0.1.2", "mac": "00:00:0a:00:01:02", "port": 2},
             "h3": {"ip": "10.0.1.3", "mac": "00:00:0a:00:01:03", "port": 3},
         }
+        # TODO add mirroring_add 100 4
         # Apply forwarding rules
         for host, info in topology.items():
             self.add_ipv4_forward_entry(info["ip"], info["mac"], info["port"])
         
-        # print("\nCurrent table entries:")
-        # sh.tables["ipv4_lpm"].dump()
+        # Configure digest handling
+        self.configure_digest()
+
+    def configure_digest(self):
+        """Configures the P4 digest handling for connection tracking."""
+        self.digest = sh.DigestEntry("learn_connection_t")
+        self.digest.max_timeout_ns = 0  # 1 second
+        self.digest.max_list_size = 1
+        self.digest.ack_timeout_ns = 0 # 500000000  # 0.5 second
+        self.digest.insert()
+        print("Configured digest: learn_connection_t")
 
     # Add IPv4 forwarding entries
     def add_ipv4_forward_entry(self, dst_ip, mac, port):
@@ -40,6 +51,7 @@ class DigestController():
         print(f"Added forwarding entry: {dst_ip} -> {mac} via port {port}")
 
     def recv_msg_digest(self, msg):
+        print(msg)
         topic, device_id, ctx_id, list_id, buffer_id, num = struct.unpack("<iQiiQi", msg[:32])
         offset = 17  # number of bytes in digest message
         msg = msg[32:]
@@ -91,9 +103,10 @@ class DigestController():
         # P4Runtime handles digests internally (no nnpy needed)
         while True:
             try:
-                digests = sh.DigestList().sniff(function=self.recv_msg_digest)
-                # for digest in digests:
-                #     self.recv_msg_digest(digest)
+                digest_list = sh.DigestList()
+                for digest_msg in digest_list.sniff():
+                    print("Received Digest:", digest_msg)
+                
             except Exception as e:
                 print(f"Error processing digests: {e}")
 

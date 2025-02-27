@@ -322,7 +322,7 @@
       "id" : 0,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 701,
+        "line" : 717,
         "column" : 8,
         "source_fragment" : "MyDeparser"
       },
@@ -504,7 +504,7 @@
       "id" : 7,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 651,
+        "line" : 667,
         "column" : 1,
         "source_fragment" : "update_checksum( ..."
       },
@@ -561,7 +561,7 @@
       "id" : 8,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 667,
+        "line" : 683,
         "column" : 8,
         "source_fragment" : "update_checksum_with_payload( ..."
       },
@@ -663,7 +663,7 @@
       "id" : 9,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 157,
+        "line" : 158,
         "column" : 5,
         "source_fragment" : "verify_checksum( ..."
       },
@@ -720,12 +720,6 @@
     {
       "id" : 1,
       "name" : "learn_connection_t",
-      "source_info" : {
-        "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 214,
-        "column" : 18,
-        "source_fragment" : "meta"
-      },
       "elements" : [
         {
           "type" : "field",
@@ -754,7 +748,7 @@
       "name" : "learn_debug_t",
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 224,
+        "line" : 240,
         "column" : 18,
         "source_fragment" : "meta"
       },
@@ -810,7 +804,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 184,
+            "line" : 185,
             "column" : 8,
             "source_fragment" : "mark_to_drop(standard_metadata)"
           }
@@ -832,7 +826,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 184,
+            "line" : 185,
             "column" : 8,
             "source_fragment" : "mark_to_drop(standard_metadata)"
           }
@@ -854,7 +848,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 184,
+            "line" : 185,
             "column" : 8,
             "source_fragment" : "mark_to_drop(standard_metadata)"
           }
@@ -889,7 +883,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 188,
+            "line" : 189,
             "column" : 8,
             "source_fragment" : "standard_metadata.egress_spec = port"
           }
@@ -908,7 +902,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 189,
+            "line" : 190,
             "column" : 8,
             "source_fragment" : "hdr.ethernet.srcAddr = hdr.ethernet.dstAddr"
           }
@@ -927,7 +921,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 190,
+            "line" : 191,
             "column" : 8,
             "source_fragment" : "hdr.ethernet.dstAddr = dstAddr"
           }
@@ -969,7 +963,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 191,
+            "line" : 192,
             "column" : 8,
             "source_fragment" : "hdr.ipv4.ttl = hdr.ipv4.ttl - 1"
           }
@@ -995,7 +989,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 208,
+            "line" : 223,
             "column" : 8,
             "source_fragment" : "meta.seq_digest.type = 2"
           }
@@ -1014,7 +1008,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 209,
+            "line" : 224,
             "column" : 8,
             "source_fragment" : "meta.seq_digest.connection_hash = meta"
           }
@@ -1033,7 +1027,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 210,
+            "line" : 225,
             "column" : 8,
             "source_fragment" : "meta.seq_digest.seqNo = meta"
           }
@@ -1052,7 +1046,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 211,
+            "line" : 226,
             "column" : 8,
             "source_fragment" : "meta.seq_digest.connection_hash_rev = meta"
           }
@@ -1071,7 +1065,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 212,
+            "line" : 227,
             "column" : 8,
             "source_fragment" : "meta.seq_digest.seqNo_rev = meta"
           }
@@ -1090,8 +1084,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 214,
-            "column" : 18,
+            "line" : 230,
+            "column" : 39,
             "source_fragment" : "meta"
           }
         },
@@ -1109,8 +1103,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 214,
-            "column" : 18,
+            "line" : 230,
+            "column" : 61,
             "source_fragment" : "meta"
           }
         },
@@ -1128,8 +1122,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 214,
-            "column" : 18,
+            "line" : 230,
+            "column" : 94,
             "source_fragment" : "meta"
           }
         },
@@ -1147,8 +1141,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 214,
-            "column" : 18,
+            "line" : 230,
+            "column" : 117,
             "source_fragment" : "meta"
           }
         },
@@ -1166,8 +1160,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 214,
-            "column" : 18,
+            "line" : 230,
+            "column" : 154,
             "source_fragment" : "meta"
           }
         },
@@ -1185,9 +1179,9 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 214,
+            "line" : 230,
             "column" : 8,
-            "source_fragment" : "digest(1, meta.seq_digest)"
+            "source_fragment" : "digest<learn_connection_t>(1, {meta.seq_digest.type, meta.seq_digest.connection_hash, meta.seq_digest.seqNo, meta.seq_digest.connection_hash_rev, meta.seq_digest.seqNo_rev})"
           }
         }
       ]
@@ -1211,7 +1205,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 220,
+            "line" : 236,
             "column" : 8,
             "source_fragment" : "meta.debug_digest.type = 0"
           }
@@ -1243,7 +1237,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 221,
+            "line" : 237,
             "column" : 8,
             "source_fragment" : "meta.debug_digest.data = (bit<32>)meta.debug_bool"
           }
@@ -1262,7 +1256,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 222,
+            "line" : 238,
             "column" : 8,
             "source_fragment" : "meta.debug_digest.extra_1 = extra"
           }
@@ -1281,7 +1275,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 224,
+            "line" : 240,
             "column" : 18,
             "source_fragment" : "meta"
           }
@@ -1313,7 +1307,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 224,
+            "line" : 240,
             "column" : 18,
             "source_fragment" : "meta"
           }
@@ -1332,7 +1326,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 224,
+            "line" : 240,
             "column" : 18,
             "source_fragment" : "meta"
           }
@@ -1351,7 +1345,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 224,
+            "line" : 240,
             "column" : 18,
             "source_fragment" : "meta"
           }
@@ -1370,7 +1364,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 224,
+            "line" : 240,
             "column" : 18,
             "source_fragment" : "meta"
           }
@@ -1389,7 +1383,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 224,
+            "line" : 240,
             "column" : 8,
             "source_fragment" : "digest(1, meta.debug_digest)"
           }
@@ -1438,7 +1432,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 229,
+            "line" : 245,
             "column" : 9,
             "source_fragment" : "meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo"
           }
@@ -1457,7 +1451,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 230,
+            "line" : 246,
             "column" : 69,
             "source_fragment" : "hdr.ipv4.srcAddr"
           }
@@ -1476,7 +1470,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
+            "line" : 247,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.dstAddr"
           }
@@ -1495,7 +1489,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 232,
+            "line" : 248,
             "column" : 58,
             "source_fragment" : "hdr.tcp.srcPort"
           }
@@ -1514,7 +1508,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 233,
+            "line" : 249,
             "column" : 58,
             "source_fragment" : "hdr.tcp.dstPort"
           }
@@ -1533,7 +1527,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 234,
+            "line" : 250,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.protocol"
           }
@@ -1560,7 +1554,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 230,
+            "line" : 246,
             "column" : 9,
             "source_fragment" : "hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ..."
           }
@@ -1602,7 +1596,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 236,
+            "line" : 252,
             "column" : 9,
             "source_fragment" : "meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue"
           }
@@ -1621,7 +1615,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 237,
+            "line" : 253,
             "column" : 73,
             "source_fragment" : "hdr.ipv4.dstAddr"
           }
@@ -1640,7 +1634,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 238,
+            "line" : 254,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.srcAddr"
           }
@@ -1659,7 +1653,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 239,
+            "line" : 255,
             "column" : 58,
             "source_fragment" : "hdr.tcp.dstPort"
           }
@@ -1678,7 +1672,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 240,
+            "line" : 256,
             "column" : 58,
             "source_fragment" : "hdr.tcp.srcPort"
           }
@@ -1697,7 +1691,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 241,
+            "line" : 257,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.protocol"
           }
@@ -1724,7 +1718,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 237,
+            "line" : 253,
             "column" : 9,
             "source_fragment" : "hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ..."
           }
@@ -1773,7 +1767,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 229,
+            "line" : 245,
             "column" : 9,
             "source_fragment" : "meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo"
           }
@@ -1792,7 +1786,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 230,
+            "line" : 246,
             "column" : 69,
             "source_fragment" : "hdr.ipv4.srcAddr"
           }
@@ -1811,7 +1805,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
+            "line" : 247,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.dstAddr"
           }
@@ -1830,7 +1824,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 232,
+            "line" : 248,
             "column" : 58,
             "source_fragment" : "hdr.tcp.srcPort"
           }
@@ -1849,7 +1843,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 233,
+            "line" : 249,
             "column" : 58,
             "source_fragment" : "hdr.tcp.dstPort"
           }
@@ -1868,7 +1862,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 234,
+            "line" : 250,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.protocol"
           }
@@ -1895,7 +1889,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 230,
+            "line" : 246,
             "column" : 9,
             "source_fragment" : "hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ..."
           }
@@ -1937,7 +1931,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 236,
+            "line" : 252,
             "column" : 9,
             "source_fragment" : "meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue"
           }
@@ -1956,7 +1950,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 237,
+            "line" : 253,
             "column" : 73,
             "source_fragment" : "hdr.ipv4.dstAddr"
           }
@@ -1975,7 +1969,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 238,
+            "line" : 254,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.srcAddr"
           }
@@ -1994,7 +1988,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 239,
+            "line" : 255,
             "column" : 58,
             "source_fragment" : "hdr.tcp.dstPort"
           }
@@ -2013,7 +2007,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 240,
+            "line" : 256,
             "column" : 58,
             "source_fragment" : "hdr.tcp.srcPort"
           }
@@ -2032,7 +2026,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 241,
+            "line" : 257,
             "column" : 58,
             "source_fragment" : "hdr.ipv4.protocol"
           }
@@ -2059,7 +2053,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 237,
+            "line" : 253,
             "column" : 9,
             "source_fragment" : "hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ..."
           }
@@ -2085,7 +2079,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 252,
+            "line" : 268,
             "column" : 8,
             "source_fragment" : "bit<32> clientIPAddress = hdr.ipv4.srcAddr"
           }
@@ -2104,7 +2098,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 253,
+            "line" : 269,
             "column" : 8,
             "source_fragment" : "bit<16> clientPortNum = hdr.tcp.srcPort"
           }
@@ -2123,7 +2117,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 257,
+            "line" : 273,
             "column" : 8,
             "source_fragment" : "bit<48> dstMAC = hdr.ethernet.dstAddr"
           }
@@ -2142,7 +2136,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 258,
+            "line" : 274,
             "column" : 8,
             "source_fragment" : "hdr.ethernet.dstAddr = srcMAC"
           }
@@ -2161,7 +2155,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 259,
+            "line" : 275,
             "column" : 8,
             "source_fragment" : "hdr.ethernet.srcAddr = dstMAC"
           }
@@ -2180,7 +2174,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 267,
+            "line" : 283,
             "column" : 8,
             "source_fragment" : "bit<32> clientAddr = hdr.ipv4.srcAddr"
           }
@@ -2199,7 +2193,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 270,
+            "line" : 286,
             "column" : 8,
             "source_fragment" : "hdr.ipv4.srcAddr = serverAddr"
           }
@@ -2218,7 +2212,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 271,
+            "line" : 287,
             "column" : 8,
             "source_fragment" : "hdr.ipv4.dstAddr = clientAddr"
           }
@@ -2237,7 +2231,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 275,
+            "line" : 291,
             "column" : 8,
             "source_fragment" : "bit<16> serverPort = hdr.tcp.dstPort"
           }
@@ -2256,7 +2250,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 276,
+            "line" : 292,
             "column" : 8,
             "source_fragment" : "hdr.tcp.dstPort = clientPort"
           }
@@ -2275,7 +2269,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 277,
+            "line" : 293,
             "column" : 8,
             "source_fragment" : "hdr.tcp.srcPort = serverPort"
           }
@@ -2294,7 +2288,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 284,
+            "line" : 300,
             "column" : 8,
             "source_fragment" : "hdr.tcp.syn = 1"
           }
@@ -2313,7 +2307,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 285,
+            "line" : 301,
             "column" : 8,
             "source_fragment" : "hdr.tcp.ack = 1"
           }
@@ -2355,7 +2349,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 288,
+            "line" : 304,
             "column" : 8,
             "source_fragment" : "hdr.tcp.ackNo = hdr.tcp.seqNo + 1"
           }
@@ -2374,7 +2368,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 307,
+            "line" : 323,
             "column" : 7,
             "source_fragment" : "clientIPAddress"
           }
@@ -2393,7 +2387,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 308,
+            "line" : 324,
             "column" : 14,
             "source_fragment" : "clientPortNum"
           }
@@ -2412,7 +2406,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 309,
+            "line" : 325,
             "column" : 14,
             "source_fragment" : "time"
           }
@@ -2439,7 +2433,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 304,
+            "line" : 320,
             "column" : 8,
             "source_fragment" : "hash(hash_value, ..."
           }
@@ -2481,7 +2475,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 319,
+            "line" : 335,
             "column" : 8,
             "source_fragment" : "hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value"
           }
@@ -2497,7 +2491,7 @@
           "op" : "_jump_if_zero",
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 335,
+            "line" : 351,
             "column" : 8,
             "source_fragment" : "if"
           },
@@ -2546,7 +2540,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 336,
+            "line" : 352,
             "column" : 13,
             "source_fragment" : "clientIPAddress = hdr.ipv4.dstAddr"
           }
@@ -2565,7 +2559,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 337,
+            "line" : 353,
             "column" : 13,
             "source_fragment" : "clientPortNum = hdr.tcp.dstPort"
           }
@@ -2574,7 +2568,7 @@
           "op" : "_jump",
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 335,
+            "line" : 351,
             "column" : 8,
             "source_fragment" : "if"
           },
@@ -2599,7 +2593,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 339,
+            "line" : 355,
             "column" : 13,
             "source_fragment" : "clientIPAddress = hdr.ipv4.srcAddr"
           }
@@ -2618,7 +2612,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 340,
+            "line" : 356,
             "column" : 13,
             "source_fragment" : "clientPortNum = hdr.tcp.srcPort"
           }
@@ -2637,7 +2631,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 350,
+            "line" : 366,
             "column" : 7,
             "source_fragment" : "clientIPAddress"
           }
@@ -2656,7 +2650,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 351,
+            "line" : 367,
             "column" : 14,
             "source_fragment" : "clientPortNum"
           }
@@ -2675,7 +2669,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 352,
+            "line" : 368,
             "column" : 14,
             "source_fragment" : "time"
           }
@@ -2702,7 +2696,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 347,
+            "line" : 363,
             "column" : 8,
             "source_fragment" : "hash(hash_value, ..."
           }
@@ -2744,7 +2738,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 362,
+            "line" : 378,
             "column" : 8,
             "source_fragment" : "meta.cookieValue =tempSeqS | (bit<32>)hash_value"
           }
@@ -2770,7 +2764,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 377,
+            "line" : 393,
             "column" : 7,
             "source_fragment" : "hdr.ipv4.srcAddr"
           }
@@ -2789,7 +2783,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 378,
+            "line" : 394,
             "column" : 14,
             "source_fragment" : "hdr.tcp.srcPort"
           }
@@ -2808,7 +2802,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 379,
+            "line" : 395,
             "column" : 14,
             "source_fragment" : "time"
           }
@@ -2835,7 +2829,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 374,
+            "line" : 390,
             "column" : 8,
             "source_fragment" : "hash(hash_value, ..."
           }
@@ -2844,7 +2838,7 @@
           "op" : "_jump_if_zero",
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 393,
+            "line" : 409,
             "column" : 8,
             "source_fragment" : "if"
           },
@@ -2933,7 +2927,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 394,
+            "line" : 410,
             "column" : 11,
             "source_fragment" : "meta.is_valid_cookie = 1"
           }
@@ -2942,7 +2936,7 @@
           "op" : "_jump",
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 393,
+            "line" : 409,
             "column" : 8,
             "source_fragment" : "if"
           },
@@ -2967,7 +2961,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 396,
+            "line" : 412,
             "column" : 11,
             "source_fragment" : "meta.is_valid_cookie = 0"
           }
@@ -3046,7 +3040,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 411,
+            "line" : 427,
             "column" : 8,
             "source_fragment" : "meta.tcpLength = tcpLength"
           }
@@ -3072,7 +3066,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 417,
+            "line" : 433,
             "column" : 8,
             "source_fragment" : "hdr.tcp.syn = 1"
           }
@@ -3091,7 +3085,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 418,
+            "line" : 434,
             "column" : 8,
             "source_fragment" : "hdr.tcp.ack = 0"
           }
@@ -3133,7 +3127,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 420,
+            "line" : 436,
             "column" : 8,
             "source_fragment" : "hdr.tcp.seqNo = hdr.tcp.seqNo - 1"
           }
@@ -3152,7 +3146,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 421,
+            "line" : 437,
             "column" : 8,
             "source_fragment" : "hdr.tcp.ackNo = 0"
           }
@@ -3171,7 +3165,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 423,
+            "line" : 439,
             "column" : 8,
             "source_fragment" : "hdr.tcp.dataOffset = 5"
           }
@@ -3197,7 +3191,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 432,
+            "line" : 448,
             "column" : 8,
             "source_fragment" : "bit<48> dstMAC = hdr.ethernet.dstAddr"
           }
@@ -3216,7 +3210,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 433,
+            "line" : 449,
             "column" : 8,
             "source_fragment" : "hdr.ethernet.dstAddr = srcMAC"
           }
@@ -3235,7 +3229,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 434,
+            "line" : 450,
             "column" : 8,
             "source_fragment" : "hdr.ethernet.srcAddr = dstMAC"
           }
@@ -3254,7 +3248,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 437,
+            "line" : 453,
             "column" : 8,
             "source_fragment" : "bit<32> clientAddr = hdr.ipv4.srcAddr"
           }
@@ -3273,7 +3267,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 439,
+            "line" : 455,
             "column" : 8,
             "source_fragment" : "hdr.ipv4.srcAddr = serverAddr"
           }
@@ -3292,7 +3286,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 440,
+            "line" : 456,
             "column" : 8,
             "source_fragment" : "hdr.ipv4.dstAddr = clientAddr"
           }
@@ -3311,7 +3305,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 444,
+            "line" : 460,
             "column" : 8,
             "source_fragment" : "bit<16> serverPort = hdr.tcp.dstPort"
           }
@@ -3330,7 +3324,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 445,
+            "line" : 461,
             "column" : 8,
             "source_fragment" : "hdr.tcp.dstPort = clientPort"
           }
@@ -3349,7 +3343,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 446,
+            "line" : 462,
             "column" : 8,
             "source_fragment" : "hdr.tcp.srcPort = serverPort"
           }
@@ -3368,7 +3362,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 452,
+            "line" : 468,
             "column" : 8,
             "source_fragment" : "hdr.tcp.syn = 0"
           }
@@ -3387,7 +3381,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 453,
+            "line" : 469,
             "column" : 8,
             "source_fragment" : "hdr.tcp.ack = 1"
           }
@@ -3406,7 +3400,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 454,
+            "line" : 470,
             "column" : 8,
             "source_fragment" : "hdr.tcp.psh = 0"
           }
@@ -3425,7 +3419,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 457,
+            "line" : 473,
             "column" : 8,
             "source_fragment" : "bit <32> serverSeq = hdr.tcp.seqNo"
           }
@@ -3444,7 +3438,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 459,
+            "line" : 475,
             "column" : 8,
             "source_fragment" : "hdr.tcp.seqNo = serverAck"
           }
@@ -3486,7 +3480,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 462,
+            "line" : 478,
             "column" : 8,
             "source_fragment" : "hdr.tcp.ackNo = serverSeq + 1"
           }
@@ -3517,7 +3511,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 466,
+            "line" : 482,
             "column" : 8,
             "source_fragment" : "meta.tempDiff = difference"
           }
@@ -3533,7 +3527,7 @@
           "op" : "_jump_if_zero",
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 514,
+            "line" : 530,
             "column" : 8,
             "source_fragment" : "if"
           },
@@ -3582,7 +3576,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 515,
+            "line" : 531,
             "column" : 12,
             "source_fragment" : "meta.debug_bool=1"
           }
@@ -3624,7 +3618,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 516,
+            "line" : 532,
             "column" : 12,
             "source_fragment" : "hdr.tcp.seqNo = sequence + meta.tempDiff"
           }
@@ -3633,7 +3627,7 @@
           "op" : "_jump",
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 514,
+            "line" : 530,
             "column" : 8,
             "source_fragment" : "if"
           },
@@ -3658,7 +3652,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 518,
+            "line" : 534,
             "column" : 12,
             "source_fragment" : "meta.debug_bool=0"
           }
@@ -3700,7 +3694,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 519,
+            "line" : 535,
             "column" : 12,
             "source_fragment" : "hdr.tcp.ackNo = acknowledgment + meta.tempDiff"
           }
@@ -3708,7 +3702,7 @@
       ]
     },
     {
-      "name" : "proxy570",
+      "name" : "proxy586",
       "id" : 18,
       "runtime_data" : [],
       "primitives" : [
@@ -3726,7 +3720,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 570,
+            "line" : 586,
             "column" : 17,
             "source_fragment" : "meta.is_connection_established = 1"
           }
@@ -3734,7 +3728,7 @@
       ]
     },
     {
-      "name" : "proxy572",
+      "name" : "proxy588",
       "id" : 19,
       "runtime_data" : [],
       "primitives" : [
@@ -3752,7 +3746,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 572,
+            "line" : 588,
             "column" : 17,
             "source_fragment" : "meta.is_connection_established = 0"
           }
@@ -3760,7 +3754,7 @@
       ]
     },
     {
-      "name" : "proxy599",
+      "name" : "proxy615",
       "id" : 20,
       "runtime_data" : [],
       "primitives" : [
@@ -3778,7 +3772,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 599,
+            "line" : 615,
             "column" : 28,
             "source_fragment" : "meta.is_valid_cookie = 0"
           }
@@ -3786,7 +3780,7 @@
       ]
     },
     {
-      "name" : "proxy608",
+      "name" : "proxy624",
       "id" : 21,
       "runtime_data" : [],
       "primitives" : [
@@ -3814,7 +3808,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 608,
+            "line" : 624,
             "column" : 29,
             "source_fragment" : "return"
           }
@@ -3822,7 +3816,7 @@
       ]
     },
     {
-      "name" : "proxy622",
+      "name" : "proxy638",
       "id" : 22,
       "runtime_data" : [],
       "primitives" : [
@@ -3850,7 +3844,7 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 622,
+            "line" : 638,
             "column" : 24,
             "source_fragment" : "return"
           }
@@ -3894,7 +3888,7 @@
       "id" : 0,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 180,
+        "line" : 181,
         "column" : 8,
         "source_fragment" : "MyIngress"
       },
@@ -3928,7 +3922,7 @@
           "id" : 1,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 568,
+            "line" : 584,
             "column" : 15,
             "source_fragment" : "compute_connection_hash()"
           },
@@ -3957,7 +3951,7 @@
           "id" : 2,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 550,
+            "line" : 566,
             "column" : 10,
             "source_fragment" : "connections"
           },
@@ -3979,8 +3973,8 @@
           "actions" : ["MyIngress.saveDifferenceValue", "NoAction"],
           "base_default_next" : null,
           "next_tables" : {
-            "__HIT__" : "tbl_proxy570",
-            "__MISS__" : "tbl_proxy572"
+            "__HIT__" : "tbl_proxy586",
+            "__MISS__" : "tbl_proxy588"
           },
           "default_entry" : {
             "action_id" : 1,
@@ -3990,11 +3984,11 @@
           }
         },
         {
-          "name" : "tbl_proxy570",
+          "name" : "tbl_proxy586",
           "id" : 3,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 570,
+            "line" : 586,
             "column" : 48,
             "source_fragment" : "="
           },
@@ -4006,10 +4000,10 @@
           "support_timeout" : false,
           "direct_meters" : null,
           "action_ids" : [18],
-          "actions" : ["proxy570"],
+          "actions" : ["proxy586"],
           "base_default_next" : "node_8",
           "next_tables" : {
-            "proxy570" : "node_8"
+            "proxy586" : "node_8"
           },
           "default_entry" : {
             "action_id" : 18,
@@ -4019,11 +4013,11 @@
           }
         },
         {
-          "name" : "tbl_proxy572",
+          "name" : "tbl_proxy588",
           "id" : 4,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 572,
+            "line" : 588,
             "column" : 48,
             "source_fragment" : "="
           },
@@ -4035,10 +4029,10 @@
           "support_timeout" : false,
           "direct_meters" : null,
           "action_ids" : [19],
-          "actions" : ["proxy572"],
+          "actions" : ["proxy588"],
           "base_default_next" : "node_8",
           "next_tables" : {
-            "proxy572" : "node_8"
+            "proxy588" : "node_8"
           },
           "default_entry" : {
             "action_id" : 19,
@@ -4052,7 +4046,7 @@
           "id" : 5,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 578,
+            "line" : 594,
             "column" : 21,
             "source_fragment" : "forward_request()"
           },
@@ -4081,7 +4075,7 @@
           "id" : 6,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 592,
+            "line" : 608,
             "column" : 27,
             "source_fragment" : "create_syn_cookie_packet()"
           },
@@ -4110,7 +4104,7 @@
           "id" : 7,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 596,
+            "line" : 612,
             "column" : 26,
             "source_fragment" : "validate_syn_cookie()"
           },
@@ -4135,11 +4129,11 @@
           }
         },
         {
-          "name" : "tbl_proxy599",
+          "name" : "tbl_proxy615",
           "id" : 8,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 599,
+            "line" : 615,
             "column" : 49,
             "source_fragment" : "="
           },
@@ -4151,10 +4145,10 @@
           "support_timeout" : false,
           "direct_meters" : null,
           "action_ids" : [20],
-          "actions" : ["proxy599"],
+          "actions" : ["proxy615"],
           "base_default_next" : "tbl_create_new_tcp_connection",
           "next_tables" : {
-            "proxy599" : "tbl_create_new_tcp_connection"
+            "proxy615" : "tbl_create_new_tcp_connection"
           },
           "default_entry" : {
             "action_id" : 20,
@@ -4168,7 +4162,7 @@
           "id" : 9,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 604,
+            "line" : 620,
             "column" : 28,
             "source_fragment" : "create_new_tcp_connection()"
           },
@@ -4197,7 +4191,7 @@
           "id" : 10,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 607,
+            "line" : 623,
             "column" : 29,
             "source_fragment" : "drop()"
           },
@@ -4210,9 +4204,9 @@
           "direct_meters" : null,
           "action_ids" : [3],
           "actions" : ["MyIngress.drop"],
-          "base_default_next" : "tbl_proxy608",
+          "base_default_next" : "tbl_proxy624",
           "next_tables" : {
-            "MyIngress.drop" : "tbl_proxy608"
+            "MyIngress.drop" : "tbl_proxy624"
           },
           "default_entry" : {
             "action_id" : 3,
@@ -4222,11 +4216,11 @@
           }
         },
         {
-          "name" : "tbl_proxy608",
+          "name" : "tbl_proxy624",
           "id" : 11,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 608,
+            "line" : 624,
             "column" : 29,
             "source_fragment" : "return"
           },
@@ -4238,10 +4232,10 @@
           "support_timeout" : false,
           "direct_meters" : null,
           "action_ids" : [21],
-          "actions" : ["proxy608"],
+          "actions" : ["proxy624"],
           "base_default_next" : "node_27",
           "next_tables" : {
-            "proxy608" : "node_27"
+            "proxy624" : "node_27"
           },
           "default_entry" : {
             "action_id" : 21,
@@ -4255,7 +4249,7 @@
           "id" : 12,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 614,
+            "line" : 630,
             "column" : 22,
             "source_fragment" : "compute_cookie_value()"
           },
@@ -4284,7 +4278,7 @@
           "id" : 13,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 615,
+            "line" : 631,
             "column" : 22,
             "source_fragment" : "compute_connection_hash()"
           },
@@ -4313,7 +4307,7 @@
           "id" : 14,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 616,
+            "line" : 632,
             "column" : 22,
             "source_fragment" : "send_digest_connection()"
           },
@@ -4342,7 +4336,7 @@
           "id" : 15,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 617,
+            "line" : 633,
             "column" : 22,
             "source_fragment" : "create_ack_response()"
           },
@@ -4371,7 +4365,7 @@
           "id" : 16,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 620,
+            "line" : 636,
             "column" : 24,
             "source_fragment" : "send_digest_debug((bit<32>)000)"
           },
@@ -4400,7 +4394,7 @@
           "id" : 17,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 621,
+            "line" : 637,
             "column" : 24,
             "source_fragment" : "drop()"
           },
@@ -4413,9 +4407,9 @@
           "direct_meters" : null,
           "action_ids" : [4],
           "actions" : ["MyIngress.drop"],
-          "base_default_next" : "tbl_proxy622",
+          "base_default_next" : "tbl_proxy638",
           "next_tables" : {
-            "MyIngress.drop" : "tbl_proxy622"
+            "MyIngress.drop" : "tbl_proxy638"
           },
           "default_entry" : {
             "action_id" : 4,
@@ -4425,11 +4419,11 @@
           }
         },
         {
-          "name" : "tbl_proxy622",
+          "name" : "tbl_proxy638",
           "id" : 18,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 622,
+            "line" : 638,
             "column" : 24,
             "source_fragment" : "return"
           },
@@ -4441,10 +4435,10 @@
           "support_timeout" : false,
           "direct_meters" : null,
           "action_ids" : [22],
-          "actions" : ["proxy622"],
+          "actions" : ["proxy638"],
           "base_default_next" : "node_27",
           "next_tables" : {
-            "proxy622" : "node_27"
+            "proxy638" : "node_27"
           },
           "default_entry" : {
             "action_id" : 22,
@@ -4458,7 +4452,7 @@
           "id" : 19,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 525,
+            "line" : 541,
             "column" : 10,
             "source_fragment" : "ipv4_lpm"
           },
@@ -4496,7 +4490,7 @@
           "id" : 20,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 632,
+            "line" : 648,
             "column" : 7,
             "source_fragment" : "compute_tcp_length()"
           },
@@ -4528,7 +4522,7 @@
           "id" : 0,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 564,
+            "line" : 580,
             "column" : 10,
             "source_fragment" : "hdr.ipv4.isValid() && hdr.tcp.isValid()"
           },
@@ -4568,7 +4562,7 @@
           "id" : 1,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 576,
+            "line" : 592,
             "column" : 19,
             "source_fragment" : "meta.is_connection_established == 1"
           },
@@ -4594,7 +4588,7 @@
           "id" : 2,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 581,
+            "line" : 597,
             "column" : 22,
             "source_fragment" : "hdr.tcp.syn == 1 && hdr.tcp.ack == 0"
           },
@@ -4640,7 +4634,7 @@
           "id" : 3,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 593,
+            "line" : 609,
             "column" : 28,
             "source_fragment" : "hdr.tcp.ack == 1 && hdr.tcp.syn == 0"
           },
@@ -4686,7 +4680,7 @@
           "id" : 4,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 597,
+            "line" : 613,
             "column" : 29,
             "source_fragment" : "meta.is_valid_cookie == 1"
           },
@@ -4704,7 +4698,7 @@
               }
             }
           },
-          "true_next" : "tbl_proxy599",
+          "true_next" : "tbl_proxy615",
           "false_next" : "tbl_drop"
         },
         {
@@ -4712,7 +4706,7 @@
           "id" : 5,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 610,
+            "line" : 626,
             "column" : 28,
             "source_fragment" : "hdr.tcp.ack == 1 && hdr.tcp.syn == 1 && hdr.tcp.psh == 0"
           },
@@ -4795,7 +4789,7 @@
           "id" : 7,
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 627,
+            "line" : 643,
             "column" : 11,
             "source_fragment" : "hdr.ipv4.isValid()"
           },
@@ -4820,7 +4814,7 @@
       "id" : 1,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 639,
+        "line" : 655,
         "column" : 8,
         "source_fragment" : "MyEgress"
       },
@@ -4836,7 +4830,7 @@
       "id" : 0,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 651,
+        "line" : 667,
         "column" : 1,
         "source_fragment" : "update_checksum( ..."
       },
@@ -4862,7 +4856,7 @@
       "id" : 1,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 667,
+        "line" : 683,
         "column" : 8,
         "source_fragment" : "update_checksum_with_payload( ..."
       },
@@ -4905,7 +4899,7 @@
       "id" : 2,
       "source_info" : {
         "filename" : "syn-cookie/p4src/proxy.p4",
-        "line" : 157,
+        "line" : 158,
         "column" : 5,
         "source_fragment" : "verify_checksum( ..."
       },

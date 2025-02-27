@@ -899,6 +899,7 @@ const bit<8> UDP_PROTOCOL = 0x11; // UDP parsing is not implemented
 
 
 
+
 /*************************************************************************
 *********************** H E A D E R S  ***********************************
 *************************************************************************/
@@ -1084,8 +1085,22 @@ control MyIngress(inout headers hdr,
         digest(1, meta.ip_digest);
     }
 
+    // digest<learn_connection_t> ip_connection_digest;
 
-     action send_digest_connection() {
+    //  action send_digest_connection() {
+    //      //send digest message to control plane, structure can be adjusted to send any data for debugging
+    //      // digest messages for connection information has a type 2
+    //     meta.seq_digest.type = 2;
+    //     meta.seq_digest.connection_hash = meta.connectionHash;
+    //     meta.seq_digest.seqNo = meta.seqDiff;
+    //     meta.seq_digest.connection_hash_rev = meta.connectionHash_rev;
+    //     meta.seq_digest.seqNo_rev = meta.seqDiff_rev;
+    //     //digest packet
+    //     // digest(ip_connection_digest, meta.seq_digest);
+    //     digest(1, meta.seq_digest);
+    // }
+
+         action send_digest_connection() {
          //send digest message to control plane, structure can be adjusted to send any data for debugging
          // digest messages for connection information has a type 2
         meta.seq_digest.type = 2;
@@ -1094,7 +1109,8 @@ control MyIngress(inout headers hdr,
         meta.seq_digest.connection_hash_rev = meta.connectionHash_rev;
         meta.seq_digest.seqNo_rev = meta.seqDiff_rev;
         //digest packet
-        digest(1, meta.seq_digest);
+        // digest(ip_connection_digest, meta.seq_digest);
+        digest<learn_connection_t>(1, {meta.seq_digest.type, meta.seq_digest.connection_hash, meta.seq_digest.seqNo, meta.seq_digest.connection_hash_rev, meta.seq_digest.seqNo_rev});
     }
 
     action send_digest_debug(bit<32> extra) {

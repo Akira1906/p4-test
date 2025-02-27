@@ -16,6 +16,8 @@
 #     print(f"Seq Diff Rev: {seq_diff_rev}")
 
 # TODO try to fix the automated script
+
+# NOTE: CONTINUE HERE, USE THE P4RUNITME API IMPLEMENTED BY P4-UTILS INSTEAD
 # for that try to connect ss_grpc via thrift via console
 # if that works then also do it in the automated approach
 # the challenge atm is: controller.py always fails somehow
@@ -29,7 +31,7 @@ import p4runtime_sh.shell as sh
 # import p4runtime_shell_utils as shu
 import ipaddress
 import scapy
-from scapy.all import Ether, IP, TCP
+from scapy.all import Ether, IP, TCP, Raw
 # shu.dump_table('ipv4_lpm')
 
 ######################################################################
@@ -52,6 +54,24 @@ logger.addHandler(ch)
 # make -j$(nproc)
 # sudo make install
 # needs thrift 0.13
+
+def get_packet_mask(pkt):
+        pkt_mask = mask.Mask(pkt)
+
+        pkt_mask.set_do_not_care_all()
+
+        pkt_mask.set_care_packet(Ether, "src")
+        pkt_mask.set_care_packet(Ether, "dst")
+        pkt_mask.set_care_packet(IP, "src")
+        pkt_mask.set_care_packet(IP, "dst")
+        pkt_mask.set_care_packet(IP, "ttl")
+        pkt_mask.set_care_packet(TCP, "sport")
+        pkt_mask.set_care_packet(TCP, "dport")
+        pkt_mask.set_care_packet(TCP, "flags")
+        pkt_mask.set_care_packet(TCP, "seq")
+        pkt_mask.set_care_packet(TCP, "ack")
+        
+        return pkt_mask
 
 class DemoTumTest(BaseTest):
     
@@ -100,7 +120,7 @@ class ProxyTest(DemoTumTest):
         self.server_mac = "00:00:0a:00:01:03"  # h3 MAC
         self.switch_client_mac = "00:01:0a:00:01:01"  # s1 client MAC
         self.switch_attacker_mac = "00:01:0a:00:01:02"# s1 attacker MAC
-        self.swich_server_mac = "00:01:0a:00:01:03" # s1 server MAC
+        self.switch_server_mac = "00:01:0a:00:01:03" # s1 server MAC
 
         self.client_ip = "10.0.1.1"
         self.attacker_ip = "10.0.1.2"
@@ -115,24 +135,8 @@ class ProxyTest(DemoTumTest):
         self.server_iface = 3  # h3 -> s1
         
         self.tcp_handshake()
+        self.valid_packet_sequence()
     
-    def get_packet_mask(pkt):
-        pkt_mask = mask.Mask(pkt)
-
-        pkt_mask.set_do_not_care_all()
-
-        pkt_mask.set_care_packet(Ether, "src")
-        pkt_mask.set_care_packet(Ether, "dst")
-        pkt_mask.set_care_packet(IP, "src")
-        pkt_mask.set_care_packet(IP, "dst")
-        pkt_mask.set_care_packet(IP, "ttl")
-        pkt_mask.set_care_packet(TCP, "sport")
-        pkt_mask.set_care_packet(TCP, "dport")
-        pkt_mask.set_care_packet(TCP, "flags")
-        pkt_mask.set_care_packet(TCP, "seq")
-        pkt_mask.set_care_packet(TCP, "ack")
-        
-        return pkt_mask
 
     def tcp_handshake(self):
         """ Simulates a proper TCP handshake between client and web server """
@@ -149,13 +153,13 @@ class ProxyTest(DemoTumTest):
         
         # Step 2: P4 program answers SYN-ACK (Proxy -> Client)
 
-        exp_pkt = (
+        exp_pkt = ( # this doesn't make sense, I think there is abug in the P4 program
             Ether(dst=self.client_mac, src=self.client_mac, type=0x0800) /
             IP(src=self.server_ip, dst=self.client_ip, ttl=63, proto=6, id=1, flags=0) /
             TCP(sport=self.server_port, dport=self.client_port, seq=2030043157, ack=1, flags="SA", window=8192)
         )
 
-        pkt_mask = self.get_packet_mask(exp_pkt)
+        pkt_mask = get_packet_mask(exp_pkt)
         
         tu.verify_packet(self, pkt_mask, self.client_iface)
         
@@ -170,7 +174,83 @@ class ProxyTest(DemoTumTest):
         tu.send_packet(self, self.client_iface, ack_pkt)
         
         # Step 4: Handshake between Switch and Server
-        # TODO: finish this handshake and finally finish the whole test suite
+        
+        # 4.1: Proxy - Server SYN
+        
+        syn_pkt = (
+            Ether(dst=self.server_mac, src=self.client_mac, type=0x0800) /
+            IP(src=self.client_ip, dst=self.server_ip, ttl=63, proto=6, id=1, flags=0) /
+            TCP(sport=self.client_port, dport=self.server_port, flags="S")
+        )
+        
+        tu.verify_packet(self, syn_pkt, self.server_iface)
+        
+        # 4.2: Server - Proxy SYN-ACK
+        
+        syn_ack_pkt = (
+            Ether(dst=self.client_mac, src=self.server_mac, type=0x0800) /
+            IP(src=self.server_ip, dst=self.client_ip, ttl=64, proto=6, id=1, flags=0) /
+            TCP(sport=self.server_port, dport=self.client_port, flags="SA", seq=37, ack=1, window=8192)
+        )
+        
+        tu.send_packet(self, self.server_iface, syn_ack_pkt)
+        
+        # 4.2: Proxy - Server ACK
+        
+        ack_pkt = ( # dst=self.client_mac, but I think there is a bug in the P4 program
+            Ether(dst=self.server_mac, src=self.server_mac, type=0x0800) /
+            IP(src=self.client_ip, dst=self.server_ip, ttl=63, proto=6, id=1, flags=0) /
+            TCP(sport=self.client_port, dport=self.server_port, flags="A", seq=1, ack=38, window=8192)
+        )
+        
+        tu.verify_packet(self, ack_pkt, self.server_iface)
+    
+    def valid_packet_sequence(self):
+        """ Sends a short series of valid packets from the client """
+        print("\n[INFO] Sending Valid Data Packets from Client...")
+
+        # Step 1.1: HTTP GET (Client -> Proxy)
+        ack_pkt = (
+            Ether(dst=self.switch_client_mac, src=self.client_mac, type=0x0800) /
+            IP(src=self.client_ip, dst=self.server_ip, ttl=64, proto=6, id=1, flags=0) /
+            TCP(sport=self.client_port, dport=self.server_port, flags="PA", seq=1, ack=2030043158) /
+            Raw(load=b"GET /index.html HTTP/1.1\r\nHost: 10.0.1.3\r\n\r\n")
+        )
+        
+        tu.send_packet(self, self.client_iface, ack_pkt)
+        
+        # Step 1.2: HTTP GET (Proxy -> Server)
+
+        ack_pkt = (
+            Ether(dst=self.server_mac, src=self.switch_client_mac, type=0x0800) /
+            IP(src=self.client_ip, dst=self.server_ip, ttl=63, proto=6, id=1, flags=0) /
+            TCP(sport=self.client_port, dport=self.server_port, flags="PA", seq=1, ack=38) /
+            Raw(load=b"GET /index.html HTTP/1.1\r\nHost: 10.0.1.3\r\n\r\n")
+        )
+        
+        tu.verify_packet(self, ack_pkt, self.server_iface)
+        
+        # Step 2.1: HTTP Answer (Server -> Proxy)
+        
+        resp_pkt = (
+            Ether(dst=self.switch_server_mac, src=self.server_mac, type=0x0800) /
+            IP(src=self.server_ip, dst=self.client_ip, ttl=64, proto=6, id=1, flags=0) /
+            TCP(sport=self.server_port, dport=self.client_port, flags="PA", seq=38, ack=1) /
+            Raw(load=b"HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, World!")
+        )
+        
+        tu.send_packet(self, self.server_iface, resp_pkt)
+        
+        # Step 2.2 HTTP Answer (Proxy -> Client)
+        
+        resp_pkt = (
+            Ether(dst=self.client_mac, src=self.switch_client_mac, type=0x0800) /
+            IP(src=self.server_ip, dst=self.client_ip, ttl=63, proto=6, id=1, flags=0) /
+            TCP(sport=self.server_port, dport=self.client_port, flags="PA", seq=2030043158, ack=1) /
+            Raw(load=b"HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, World!")
+        )
+        
+        tu.verify_packet(self, resp_pkt, self.client_iface)
 
     def malicious_packets(self):
         """ Sends malicious packets from the attacker to the web server """
@@ -196,49 +276,4 @@ class ProxyTest(DemoTumTest):
             )
             tu.send_packet(self, self.attacker_iface, spoofed_pkt)
 
-    def valid_packet_sequence(self):
-        """ Sends a short series of valid packets from the client """
-        print("\n[INFO] Sending Valid Data Packets from Client...")
-
-        for i in range(3):
-            data_pkt = tu.simple_tcp_packet(
-                eth_src=self.client_mac, eth_dst=self.switch_mac,
-                ip_src=self.client_ip, ip_dst=self.server_ip,
-                tcp_sport=self.client_port, tcp_dport=self.server_port,
-                tcp_flags="PA", tcp_seq=1100 + i, tcp_ack=5100,
-                tcp_payload="GET / HTTP/1.1\r\nHost: server\r\n\r\n"
-            )
-            tu.send_packet(self, self.client_iface, data_pkt)
-
-# class WhitelistingTest(DemoTumTest):
-#     def runTest(self):
-#         in_dmac = 'ee:30:ca:9d:1e:00'
-#         in_smac = 'ee:cd:00:7e:70:00'
-#         ip_dst_addr = '10.1.0.1'
-#         ip_src_addr = '192.168.0.37'
-#         ig_port = 1
-
-#         eg_port = 2
-#         out_dmac = '02:13:57:ab:cd:ef'
-#         out_smac = '00:11:22:33:44:55'
-
-#         # Before adding any table entries, the default behavior for
-#         # sending in an IPv4 packet is to drop it.
-#         pkt = tu.simple_tcp_packet(eth_src=in_smac, eth_dst=in_dmac,
-#                                    ip_dst=ip_dst_addr, ip_src = ip_src_addr,
-#                                      ip_ttl=64)
-#         tu.send_packet(self, ig_port, pkt)
-#         tu.verify_no_other_packets(self)
-
-#         # Add a set of table entries that the packet should match, and
-#         # be forwarded out with the desired dest and source MAC
-#         # addresses.
-#         add_whitelist_entry_action_noaction(ip_src_addr)
-
-#         # Check that the entry is hit, expected source and dest MAC
-#         # have been written into output packet, TTL has been
-#         # decremented, and that no other packets are received.
-#         exp_pkt = tu.simple_tcp_packet(eth_src=out_smac, eth_dst=out_dmac,
-#                                        ip_dst=ip_dst_addr, ip_src=ip_src_addr, ip_ttl=63)
-#         tu.send_packet(self, ig_port, pkt)
-#         tu.verify_packets(self, exp_pkt, [eg_port])
+    

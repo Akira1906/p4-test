@@ -36,8 +36,8 @@ set -x
 p4c --target bmv2 \
     --arch v1model \
     --p4runtime-files syn-cookie/p4src/proxy.p4info.txtpb \
-    syn-cookie/p4src/proxy.p4
-    -o syn-cookie/p4src/proxy.json
+    syn-cookie/p4src/proxy.p4\
+    -o syn-cookie/p4src/
 
 # Remove any log file written in an earlier run, otherwise
 # simple_switch_grpc will append the new log messages to the end of
@@ -68,8 +68,10 @@ sleep 2
 # line.
 # source /home/tristan/p4dev-python-venv/bin/activate
 echo "Start SYN-Cookie Control Plane application"
-python3 syn-cookie/controller-grpc.py &
+python3 -u syn-cookie/controller-grpc.py &> controller.log &
 sleep 2
+sudo netstat -tulnp
+sleep 20
 
 sudo -E ${P4_EXTRA_SUDO_OPTS} $(which ptf) \
     --pypath "$P" \
@@ -88,7 +90,7 @@ echo ""
 echo "PTF test finished.  Waiting 2 seconds before killing simple_switch_grpc ..."
 sleep 2
 sudo pkill --signal 9 --list-name simple_switch
-sudo pkill --signal 9 -f controller-grpc.py
+sudo pkill --signal 15 -f controller-grpc.py
 echo ""
 echo "Verifying that there are no simple_switch_grpc processes running any longer in 4 seconds ..."
 sleep 4

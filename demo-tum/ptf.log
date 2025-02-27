@@ -1,33 +1,63 @@
-11:55:44.134  root      : INFO    : ++++++++ Wed Feb 26 11:55:44 2025 ++++++++
-11:55:44.230  root      : INFO    : ROCEv2 support found in Scapy
-11:55:44.230  root      : INFO    : ERSPAN support found in Scapy
-11:55:44.231  root      : INFO    : GENEVE support found in Scapy
-11:55:44.231  root      : INFO    : MPLS support found in Scapy
-11:55:44.232  root      : INFO    : IGMP support found in Scapy
-11:55:44.234  root      : DEBUG   : Parsed test parameters:
-11:55:44.234  root      : DEBUG   : 	*grpcaddr=localhost:9559
-11:55:44.234  root      : DEBUG   : 	*p4info=syn-cookie/p4src/proxy.p4info.txtpb
-11:55:44.235  root      : DEBUG   : 	*config=syn-cookie/p4src/proxy.json
-11:55:44.235  root      : DEBUG   : If something is missing, make sure you used the correct syntax: --test-params="[k=v;]*k=v"
-11:55:44.540  root      : INFO    : Importing platform: eth
-11:55:44.540  root      : DEBUG   : Configuration: {'list': False, 'list_test_names': False, 'allow_user': False, 'test_spec': '', 'test_file': None, 'test_dir': 'ptf', 'test_order': 'default', 'test_order_seed': 2746, 'num_shards': 1, 'shard_id': 0, 'platform': 'eth', 'platform_args': None, 'platform_dir': '/home/tristan/p4dev-python-venv/lib/python3.8/site-packages/ptf/platforms', 'interfaces': [(0, 1, 'veth1'), (0, 2, 'veth3'), (0, 3, 'veth5')], 'port_info': {}, 'device_sockets': [], 'log_file': 'ptf.log', 'log_dir': None, 'debug': 'verbose', 'profile': False, 'profile_file': 'profile.out', 'xunit': False, 'xunit_dir': 'xunit', 'relax': False, 'test_params': "grpcaddr='localhost:9559';p4info='syn-cookie/p4src/proxy.p4info.txtpb';config='syn-cookie/p4src/proxy.json'", 'failfast': False, 'fail_skipped': False, 'default_timeout': 2.0, 'default_negative_timeout': 0.1, 'minsize': 0, 'random_seed': None, 'disable_ipv6': False, 'disable_vxlan': False, 'disable_erspan': False, 'disable_geneve': False, 'disable_mpls': False, 'disable_nvgre': False, 'disable_igmp': False, 'disable_rocev2': False, 'qlen': 100, 'test_case_timeout': None, 'socket_recv_size': 4096, 'packet_manipulation_module': 'ptf.packet_scapy', 'port_map': {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}}
-11:55:44.540  root      : INFO    : port map: {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}
-11:55:44.540  root      : INFO    : Autogen random seed: 10920859
-11:55:44.541  root      : INFO    : *** TEST RUN START: Wed Feb 26 11:55:44 2025
-11:55:44.541  root      : DEBUG   : DemoTUM.setUp()
-11:55:44.541  root      : DEBUG   : Creating P4Runtime client
-11:55:44.541  root      : DEBUG   : Connecting to device 0 at 0.0.0.0:9559
-11:55:44.541  root      : DEBUG   : Using insecure channel
-11:55:44.544  root      : DEBUG   : Session established, client is 'backup'
-11:55:44.544  root      : DEBUG   : Retrieving P4Info file
-11:55:44.546  root      : DEBUG   : Parsing P4Info message
-11:55:44.547  dataplane : DEBUG   : Sending 54 bytes to device 0, port 1
-11:55:44.559  dataplane : DEBUG   : Pkt len 54 in on device 0, port 1
-11:55:44.571  root      : DEBUG   : Checking for pkt on device 0, port 1
-11:55:44.571  dataplane : DEBUG   : Grabbing packet
-11:55:44.571  dataplane : DEBUG   : Checking packet from device 0, port 1
-11:55:44.571  root      : DEBUG   : DemoTumTest.tearDown()
-11:55:44.571  root      : DEBUG   : Tearing down P4Runtime client
-11:55:44.571  root      : DEBUG   : Cleaning up stream
-11:55:44.573  root      : INFO    : *** TEST RUN END  : Wed Feb 26 11:55:44 2025
-11:55:44.573  dataplane : INFO    : Thread exit
+17:48:35.043  root      : INFO    : ++++++++ Wed Feb 26 17:48:35 2025 ++++++++
+17:48:35.145  root      : INFO    : ROCEv2 support found in Scapy
+17:48:35.146  root      : INFO    : ERSPAN support found in Scapy
+17:48:35.146  root      : INFO    : GENEVE support found in Scapy
+17:48:35.147  root      : INFO    : MPLS support found in Scapy
+17:48:35.147  root      : INFO    : IGMP support found in Scapy
+17:48:35.150  root      : DEBUG   : Parsed test parameters:
+17:48:35.150  root      : DEBUG   : 	*grpcaddr=localhost:9559
+17:48:35.150  root      : DEBUG   : 	*p4info=syn-cookie/p4src/proxy.p4info.txtpb
+17:48:35.150  root      : DEBUG   : 	*config=syn-cookie/p4src/proxy.json
+17:48:35.150  root      : DEBUG   : If something is missing, make sure you used the correct syntax: --test-params="[k=v;]*k=v"
+17:48:35.478  root      : INFO    : Importing platform: eth
+17:48:35.479  root      : DEBUG   : Configuration: {'list': False, 'list_test_names': False, 'allow_user': False, 'test_spec': '', 'test_file': None, 'test_dir': 'ptf', 'test_order': 'default', 'test_order_seed': 2746, 'num_shards': 1, 'shard_id': 0, 'platform': 'eth', 'platform_args': None, 'platform_dir': '/home/tristan/p4dev-python-venv/lib/python3.8/site-packages/ptf/platforms', 'interfaces': [(0, 1, 'veth1'), (0, 2, 'veth3'), (0, 3, 'veth5')], 'port_info': {}, 'device_sockets': [], 'log_file': 'ptf.log', 'log_dir': None, 'debug': 'verbose', 'profile': False, 'profile_file': 'profile.out', 'xunit': False, 'xunit_dir': 'xunit', 'relax': False, 'test_params': "grpcaddr='localhost:9559';p4info='syn-cookie/p4src/proxy.p4info.txtpb';config='syn-cookie/p4src/proxy.json'", 'failfast': False, 'fail_skipped': False, 'default_timeout': 2.0, 'default_negative_timeout': 0.1, 'minsize': 0, 'random_seed': None, 'disable_ipv6': False, 'disable_vxlan': False, 'disable_erspan': False, 'disable_geneve': False, 'disable_mpls': False, 'disable_nvgre': False, 'disable_igmp': False, 'disable_rocev2': False, 'qlen': 100, 'test_case_timeout': None, 'socket_recv_size': 4096, 'packet_manipulation_module': 'ptf.packet_scapy', 'port_map': {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}}
+17:48:35.479  root      : INFO    : port map: {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}
+17:48:35.479  root      : INFO    : Autogen random seed: 39181338
+17:48:35.479  root      : INFO    : *** TEST RUN START: Wed Feb 26 17:48:35 2025
+17:48:35.479  root      : DEBUG   : DemoTUM.setUp()
+17:48:35.479  root      : DEBUG   : Creating P4Runtime client
+17:48:35.479  root      : DEBUG   : Connecting to device 0 at 0.0.0.0:9559
+17:48:35.480  root      : DEBUG   : Using insecure channel
+17:48:35.482  root      : DEBUG   : Session established, client is 'backup'
+17:48:35.482  root      : DEBUG   : Retrieving P4Info file
+17:48:35.484  root      : DEBUG   : Parsing P4Info message
+17:48:35.485  dataplane : DEBUG   : Sending 54 bytes to device 0, port 1
+17:48:35.497  dataplane : DEBUG   : Pkt len 54 in on device 0, port 1
+17:48:35.509  root      : DEBUG   : Checking for pkt on device 0, port 1
+17:48:35.509  dataplane : DEBUG   : Grabbing packet
+17:48:35.509  dataplane : DEBUG   : Checking packet from device 0, port 1
+17:48:35.510  dataplane : DEBUG   : Sending 54 bytes to device 0, port 1
+17:48:35.510  root      : DEBUG   : Checking for pkt on device 0, port 3
+17:48:35.511  dataplane : DEBUG   : Grabbing packet
+17:48:35.511  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:48:35.511  dataplane : DEBUG   : Did not find packet
+17:48:35.511  dataplane : DEBUG   : Pkt len 54 in on device 0, port 3
+17:48:35.511  dataplane : DEBUG   : Grabbing packet
+17:48:35.511  dataplane : DEBUG   : Checking packet from device 0, port 3
+17:48:35.512  dataplane : DEBUG   : Sending 54 bytes to device 0, port 3
+17:48:35.512  root      : DEBUG   : Checking for pkt on device 0, port 3
+17:48:35.512  dataplane : DEBUG   : Grabbing packet
+17:48:35.512  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:48:35.512  dataplane : DEBUG   : Did not find packet
+17:48:35.513  dataplane : DEBUG   : Pkt len 54 in on device 0, port 3
+17:48:35.513  dataplane : DEBUG   : Grabbing packet
+17:48:35.513  dataplane : DEBUG   : Checking packet from device 0, port 3
+17:48:35.514  dataplane : DEBUG   : Sending 98 bytes to device 0, port 1
+17:48:35.514  root      : DEBUG   : Checking for pkt on device 0, port 3
+17:48:35.514  dataplane : DEBUG   : Grabbing packet
+17:48:35.514  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:48:35.514  dataplane : DEBUG   : Did not find packet
+17:48:35.515  dataplane : DEBUG   : Pkt len 98 in on device 0, port 3
+17:48:35.515  dataplane : DEBUG   : Grabbing packet
+17:48:35.515  dataplane : DEBUG   : Checking packet from device 0, port 3
+17:48:35.515  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:48:35.515  dataplane : DEBUG   : Did not find packet
+17:48:36.516  dataplane : DEBUG   : Grabbing packet
+17:48:36.516  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:48:36.516  dataplane : DEBUG   : Did not find packet
+17:48:37.514  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:48:37.516  root      : DEBUG   : DemoTumTest.tearDown()
+17:48:37.516  root      : DEBUG   : Tearing down P4Runtime client
+17:48:37.516  root      : DEBUG   : Cleaning up stream
+17:48:37.517  root      : INFO    : *** TEST RUN END  : Wed Feb 26 17:48:37 2025
+17:48:37.517  dataplane : INFO    : Thread exit
