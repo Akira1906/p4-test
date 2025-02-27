@@ -5,18 +5,6 @@
 
 # p4c --target bmv2 --arch v1model --p4runtime-files proxy.p4info.txtpb proxy.p4
 
-
-#     connection_hash, connection_hash_rev, seq_diff, seq_diff_rev = compute_connection_hash(
-#         src_ip, dst_ip, src_port, dst_port, protocol, cookie_value, seq_no
-#     )
-
-#     print(f"Connection Hash: {connection_hash}")
-#     print(f"Reverse Connection Hash: {connection_hash_rev}")
-#     print(f"Seq Diff: {seq_diff}")
-#     print(f"Seq Diff Rev: {seq_diff_rev}")
-
-# TODO try to fix the automated script
-
 # NOTE: CONTINUE HERE, USE THE P4RUNITME API IMPLEMENTED BY P4-UTILS INSTEAD
 # for that try to connect ss_grpc via thrift via console
 # if that works then also do it in the automated approach
@@ -47,13 +35,13 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 ch.setFormatter(formatter)
 logger.addHandler(ch)
 
-# NOTE: need to install behavioral model with thrift support
-# cd ~/behavioral-model  # Go to BMv2 source directory
-# ./autogen.sh
-# ./configure --enable-debugger --with-thrift
-# make -j$(nproc)
-# sudo make install
-# needs thrift 0.13
+# NOTE: How to install behavioral model with thrift support
+    # cd ~/behavioral-model  # Go to BMv2 source directory
+    # ./autogen.sh
+    # ./configure --enable-debugger --with-thrift
+    # make -j$(nproc)
+    # sudo make install
+    # needs thrift 0.13
 
 def get_packet_mask(pkt):
         pkt_mask = mask.Mask(pkt)
@@ -127,7 +115,7 @@ class ProxyTest(DemoTumTest):
         self.server_ip = "10.0.1.3"
 
         self.client_port = 1234
-        self.server_port = 80
+        self.server_port = 81
         self.attacker_port = 5555
 
         self.client_iface = 1  # h1 -> s1
@@ -244,7 +232,7 @@ class ProxyTest(DemoTumTest):
         # Step 2.2 HTTP Answer (Proxy -> Client)
         
         resp_pkt = (
-            Ether(dst=self.client_mac, src=self.switch_client_mac, type=0x0800) /
+            Ether(dst=self.client_mac, src=self.switch_server_mac, type=0x0800) /
             IP(src=self.server_ip, dst=self.client_ip, ttl=63, proto=6, id=1, flags=0) /
             TCP(sport=self.server_port, dport=self.client_port, flags="PA", seq=2030043158, ack=1) /
             Raw(load=b"HTTP/1.1 200 OK\r\nContent-Length: 13\r\n\r\nHello, World!")

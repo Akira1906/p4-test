@@ -70,8 +70,8 @@ sleep 2
 echo "Start SYN-Cookie Control Plane application"
 python3 -u syn-cookie/controller-grpc.py &> controller.log &
 sleep 2
-sudo netstat -tulnp
-sleep 20
+# sudo netstat -tulnp
+# sleep 20
 
 sudo -E ${P4_EXTRA_SUDO_OPTS} $(which ptf) \
     --pypath "$P" \

@@ -720,6 +720,12 @@
     {
       "id" : 1,
       "name" : "learn_connection_t",
+      "source_info" : {
+        "filename" : "syn-cookie/p4src/proxy.p4",
+        "line" : 217,
+        "column" : 18,
+        "source_fragment" : "meta"
+      },
       "elements" : [
         {
           "type" : "field",
@@ -980,6 +986,101 @@
           "parameters" : [
             {
               "type" : "field",
+              "value" : ["scalars", "metadata._seq_digest_type14"]
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x02"
+            }
+          ],
+          "source_info" : {
+            "filename" : "syn-cookie/p4src/proxy.p4",
+            "line" : 210,
+            "column" : 8,
+            "source_fragment" : "meta.seq_digest.type = 2"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._seq_digest_connection_hash15"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._connectionHash1"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "syn-cookie/p4src/proxy.p4",
+            "line" : 211,
+            "column" : 8,
+            "source_fragment" : "meta.seq_digest.connection_hash = meta"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._seq_digest_seqNo16"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._seqDiff5"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "syn-cookie/p4src/proxy.p4",
+            "line" : 212,
+            "column" : 8,
+            "source_fragment" : "meta.seq_digest.seqNo = meta"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._seq_digest_connection_hash_rev17"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._connectionHash_rev2"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "syn-cookie/p4src/proxy.p4",
+            "line" : 213,
+            "column" : 8,
+            "source_fragment" : "meta.seq_digest.connection_hash_rev = meta"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._seq_digest_seqNo_rev18"]
+            },
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata._seqDiff_rev6"]
+            }
+          ],
+          "source_info" : {
+            "filename" : "syn-cookie/p4src/proxy.p4",
+            "line" : 214,
+            "column" : 8,
+            "source_fragment" : "meta.seq_digest.seqNo_rev = meta"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
               "value" : ["scalars", "tmp"]
             },
             {
@@ -989,9 +1090,9 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
-            "column" : 39,
-            "source_fragment" : "2"
+            "line" : 217,
+            "column" : 18,
+            "source_fragment" : "meta"
           }
         },
         {
@@ -1008,8 +1109,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
-            "column" : 42,
+            "line" : 217,
+            "column" : 18,
             "source_fragment" : "meta"
           }
         },
@@ -1027,8 +1128,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
-            "column" : 63,
+            "line" : 217,
+            "column" : 18,
             "source_fragment" : "meta"
           }
         },
@@ -1046,8 +1147,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
-            "column" : 77,
+            "line" : 217,
+            "column" : 18,
             "source_fragment" : "meta"
           }
         },
@@ -1065,8 +1166,8 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
-            "column" : 102,
+            "line" : 217,
+            "column" : 18,
             "source_fragment" : "meta"
           }
         },
@@ -1084,9 +1185,9 @@
           ],
           "source_info" : {
             "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 231,
+            "line" : 217,
             "column" : 8,
-            "source_fragment" : "digest<learn_connection_t>(1, {2, meta.connectionHash, meta.seqDiff, meta.connectionHash_rev, meta.seqDiff_rev})"
+            "source_fragment" : "digest(1, meta.seq_digest)"
           }
         }
       ]
