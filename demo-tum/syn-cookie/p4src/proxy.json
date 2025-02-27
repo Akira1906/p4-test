@@ -45,7 +45,6 @@
         ["tmp_37", 5, false],
         ["clientIPAddress_0", 32, false],
         ["clientPortNum_0", 16, false],
-        ["dstMAC_0", 48, false],
         ["clientAddr_0", 32, false],
         ["serverPort_0", 16, false],
         ["hash_value_0", 24, false],
@@ -53,7 +52,7 @@
         ["clientIPAddress_1", 32, false],
         ["clientPortNum_1", 16, false],
         ["hash_value_2", 24, false],
-        ["dstMAC_1", 48, false],
+        ["dstMAC_0", 48, false],
         ["clientAddr_1", 32, false],
         ["serverPort_1", 16, false],
         ["serverSeq_0", 32, false],
@@ -2114,63 +2113,6 @@
           "parameters" : [
             {
               "type" : "field",
-              "value" : ["scalars", "dstMAC_0"]
-            },
-            {
-              "type" : "field",
-              "value" : ["ethernet", "dstAddr"]
-            }
-          ],
-          "source_info" : {
-            "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 275,
-            "column" : 8,
-            "source_fragment" : "bit<48> dstMAC = hdr.ethernet.dstAddr"
-          }
-        },
-        {
-          "op" : "assign",
-          "parameters" : [
-            {
-              "type" : "field",
-              "value" : ["ethernet", "dstAddr"]
-            },
-            {
-              "type" : "field",
-              "value" : ["ethernet", "srcAddr"]
-            }
-          ],
-          "source_info" : {
-            "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 276,
-            "column" : 8,
-            "source_fragment" : "hdr.ethernet.dstAddr = srcMAC"
-          }
-        },
-        {
-          "op" : "assign",
-          "parameters" : [
-            {
-              "type" : "field",
-              "value" : ["ethernet", "srcAddr"]
-            },
-            {
-              "type" : "field",
-              "value" : ["scalars", "dstMAC_0"]
-            }
-          ],
-          "source_info" : {
-            "filename" : "syn-cookie/p4src/proxy.p4",
-            "line" : 277,
-            "column" : 8,
-            "source_fragment" : "hdr.ethernet.srcAddr = dstMAC"
-          }
-        },
-        {
-          "op" : "assign",
-          "parameters" : [
-            {
-              "type" : "field",
               "value" : ["scalars", "clientAddr_0"]
             },
             {
@@ -3188,7 +3130,7 @@
           "parameters" : [
             {
               "type" : "field",
-              "value" : ["scalars", "dstMAC_1"]
+              "value" : ["scalars", "dstMAC_0"]
             },
             {
               "type" : "field",
@@ -3230,7 +3172,7 @@
             },
             {
               "type" : "field",
-              "value" : ["scalars", "dstMAC_1"]
+              "value" : ["scalars", "dstMAC_0"]
             }
           ],
           "source_info" : {

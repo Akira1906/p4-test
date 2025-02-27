@@ -1,0 +1,31 @@
+Calling target program-options parser
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_act': act - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'MyIngress.connections': NoAction - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_proxy588': proxy588 - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_proxy590': proxy590 - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_proxy617': proxy617 - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_proxy626': proxy626 - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_proxy640': proxy640 - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[16:59:25.131] [bmv2] [D] [thread 706153] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+Adding interface s1-eth1 as port 1
+[16:59:25.132] [bmv2] [D] [thread 706153] Adding interface s1-eth1 as port 1
+Adding interface s1-eth2 as port 2
+[16:59:25.161] [bmv2] [D] [thread 706153] Adding interface s1-eth2 as port 2
+Adding interface s1-eth3 as port 3
+[16:59:25.205] [bmv2] [D] [thread 706153] Adding interface s1-eth3 as port 3
+Server listening on 0.0.0.0:9559
+[16:59:25.231] [bmv2] [I] [thread 706153] Starting Thrift server on port 9090
+[16:59:25.231] [bmv2] [I] [thread 706153] Thrift server was started

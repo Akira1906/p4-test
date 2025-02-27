@@ -271,10 +271,11 @@ control MyIngress(inout headers hdr,
         bit<16> clientPortNum = hdr.tcp.srcPort;
 
         // reverse MAC address
-        bit<48> srcMAC = hdr.ethernet.srcAddr;
-        bit<48> dstMAC = hdr.ethernet.dstAddr;
-        hdr.ethernet.dstAddr = srcMAC;
-        hdr.ethernet.srcAddr = dstMAC;
+        // commented the following out because this causes mac address issues, since it is already reversed in ipv4_forward
+        // bit<48> srcMAC = hdr.ethernet.srcAddr;
+        // bit<48> dstMAC = hdr.ethernet.dstAddr;
+        // hdr.ethernet.dstAddr = srcMAC;
+        // hdr.ethernet.srcAddr = dstMAC;
 
         // return the packet to the same port it came from
         // is this really necessary ? you are already doing this in the forwarding part

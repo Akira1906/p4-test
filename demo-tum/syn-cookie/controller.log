@@ -1,36 +1,3 @@
-Connected to s1 via gRPC at 0.0.0.0:9559
-Adding entry to: ipv4_lpm
-match:
-field_id: 1
-lpm {
-  value: "\n\000\001\001"
-  prefix_len: 32
-}
-
-action: ipv4_forward
-param_id: 1
-value: "\000\000\n\000\001\001"
-
-param_id: 2
-value: "\000\001"
-
-Added entry: 10.0.1.1/32 -> 00:00:0a:00:01:01, Port 1
-Adding entry to: ipv4_lpm
-match:
-field_id: 1
-lpm {
-  value: "\n\000\001\002"
-  prefix_len: 32
-}
-
-action: ipv4_forward
-param_id: 1
-value: "\000\000\n\000\001\002"
-
-param_id: 2
-value: "\000\002"
-
-Added entry: 10.0.1.2/32 -> 00:00:0a:00:01:02, Port 2
 Adding entry to: ipv4_lpm
 match:
 field_id: 1
@@ -46,7 +13,36 @@ value: "\000\000\n\000\001\003"
 param_id: 2
 value: "\000\003"
 
-Added entry: 10.0.1.3/32 -> 00:00:0a:00:01:03, Port 3
+Adding entry to: ipv4_lpm
+match:
+field_id: 1
+lpm {
+  value: "\n\000\001\002"
+  prefix_len: 32
+}
+
+action: ipv4_forward
+param_id: 1
+value: "\000\000\n\000\001\002"
+
+param_id: 2
+value: "\000\002"
+
+Adding entry to: ipv4_lpm
+match:
+field_id: 1
+lpm {
+  value: "\n\000\001\001"
+  prefix_len: 32
+}
+
+action: ipv4_forward
+param_id: 1
+value: "\000\000\n\000\001\001"
+
+param_id: 2
+value: "\000\001"
+
 Enabling digest: learn_connection_t
 Enabling digest: learn_debug_t
 Listening for digest messages via gRPC...
@@ -71,7 +67,7 @@ data {
     }
   }
 }
-timestamp: 269869605089042
+timestamp: 282793412764786
 
 message type: 2, connection added with Hash: 40350, diff: 2030043120
 Adding entry to: connections

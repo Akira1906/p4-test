@@ -1,139 +1,142 @@
-14:04:44.546  root      : INFO    : ++++++++ Thu Feb 27 14:04:44 2025 ++++++++
-14:04:44.639  root      : INFO    : ROCEv2 support found in Scapy
-14:04:44.640  root      : INFO    : ERSPAN support found in Scapy
-14:04:44.640  root      : INFO    : GENEVE support found in Scapy
-14:04:44.641  root      : INFO    : MPLS support found in Scapy
-14:04:44.641  root      : INFO    : IGMP support found in Scapy
-14:04:44.644  root      : DEBUG   : Parsed test parameters:
-14:04:44.644  root      : DEBUG   : 	*grpcaddr=localhost:9559
-14:04:44.644  root      : DEBUG   : 	*p4info=syn-cookie/p4src/proxy.p4info.txtpb
-14:04:44.644  root      : DEBUG   : 	*config=syn-cookie/p4src/proxy.json
-14:04:44.644  root      : DEBUG   : If something is missing, make sure you used the correct syntax: --test-params="[k=v;]*k=v"
-14:04:44.947  root      : INFO    : Importing platform: eth
-14:04:44.948  root      : DEBUG   : Configuration: {'list': False, 'list_test_names': False, 'allow_user': False, 'test_spec': '', 'test_file': None, 'test_dir': 'ptf', 'test_order': 'default', 'test_order_seed': 2746, 'num_shards': 1, 'shard_id': 0, 'platform': 'eth', 'platform_args': None, 'platform_dir': '/home/tristan/p4dev-python-venv/lib/python3.8/site-packages/ptf/platforms', 'interfaces': [(0, 1, 'veth1'), (0, 2, 'veth3'), (0, 3, 'veth5')], 'port_info': {}, 'device_sockets': [], 'log_file': 'ptf.log', 'log_dir': None, 'debug': 'verbose', 'profile': False, 'profile_file': 'profile.out', 'xunit': False, 'xunit_dir': 'xunit', 'relax': False, 'test_params': "grpcaddr='localhost:9559';p4info='syn-cookie/p4src/proxy.p4info.txtpb';config='syn-cookie/p4src/proxy.json'", 'failfast': False, 'fail_skipped': False, 'default_timeout': 2.0, 'default_negative_timeout': 0.1, 'minsize': 0, 'random_seed': None, 'disable_ipv6': False, 'disable_vxlan': False, 'disable_erspan': False, 'disable_geneve': False, 'disable_mpls': False, 'disable_nvgre': False, 'disable_igmp': False, 'disable_rocev2': False, 'qlen': 100, 'test_case_timeout': None, 'socket_recv_size': 4096, 'packet_manipulation_module': 'ptf.packet_scapy', 'port_map': {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}}
-14:04:44.948  root      : INFO    : port map: {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}
-14:04:44.948  root      : INFO    : Autogen random seed: 55498163
-14:04:44.948  root      : INFO    : *** TEST RUN START: Thu Feb 27 14:04:44 2025
-14:04:44.949  root      : DEBUG   : DemoTUM.setUp()
-14:04:44.949  root      : DEBUG   : Creating P4Runtime client
-14:04:44.949  root      : DEBUG   : Connecting to device 0 at 0.0.0.0:9559
-14:04:44.949  root      : DEBUG   : Using insecure channel
-14:04:44.952  root      : DEBUG   : Session established, client is 'backup'
-14:04:44.952  root      : DEBUG   : Retrieving P4Info file
-14:04:44.954  root      : DEBUG   : Parsing P4Info message
-14:04:44.955  dataplane : DEBUG   : Sending 54 bytes to device 0, port 1
-14:04:44.966  dataplane : DEBUG   : Pkt len 54 in on device 0, port 1
-14:04:44.978  root      : DEBUG   : Checking for pkt on device 0, port 1
-14:04:44.978  dataplane : DEBUG   : Grabbing packet
-14:04:44.978  dataplane : DEBUG   : Checking packet from device 0, port 1
-14:04:44.979  dataplane : DEBUG   : Sending 54 bytes to device 0, port 1
-14:04:44.980  root      : DEBUG   : Checking for pkt on device 0, port 3
-14:04:44.980  dataplane : DEBUG   : Grabbing packet
-14:04:44.980  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:44.980  dataplane : DEBUG   : Did not find packet
-14:04:44.980  dataplane : DEBUG   : Pkt len 54 in on device 0, port 3
-14:04:44.980  dataplane : DEBUG   : Grabbing packet
-14:04:44.980  dataplane : DEBUG   : Checking packet from device 0, port 3
-14:04:44.981  dataplane : DEBUG   : Sending 54 bytes to device 0, port 3
-14:04:44.982  root      : DEBUG   : Checking for pkt on device 0, port 3
-14:04:44.982  dataplane : DEBUG   : Grabbing packet
-14:04:44.982  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:44.982  dataplane : DEBUG   : Did not find packet
-14:04:44.982  dataplane : DEBUG   : Pkt len 54 in on device 0, port 3
-14:04:44.982  dataplane : DEBUG   : Grabbing packet
-14:04:44.983  dataplane : DEBUG   : Checking packet from device 0, port 3
-14:04:44.984  dataplane : DEBUG   : Sending 98 bytes to device 0, port 1
-14:04:44.984  root      : DEBUG   : Checking for pkt on device 0, port 3
-14:04:44.984  dataplane : DEBUG   : Grabbing packet
-14:04:44.984  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:44.984  dataplane : DEBUG   : Did not find packet
-14:04:44.985  dataplane : DEBUG   : Pkt len 98 in on device 0, port 3
-14:04:44.985  dataplane : DEBUG   : Grabbing packet
-14:04:44.985  dataplane : DEBUG   : Checking packet from device 0, port 3
-14:04:44.986  dataplane : DEBUG   : Sending 106 bytes to device 0, port 3
-14:04:44.986  root      : DEBUG   : Checking for pkt on device 0, port 1
-14:04:44.986  dataplane : DEBUG   : Grabbing packet
-14:04:44.986  dataplane : DEBUG   : Out of packets on device 0, port 1
-14:04:44.986  dataplane : DEBUG   : Did not find packet
-14:04:44.986  dataplane : DEBUG   : Pkt len 106 in on device 0, port 1
-14:04:44.986  dataplane : DEBUG   : Grabbing packet
-14:04:44.987  dataplane : DEBUG   : Checking packet from device 0, port 1
-14:04:44.987  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:44.987  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:44.987  dataplane : DEBUG   : Grabbing packet
-14:04:44.987  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:44.987  dataplane : DEBUG   : Did not find packet
-14:04:44.988  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
-14:04:44.988  dataplane : DEBUG   : Grabbing packet
-14:04:44.988  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:44.988  dataplane : DEBUG   : Did not find packet
-14:04:45.088  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.090  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:45.091  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.091  dataplane : DEBUG   : Grabbing packet
-14:04:45.091  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.091  dataplane : DEBUG   : Did not find packet
-14:04:45.094  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
-14:04:45.095  dataplane : DEBUG   : Grabbing packet
-14:04:45.095  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.095  dataplane : DEBUG   : Did not find packet
-14:04:45.191  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.194  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:45.194  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.194  dataplane : DEBUG   : Grabbing packet
-14:04:45.194  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.194  dataplane : DEBUG   : Did not find packet
-14:04:45.197  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
-14:04:45.197  dataplane : DEBUG   : Grabbing packet
-14:04:45.197  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.197  dataplane : DEBUG   : Did not find packet
-14:04:45.294  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.297  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:45.297  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.297  dataplane : DEBUG   : Grabbing packet
-14:04:45.298  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.298  dataplane : DEBUG   : Did not find packet
-14:04:45.301  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
-14:04:45.301  dataplane : DEBUG   : Grabbing packet
-14:04:45.301  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.302  dataplane : DEBUG   : Did not find packet
-14:04:45.398  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.400  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:45.401  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.401  dataplane : DEBUG   : Grabbing packet
-14:04:45.401  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.401  dataplane : DEBUG   : Did not find packet
-14:04:45.403  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
-14:04:45.403  dataplane : DEBUG   : Grabbing packet
-14:04:45.403  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.403  dataplane : DEBUG   : Did not find packet
-14:04:45.501  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.504  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:45.504  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.505  dataplane : DEBUG   : Grabbing packet
-14:04:45.505  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.505  dataplane : DEBUG   : Did not find packet
-14:04:45.605  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.608  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:45.608  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.608  dataplane : DEBUG   : Grabbing packet
-14:04:45.608  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.608  dataplane : DEBUG   : Did not find packet
-14:04:45.708  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.711  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
-14:04:45.711  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.712  dataplane : DEBUG   : Grabbing packet
-14:04:45.712  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.712  dataplane : DEBUG   : Did not find packet
-14:04:45.812  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.816  dataplane : DEBUG   : Sending 98 bytes to device 0, port 1
-14:04:45.816  root      : DEBUG   : Negative check for pkt on device 0, port 3
-14:04:45.816  dataplane : DEBUG   : Grabbing packet
-14:04:45.816  dataplane : DEBUG   : Out of packets on device 0, port 3
-14:04:45.816  dataplane : DEBUG   : Did not find packet
-14:04:45.916  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
-14:04:45.917  root      : DEBUG   : DemoTumTest.tearDown()
-14:04:45.917  root      : DEBUG   : Tearing down P4Runtime client
-14:04:45.917  root      : DEBUG   : Cleaning up stream
-14:04:45.920  root      : INFO    : *** TEST RUN END  : Thu Feb 27 14:04:45 2025
-14:04:45.921  dataplane : INFO    : Thread exit
+17:40:08.369  root      : INFO    : ++++++++ Thu Feb 27 17:40:08 2025 ++++++++
+17:40:08.466  root      : INFO    : ROCEv2 support found in Scapy
+17:40:08.467  root      : INFO    : ERSPAN support found in Scapy
+17:40:08.467  root      : INFO    : GENEVE support found in Scapy
+17:40:08.468  root      : INFO    : MPLS support found in Scapy
+17:40:08.468  root      : INFO    : IGMP support found in Scapy
+17:40:08.471  root      : DEBUG   : Parsed test parameters:
+17:40:08.471  root      : DEBUG   : 	*grpcaddr=localhost:9559
+17:40:08.471  root      : DEBUG   : 	*p4info=syn-cookie/p4src/proxy.p4info.txtpb
+17:40:08.471  root      : DEBUG   : 	*config=syn-cookie/p4src/proxy.json
+17:40:08.471  root      : DEBUG   : If something is missing, make sure you used the correct syntax: --test-params="[k=v;]*k=v"
+17:40:08.777  root      : INFO    : Importing platform: eth
+17:40:08.778  root      : DEBUG   : Configuration: {'list': False, 'list_test_names': False, 'allow_user': False, 'test_spec': '', 'test_file': None, 'test_dir': 'ptf', 'test_order': 'default', 'test_order_seed': 2746, 'num_shards': 1, 'shard_id': 0, 'platform': 'eth', 'platform_args': None, 'platform_dir': '/home/tristan/p4dev-python-venv/lib/python3.8/site-packages/ptf/platforms', 'interfaces': [(0, 1, 'veth1'), (0, 2, 'veth3'), (0, 3, 'veth5')], 'port_info': {}, 'device_sockets': [], 'log_file': 'ptf.log', 'log_dir': None, 'debug': 'verbose', 'profile': False, 'profile_file': 'profile.out', 'xunit': False, 'xunit_dir': 'xunit', 'relax': False, 'test_params': "grpcaddr='localhost:9559';p4info='syn-cookie/p4src/proxy.p4info.txtpb';config='syn-cookie/p4src/proxy.json'", 'failfast': False, 'fail_skipped': False, 'default_timeout': 2.0, 'default_negative_timeout': 0.1, 'minsize': 0, 'random_seed': None, 'disable_ipv6': False, 'disable_vxlan': False, 'disable_erspan': False, 'disable_geneve': False, 'disable_mpls': False, 'disable_nvgre': False, 'disable_igmp': False, 'disable_rocev2': False, 'qlen': 100, 'test_case_timeout': None, 'socket_recv_size': 4096, 'packet_manipulation_module': 'ptf.packet_scapy', 'port_map': {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}}
+17:40:08.778  root      : INFO    : port map: {(0, 1): 'veth1', (0, 2): 'veth3', (0, 3): 'veth5'}
+17:40:08.778  root      : INFO    : Autogen random seed: 26306505
+17:40:08.778  root      : INFO    : *** TEST RUN START: Thu Feb 27 17:40:08 2025
+17:40:08.778  root      : DEBUG   : DemoTUM.setUp()
+17:40:08.779  root      : DEBUG   : Creating P4Runtime client
+17:40:08.779  root      : DEBUG   : Connecting to device 1 at 127.0.1.0:9559
+17:40:08.779  root      : DEBUG   : Using insecure channel
+17:40:08.781  root      : DEBUG   : Session established, client is 'backup'
+17:40:08.781  root      : DEBUG   : Retrieving P4Info file
+17:40:08.784  root      : DEBUG   : Parsing P4Info message
+17:40:08.784  dataplane : DEBUG   : Sending 54 bytes to device 0, port 1
+17:40:08.785  root      : DEBUG   : Checking for pkt on device 0, port 1
+17:40:08.785  dataplane : DEBUG   : Grabbing packet
+17:40:08.785  dataplane : DEBUG   : Out of packets on device 0, port 1
+17:40:08.785  dataplane : DEBUG   : Did not find packet
+17:40:08.786  dataplane : DEBUG   : Pkt len 54 in on device 0, port 1
+17:40:08.786  dataplane : DEBUG   : Grabbing packet
+17:40:08.786  dataplane : DEBUG   : Checking packet from device 0, port 1
+17:40:08.787  dataplane : DEBUG   : Sending 54 bytes to device 0, port 1
+17:40:08.787  root      : DEBUG   : Checking for pkt on device 0, port 3
+17:40:08.787  dataplane : DEBUG   : Grabbing packet
+17:40:08.787  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:08.787  dataplane : DEBUG   : Did not find packet
+17:40:08.788  dataplane : DEBUG   : Pkt len 54 in on device 0, port 3
+17:40:08.788  dataplane : DEBUG   : Grabbing packet
+17:40:08.788  dataplane : DEBUG   : Checking packet from device 0, port 3
+17:40:08.789  dataplane : DEBUG   : Sending 54 bytes to device 0, port 3
+17:40:08.789  root      : DEBUG   : Checking for pkt on device 0, port 3
+17:40:08.789  dataplane : DEBUG   : Grabbing packet
+17:40:08.789  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:08.789  dataplane : DEBUG   : Did not find packet
+17:40:08.790  dataplane : DEBUG   : Pkt len 54 in on device 0, port 3
+17:40:08.790  dataplane : DEBUG   : Grabbing packet
+17:40:08.790  dataplane : DEBUG   : Checking packet from device 0, port 3
+17:40:08.792  dataplane : DEBUG   : Sending 98 bytes to device 0, port 1
+17:40:08.792  root      : DEBUG   : Checking for pkt on device 0, port 3
+17:40:08.792  dataplane : DEBUG   : Grabbing packet
+17:40:08.792  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:08.793  dataplane : DEBUG   : Did not find packet
+17:40:08.793  dataplane : DEBUG   : Pkt len 98 in on device 0, port 3
+17:40:08.793  dataplane : DEBUG   : Grabbing packet
+17:40:08.793  dataplane : DEBUG   : Checking packet from device 0, port 3
+17:40:08.794  dataplane : DEBUG   : Sending 106 bytes to device 0, port 3
+17:40:08.794  root      : DEBUG   : Checking for pkt on device 0, port 1
+17:40:08.794  dataplane : DEBUG   : Grabbing packet
+17:40:08.794  dataplane : DEBUG   : Out of packets on device 0, port 1
+17:40:08.794  dataplane : DEBUG   : Did not find packet
+17:40:08.795  dataplane : DEBUG   : Pkt len 106 in on device 0, port 1
+17:40:08.795  dataplane : DEBUG   : Grabbing packet
+17:40:08.795  dataplane : DEBUG   : Checking packet from device 0, port 1
+17:40:08.796  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:08.796  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:08.796  dataplane : DEBUG   : Grabbing packet
+17:40:08.796  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:08.796  dataplane : DEBUG   : Did not find packet
+17:40:08.796  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
+17:40:08.796  dataplane : DEBUG   : Grabbing packet
+17:40:08.796  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:08.797  dataplane : DEBUG   : Did not find packet
+17:40:08.896  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:08.899  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:08.899  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:08.899  dataplane : DEBUG   : Grabbing packet
+17:40:08.899  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:08.900  dataplane : DEBUG   : Did not find packet
+17:40:08.903  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
+17:40:08.903  dataplane : DEBUG   : Grabbing packet
+17:40:08.903  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:08.903  dataplane : DEBUG   : Did not find packet
+17:40:08.999  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.003  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:09.004  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:09.004  dataplane : DEBUG   : Grabbing packet
+17:40:09.004  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.004  dataplane : DEBUG   : Did not find packet
+17:40:09.005  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
+17:40:09.005  dataplane : DEBUG   : Grabbing packet
+17:40:09.005  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.005  dataplane : DEBUG   : Did not find packet
+17:40:09.104  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.106  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:09.107  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:09.107  dataplane : DEBUG   : Grabbing packet
+17:40:09.107  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.107  dataplane : DEBUG   : Did not find packet
+17:40:09.109  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
+17:40:09.110  dataplane : DEBUG   : Grabbing packet
+17:40:09.110  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.110  dataplane : DEBUG   : Did not find packet
+17:40:09.207  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.209  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:09.210  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:09.210  dataplane : DEBUG   : Grabbing packet
+17:40:09.210  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.210  dataplane : DEBUG   : Did not find packet
+17:40:09.212  dataplane : DEBUG   : Pkt len 54 in on device 0, port 2
+17:40:09.213  dataplane : DEBUG   : Grabbing packet
+17:40:09.213  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.213  dataplane : DEBUG   : Did not find packet
+17:40:09.310  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.313  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:09.313  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:09.314  dataplane : DEBUG   : Grabbing packet
+17:40:09.314  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.314  dataplane : DEBUG   : Did not find packet
+17:40:09.414  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.415  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:09.415  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:09.416  dataplane : DEBUG   : Grabbing packet
+17:40:09.416  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.416  dataplane : DEBUG   : Did not find packet
+17:40:09.516  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.517  dataplane : DEBUG   : Sending 54 bytes to device 0, port 2
+17:40:09.517  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:09.517  dataplane : DEBUG   : Grabbing packet
+17:40:09.518  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.518  dataplane : DEBUG   : Did not find packet
+17:40:09.618  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.620  dataplane : DEBUG   : Sending 98 bytes to device 0, port 1
+17:40:09.620  root      : DEBUG   : Negative check for pkt on device 0, port 3
+17:40:09.620  dataplane : DEBUG   : Grabbing packet
+17:40:09.620  dataplane : DEBUG   : Out of packets on device 0, port 3
+17:40:09.620  dataplane : DEBUG   : Did not find packet
+17:40:09.720  dataplane : DEBUG   : Poll timeout, no packet from device 0, port 3
+17:40:09.721  root      : DEBUG   : DemoTumTest.tearDown()
+17:40:09.721  root      : DEBUG   : Tearing down P4Runtime client
+17:40:09.721  root      : DEBUG   : Cleaning up stream
+17:40:09.724  root      : INFO    : *** TEST RUN END  : Thu Feb 27 17:40:09 2025
+17:40:09.724  dataplane : INFO    : Thread exit

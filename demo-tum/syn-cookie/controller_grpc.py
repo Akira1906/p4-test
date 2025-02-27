@@ -1,37 +1,29 @@
 import struct
-import p4runtime_sh.shell as sh
-import p4utils.utils.sswitch_p4runtime_API as p4r
+from p4utils.utils.sswitch_p4runtime_API import SimpleSwitchP4RuntimeAPI
+from p4utils.utils.helper import load_topo
 
 
 class DigestController():
 
-    def __init__(self, sw_name, grpc_addr="0.0.0.0:9559", device_id=0):
-        self.sw_name = sw_name
-        self.device_id = device_id
-        self.grpc_addr = grpc_addr
-        p4info_txt_fname = "syn-cookie/p4src/proxy.p4info.txtpb"
-        p4prog_binary_fname = "syn-cookie/p4src/proxy.json"
+    def __init__(self):
+        topo = load_topo("topology.json")
+        nodes = topo.get_nodes()
 
-        # Connect to the switch using P4Runtime (gRPC)
-        self.ss = p4r.SimpleSwitchP4RuntimeAPI(
-            device_id=device_id,
-            grpc_ip=grpc_addr[:-5],
-            grpc_port=grpc_addr[-4:],
-            p4rt_path=p4info_txt_fname,
-            json_path=p4prog_binary_fname
+        self.ss = SimpleSwitchP4RuntimeAPI(
+            nodes['s1']['device_id'],
+            nodes['s1']['grpc_port'],
+            p4rt_path=nodes['s1']['p4rt_path'],
+            json_path=nodes['s1']['json_path']
         )
 
-        print(f"Connected to {self.sw_name} via gRPC at {self.grpc_addr}")
-
-        topology = {
-            "h1": {"ip": "10.0.1.1", "mac": "00:00:0a:00:01:01", "port": 1},
-            "h2": {"ip": "10.0.1.2", "mac": "00:00:0a:00:01:02", "port": 2},
-            "h3": {"ip": "10.0.1.3", "mac": "00:00:0a:00:01:03", "port": 3},
-        }
-        # TODO add mirroring_add 100 4, do i need this, what even is it?
-
-        for host, info in topology.items():
-            self.add_ipv4_forward_entry(info["ip"], info["mac"], info["port"])
+        
+        for neigh in topo.get_neighbors('s1'):
+            if topo.isHost(neigh):
+                self.ss.table_add('ipv4_lpm',
+                                    'ipv4_forward',
+                                    [topo.get_host_ip(neigh)],
+                                    [topo.node_to_node_mac(neigh, 's1'), str(topo.node_to_node_port_num('s1', neigh))])
+        # add mirroring_add 100 4 legacy, was used for debugging
 
         self.configure_digest()
 
@@ -39,17 +31,6 @@ class DigestController():
         """Configures the P4 digest handling for connection tracking."""
         self.ss.digest_enable("learn_connection_t")
         self.ss.digest_enable("learn_debug_t")
-        # print("Enabled digests:")
-        # print(self.ss.digest_get_conf('learn_connection_t'))
-        # print(self.ss.digest_get_conf("learn_debug_t"))
-
-    def add_ipv4_forward_entry(self, dst_ip, mac, port):
-        success = self.ss.table_add("ipv4_lpm", "ipv4_forward", [
-                                    f"{dst_ip}/32"], [mac, str(port)])
-        if success:
-            print(f"Added entry: {dst_ip}/32 -> {mac}, Port {port}")
-        else:
-            print(f"Failed to add entry for {dst_ip}")
 
     def raw_digest_message(self, digest_msg):
         raw_data_list = []
@@ -97,8 +78,6 @@ class DigestController():
     def add_connection_entry(self, connection_hash, diff_value):
         self.ss.table_add("connections", "saveDifferenceValue", [
                           str(connection_hash)], [str(diff_value)])
-        # print(
-        #     f"Added connection with Hash {connection_hash} and Diff {diff_value}.")
 
     def run_digest_loop(self):
         print("Listening for digest messages via gRPC...")
@@ -115,7 +94,7 @@ class DigestController():
 
 
 def main():
-    controller = DigestController("s1")
+    controller = DigestController()
     controller.run_digest_loop()
 
 

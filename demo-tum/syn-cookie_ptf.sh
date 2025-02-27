@@ -45,7 +45,7 @@ p4c --target bmv2 \
 /bin/rm -f ss-log.txt
 
 sudo simple_switch_grpc \
-     --device-id 0 \
+     --device-id 1 \
      --log-file syn-cookie_ss-log \
      --log-flush \
      --dump-packet-data 10000 \
@@ -68,10 +68,14 @@ sleep 2
 # line.
 # source /home/tristan/p4dev-python-venv/bin/activate
 echo "Start SYN-Cookie Control Plane application"
-python3 -u syn-cookie/controller-grpc.py &> controller.log &
+cd syn-cookie
+python3 -u controller_grpc.py &> controller.log &
+cd ..
 sleep 2
 # sudo netstat -tulnp
 # sleep 20
+
+# sudo python3 syn-cookie/tcp_integration.py
 
 sudo -E ${P4_EXTRA_SUDO_OPTS} $(which ptf) \
     --pypath "$P" \

@@ -5,23 +5,14 @@
 
 # p4c --target bmv2 --arch v1model --p4runtime-files proxy.p4info.txtpb proxy.p4
 
-# NOTE: CONTINUE HERE, USE THE P4RUNITME API IMPLEMENTED BY P4-UTILS INSTEAD
-# for that try to connect ss_grpc via thrift via console
-# if that works then also do it in the automated approach
-# the challenge atm is: controller.py always fails somehow
-
 import logging
 import ptf.mask as mask
 import ptf
 import ptf.testutils as tu
 from ptf.base_tests import BaseTest
 import p4runtime_sh.shell as sh
-# import p4runtime_shell_utils as shu
-import ipaddress
-import scapy
 from scapy.all import Ether, IP, TCP, Raw
 from asyncio import sleep
-# shu.dump_table('ipv4_lpm')
 
 ######################################################################
 # Configure logging
@@ -76,8 +67,8 @@ class DemoTumTest(BaseTest):
         if grpc_addr is None:
             grpc_addr = "localhost:9559"
 
-        grpc_addr='0.0.0.0:9559'
-        my_dev1_id=0
+        grpc_addr='127.0.1.0:9559'
+        my_dev1_id=1
         p4info_txt_fname = tu.test_param_get("p4info")
         p4prog_binary_fname = tu.test_param_get("config")
 
@@ -143,15 +134,17 @@ class UnitTest(DemoTumTest):
         
         # Step 2: P4 program answers SYN-ACK (Proxy -> Client)
 
-        exp_pkt = ( # this doesn't make sense, I think there is abug in the P4 program
-            Ether(dst=self.client_mac, src=self.client_mac, type=0x0800) /
+        # NOTE: I fixed this by changing line 276 in the p4 program,
+        # where the src and dst mac were reversed one time to much
+        exp_pkt = ( 
+            Ether(dst=self.client_mac, src=self.switch_client_mac, type=0x0800) /
             IP(src=self.server_ip, dst=self.client_ip, ttl=63, proto=6, id=1, flags=0) /
             TCP(sport=self.server_port, dport=self.client_port, seq=2030043157, ack=1, flags="SA", window=8192)
         )
 
-        pkt_mask = get_packet_mask(exp_pkt)
+        # pkt_mask = get_packet_mask(exp_pkt)
         
-        tu.verify_packet(self, pkt_mask, self.client_iface)
+        tu.verify_packet(self, exp_pkt, self.client_iface)
         
         # Step 3: Correct ACK answer from the client
         
@@ -277,30 +270,3 @@ class UnitTest(DemoTumTest):
         
         tu.send_packet(self, self.client_iface, ack_pkt)
         tu.verify_no_packet(self, ack_pkt, 3)
-    
-class IntegrationTest(DemoTumTest):
-    # idea let a program make a tcp connection through the proxy and see whether it will be successfull or not
-    
-    def runTest(self):
-        self.client_mac = "00:00:0a:00:01:01"  # h1 MAC
-        self.attacker_mac = "00:00:0a:00:01:02"  # h2 MAC
-        self.server_mac = "00:00:0a:00:01:03"  # h3 MAC
-        self.switch_client_mac = "00:01:0a:00:01:01"  # s1 client MAC
-        self.switch_attacker_mac = "00:01:0a:00:01:02"# s1 attacker MAC
-        self.switch_server_mac = "00:01:0a:00:01:03" # s1 server MAC
-
-        self.client_ip = "10.0.1.1"
-        self.attacker_ip = "10.0.1.2"
-        self.server_ip = "10.0.1.3"
-
-        self.client_port = 1234
-        self.server_port = 81
-        self.attacker_port = 5555
-
-        self.client_iface = 1  # h1 -> s1
-        self.attacker_iface = 2  # h2 -> s1
-        self.server_iface = 3  # h3 -> s1
-        
-        self.tcp_handshake()
-        self.valid_packet_sequence()
-        self.malicious_packets()
