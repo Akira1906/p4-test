@@ -1,0 +1,12 @@
+
+Sun Mar  2 15:08:23 2025: new connection (140573381515008) opened!
+
+Schedule time wait: 12.919017791748047
+
+Sun Mar  2 15:08:23 2025: task received!
+Task(curl, {'start': 1740899315.9466314, 'duration': 10.0, 'args': ('http://10.0.0.3:8080',), 'kwargs': {}})
+Scheduler 140573373122304 started!
+
+
+Sun Mar  2 15:08:23 2025: connection 140573381515008 closed!
+

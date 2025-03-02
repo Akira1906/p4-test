@@ -1,0 +1,150 @@
+Adding entry to: ipv4_lpm
+match:
+field_id: 1
+lpm {
+  value: "\n\000\001\003"
+  prefix_len: 32
+}
+
+action: ipv4_forward
+param_id: 1
+value: "\000\000\n\000\001\003"
+
+param_id: 2
+value: "\000\003"
+
+Adding entry to: ipv4_lpm
+match:
+field_id: 1
+lpm {
+  value: "\n\000\001\002"
+  prefix_len: 32
+}
+
+action: ipv4_forward
+param_id: 1
+value: "\000\000\n\000\001\002"
+
+param_id: 2
+value: "\000\002"
+
+Adding entry to: ipv4_lpm
+match:
+field_id: 1
+lpm {
+  value: "\n\000\001\001"
+  prefix_len: 32
+}
+
+action: ipv4_forward
+param_id: 1
+value: "\000\000\n\000\001\001"
+
+param_id: 2
+value: "\000\001"
+
+Enabling digest: learn_connection_t
+Enabling digest: learn_debug_t
+Listening for digest messages via gRPC...
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 394698674
+list_id: 1
+data {
+  struct {
+    members {
+      bitstring: "\002"
+    }
+    members {
+      bitstring: " \233"
+    }
+    members {
+      bitstring: "\357fgJ"
+    }
+    members {
+      bitstring: "\360\203"
+    }
+    members {
+      bitstring: "\020\231\230\266"
+    }
+  }
+}
+timestamp: 541771996667883
+
+message type: 2, connection added with Hash: 8347, diff: 4016465738
+Adding entry to: connections
+match:
+field_id: 1
+exact {
+  value: "\000\000 \233"
+}
+
+action: saveDifferenceValue
+param_id: 1
+value: "\357fgJ"
+
+message type: 2, connection added with Hash: 61571, diff: 278501558
+Adding entry to: connections
+match:
+field_id: 1
+exact {
+  value: "\000\000\360\203"
+}
+
+action: saveDifferenceValue
+param_id: 1
+value: "\020\231\230\266"
+
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 394698674
+list_id: 2
+data {
+  struct {
+    members {
+      bitstring: "\002"
+    }
+    members {
+      bitstring: " \233"
+    }
+    members {
+      bitstring: "\357fgJ"
+    }
+    members {
+      bitstring: "\360\203"
+    }
+    members {
+      bitstring: "\020\231\230\266"
+    }
+  }
+}
+timestamp: 541771997491350
+
+message type: 2, connection added with Hash: 8347, diff: 4016465738
+Adding entry to: connections
+match:
+field_id: 1
+exact {
+  value: "\000\000 \233"
+}
+
+action: saveDifferenceValue
+param_id: 1
+value: "\357fgJ"
+
+Error(s) during Write:
+	* At index 0: ALREADY_EXISTS, 'Match entry exists, use MODIFY if you wish to change action'
+
+message type: 2, connection added with Hash: 61571, diff: 278501558
+Adding entry to: connections
+match:
+field_id: 1
+exact {
+  value: "\000\000\360\203"
+}
+
+action: saveDifferenceValue
+param_id: 1
+value: "\020\231\230\266"
+
+Error(s) during Write:
+	* At index 0: ALREADY_EXISTS, 'Match entry exists, use MODIFY if you wish to change action'
+
+CRITICAL:root:StreamChannel error, closing stream
+CRITICAL:root:P4Runtime RPC error (UNAVAILABLE): Socket closed

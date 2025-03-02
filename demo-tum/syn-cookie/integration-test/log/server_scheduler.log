@@ -1,0 +1,38 @@
+
+Sun Mar  2 17:36:15 2025: new connection (140590587049728) opened!
+
+Schedule time wait: 4.919667482376099
+
+Sun Mar  2 17:36:15 2025: task received!
+Task(function custom_tasks.start_http_server, {'start': 1740908180.3474898, 'duration': 30.0, 'args': (), 'kwargs': {}})
+Scheduler 140590578657024 started!
+
+Schedule time wait: 9.919378757476807
+
+Sun Mar  2 17:36:15 2025: task received!
+Task(curl http://0.0.0.0:8081, {'start': 1740908185.3474898, 'duration': 10.0, 'args': (), 'kwargs': {}})
+Scheduler 140590570264320 started!
+
+
+Sun Mar  2 17:36:15 2025: connection 140590587049728 closed!
+
+
+Sun Mar  2 17:36:20 2025: task started with PID 815622!
+Task(function custom_tasks.start_http_server, {'start': 1740908180.3474898, 'duration': 30.0, 'args': (), 'kwargs': {}})
+
+🚀 HTTP Server running on port 8081...
+
+Sun Mar  2 17:36:25 2025: task started with PID 815635!
+Task(curl http://0.0.0.0:8081, {'start': 1740908185.3474898, 'duration': 10.0, 'args': (), 'kwargs': {}})
+
+127.0.0.1 - - [02/Mar/2025 17:36:25] "GET / HTTP/1.1" 200 -
+
+Sun Mar  2 17:36:25 2025: task with PID 815635 stopped!
+
+
+Sun Mar  2 17:36:25 2025: task with PID 815635 exited with code 0.
+
+
+Sun Mar  2 17:36:25 2025: scheduler 140590570264320 closed!
+
+10.0.1.1 - - [02/Mar/2025 17:36:27] "GET / HTTP/1.1" 200 -

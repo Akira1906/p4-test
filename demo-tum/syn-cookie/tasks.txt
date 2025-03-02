@@ -1,4 +1,0 @@
-client 30 10 "ping 10.0.1.3"
-server 10 10 "ping 10.0.1.1"
-server 2 30 python3 -m http.server 8080 &
-client 5 10 curl http://10.0.1.3:8080 

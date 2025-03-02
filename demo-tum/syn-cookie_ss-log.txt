@@ -18989,3 +18989,1763 @@ Action entry: MyIngress.ipv4_forward - a000102,2,
 [17:40:09.621] [bmv2] [D] [thread 711130] [13.0] [cxt 0] Pipeline 'ingress': end
 [17:40:09.621] [bmv2] [D] [thread 711130] [13.0] [cxt 0] Egress port is 511
 [17:40:09.621] [bmv2] [D] [thread 711130] [13.0] [cxt 0] Dropping packet at the end of ingress
+[11:51:14.320] [bmv2] [D] [thread 757917] Adding interface veth0 as port 1
+[11:51:14.338] [bmv2] [D] [thread 757917] Adding interface veth2 as port 2
+[11:51:14.353] [bmv2] [D] [thread 757917] Adding interface veth4 as port 3
+[11:51:14.372] [bmv2] [I] [thread 757917] Starting Thrift server on port 9090
+[11:51:14.372] [bmv2] [I] [thread 757917] Thrift server was started
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_act': act - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_compute_connection_hash': MyIngress.compute_connection_hash - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'MyIngress.connections': NoAction - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_proxy589': proxy589 - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_proxy591': proxy591 - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_forward_request': MyIngress.forward_request - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_create_syn_cookie_packet': MyIngress.create_syn_cookie_packet - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_validate_syn_cookie': MyIngress.validate_syn_cookie - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_proxy618': proxy618 - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_create_new_tcp_connection': MyIngress.create_new_tcp_connection - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_drop': MyIngress.drop - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_proxy627': proxy627 - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_compute_cookie_value': MyIngress.compute_cookie_value - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_compute_connection_hash_0': MyIngress.compute_connection_hash - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_send_digest_connection': MyIngress.send_digest_connection - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_create_ack_response': MyIngress.create_ack_response - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_send_digest_debug': MyIngress.send_digest_debug - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_drop_0': MyIngress.drop - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_proxy641': proxy641 - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'MyIngress.ipv4_lpm': MyIngress.drop - 
+[11:51:16.449] [bmv2] [D] [thread 757974] Set default default entry for table 'tbl_compute_tcp_length': MyIngress.compute_tcp_length - 
+[11:51:16.450] [bmv2] [D] [thread 757974] simple_switch target has been notified of a config swap
+[11:51:16.452] [bmv2] [D] [thread 757974] Entry 0 added to table 'MyIngress.ipv4_lpm'
+[11:51:16.452] [bmv2] [D] [thread 757974] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000103/32
+Action entry: MyIngress.ipv4_forward - a000103,3,
+
+[11:51:16.452] [bmv2] [D] [thread 757982] Entry 1 added to table 'MyIngress.ipv4_lpm'
+[11:51:16.452] [bmv2] [D] [thread 757982] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000102/32
+Action entry: MyIngress.ipv4_forward - a000102,2,
+
+[11:51:16.453] [bmv2] [D] [thread 757974] Entry 2 added to table 'MyIngress.ipv4_lpm'
+[11:51:16.453] [bmv2] [D] [thread 757974] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000101/32
+Action entry: MyIngress.ipv4_forward - a000101,1,
+
+[11:51:18.775] [bmv2] [I] [thread 757990] Received packet of length 54 on port 1: 00010a00010100000a00010108004500002800010000400664cc0a0001010a00010304d2005100000000000000005002200074bc0000
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Processing packet received on port 1
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser 'parser': start
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.775] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Bytes parsed: 14
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.775] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.775] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Bytes parsed: 34
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Bytes parsed: 54
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Checksum 'cksum_1': computed 0x64cc - actual 0x64cc
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Parser 'parser': end
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Looking up key:
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Action entry is act - 
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Action act
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Primitive (no source info)
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Looking up key:
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] hash(base=0, max=65535) = 5857
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] hash(base=0, max=65535) = 40350
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Looking up key:
+* meta.connectionHash : 000016e1
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Action entry is NoAction - 
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Action NoAction
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Looking up key:
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Action entry is proxy591 - 
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Action proxy591
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Looking up key:
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(270) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(271) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(286) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(289) Primitive hdr.ipv4.srcAddr = serverAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(290) Primitive hdr.ipv4.dstAddr = clientAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(294) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(295) Primitive hdr.tcp.dstPort = clientPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(296) Primitive hdr.tcp.srcPort = serverPort
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(303) Primitive hdr.tcp.syn = 1
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(304) Primitive hdr.tcp.ack = 1
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(307) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(326) Primitive clientIPAddress
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(327) Primitive clientPortNum
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(328) Primitive time
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(323) Primitive hash(hash_value, ...
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] hash(base=0, max=26) = 21
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(338) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000101/32
+Action entry: MyIngress.ipv4_forward - a000101,1,
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000101,1,
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Looking up key:
+
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.776] [bmv2] [T] [thread 757991] [0.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.776] [bmv2] [D] [thread 757991] [0.0] [cxt 0] Egress port is 1
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.776] [bmv2] [D] [thread 757993] [0.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.776] [bmv2] [D] [thread 757996] [0.0] [cxt 0] Transmitting packet of size 54 out of port 1
+[11:51:18.776] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 1: 00000a00010100010a000101080045000028000100003f0665cc0a0001030a000101005104d2790000150000000150122000fb950000
+[11:51:18.778] [bmv2] [I] [thread 757990] Received packet of length 54 on port 1: 00000a00010100010a00010108004500002800010000400664cc0a0001010a00010304d20051000000017900001650102000fb960000
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Processing packet received on port 1
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser 'parser': start
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Bytes parsed: 14
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Bytes parsed: 34
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Bytes parsed: 54
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Checksum 'cksum_1': computed 0x64cc - actual 0x64cc
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Parser 'parser': end
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is act - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action act
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Primitive (no source info)
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] hash(base=0, max=65535) = 5857
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] hash(base=0, max=65535) = 40350
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+* meta.connectionHash : 000016e1
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is NoAction - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action NoAction
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is proxy591 - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action proxy591
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(612) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is true
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'tbl_validate_syn_cookie'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'tbl_validate_syn_cookie': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is MyIngress.validate_syn_cookie - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action MyIngress.validate_syn_cookie
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(396) Primitive hdr.ipv4.srcAddr
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(397) Primitive hdr.tcp.srcPort
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(398) Primitive time
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(393) Primitive hash(hash_value, ...
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] hash(base=0, max=26) = 21
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(412) Primitive if
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(413) Primitive meta.is_valid_cookie = 1
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(412) Primitive if
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(616) Condition "meta.is_valid_cookie == 1" (node_14) is true
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'tbl_proxy618'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'tbl_proxy618': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is proxy618 - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action proxy618
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(618) Primitive meta.is_valid_cookie = 0
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'tbl_create_new_tcp_connection'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'tbl_create_new_tcp_connection': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is MyIngress.create_new_tcp_connection - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action MyIngress.create_new_tcp_connection
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(436) Primitive hdr.tcp.syn = 1
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(437) Primitive hdr.tcp.ack = 0
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(439) Primitive hdr.tcp.seqNo = hdr.tcp.seqNo - 1
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(440) Primitive hdr.tcp.ackNo = 0
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(442) Primitive hdr.tcp.dataOffset = 5
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000103
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000103/32
+Action entry: MyIngress.ipv4_forward - a000103,3,
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000103,3,
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Looking up key:
+
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.778] [bmv2] [T] [thread 757991] [1.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.778] [bmv2] [D] [thread 757991] [1.0] [cxt 0] Egress port is 3
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.778] [bmv2] [D] [thread 757995] [1.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.778] [bmv2] [D] [thread 757996] [1.0] [cxt 0] Transmitting packet of size 54 out of port 3
+[11:51:18.778] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 3: 00000a00010300000a000101080045000028000100003f0665cc0a0001010a00010304d2005100000000000000005002200074bc0000
+[11:51:18.779] [bmv2] [I] [thread 757990] Received packet of length 54 on port 3: 00000a00010100000a00010308004500002800010000400664cc0a0001030a000101005104d200000025000000015012200074860000
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Processing packet received on port 3
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser 'parser': start
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Bytes parsed: 14
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Bytes parsed: 34
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Bytes parsed: 54
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Checksum 'cksum_1': computed 0x64cc - actual 0x64cc
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Parser 'parser': end
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is act - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action act
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Primitive (no source info)
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] hash(base=0, max=65535) = 40350
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] hash(base=0, max=65535) = 5857
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00009d9e
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is NoAction - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action NoAction
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is proxy591 - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action proxy591
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(612) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is false
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(629) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 1 && hdr.tcp.psh == 0" (node_19) is true
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_compute_cookie_value'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_compute_cookie_value': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is MyIngress.compute_cookie_value - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action MyIngress.compute_cookie_value
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(354) Primitive if
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(355) Primitive clientIPAddress = hdr.ipv4.dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(356) Primitive clientPortNum = hdr.tcp.dstPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(354) Primitive if
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(369) Primitive clientIPAddress
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(370) Primitive clientPortNum
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(371) Primitive time
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(366) Primitive hash(hash_value, ...
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] hash(base=0, max=26) = 21
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(381) Primitive meta.cookieValue =tempSeqS | (bit<32>)hash_value
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_compute_connection_hash_0'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_compute_connection_hash_0': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] hash(base=0, max=65535) = 40350
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] hash(base=0, max=65535) = 5857
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_send_digest_connection'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_send_digest_connection': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is MyIngress.send_digest_connection - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action MyIngress.send_digest_connection
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(210) Primitive meta.seq_digest.type = 2
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(211) Primitive meta.seq_digest.connection_hash = meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(212) Primitive meta.seq_digest.seqNo = meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(213) Primitive meta.seq_digest.connection_hash_rev = meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(214) Primitive meta.seq_digest.seqNo_rev = meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(217) Primitive meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(217) Primitive meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(217) Primitive meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(217) Primitive meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(217) Primitive meta
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(217) Primitive digest(1, meta.seq_digest)
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_create_ack_response'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_create_ack_response': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is MyIngress.create_ack_response - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action MyIngress.create_ack_response
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(451) Primitive bit<48> dstMAC = hdr.ethernet.dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(452) Primitive hdr.ethernet.dstAddr = srcMAC
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(453) Primitive hdr.ethernet.srcAddr = dstMAC
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(456) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(458) Primitive hdr.ipv4.srcAddr = serverAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(459) Primitive hdr.ipv4.dstAddr = clientAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(463) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(464) Primitive hdr.tcp.dstPort = clientPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(465) Primitive hdr.tcp.srcPort = serverPort
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(471) Primitive hdr.tcp.syn = 0
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(472) Primitive hdr.tcp.ack = 1
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(473) Primitive hdr.tcp.psh = 0
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(476) Primitive bit <32> serverSeq = hdr.tcp.seqNo
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(478) Primitive hdr.tcp.seqNo = serverAck
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(481) Primitive hdr.tcp.ackNo = serverSeq + 1
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000103
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000103/32
+Action entry: MyIngress.ipv4_forward - a000103,3,
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000103,3,
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Looking up key:
+
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.780] [bmv2] [T] [thread 757991] [2.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.780] [bmv2] [T] [thread 757991] Learning sample for list id 1
+[11:51:18.780] [bmv2] [D] [thread 757991] [2.0] [cxt 0] Egress port is 3
+[11:51:18.780] [bmv2] [T] [thread 757987] Sending learning notification for list id 1 (buffer id 0)
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.780] [bmv2] [D] [thread 757995] [2.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.780] [bmv2] [D] [thread 757996] [2.0] [cxt 0] Transmitting packet of size 54 out of port 3
+[11:51:18.780] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 3: 00000a00010300000a000103080045000028000100003f0665cc0a0001010a00010304d2005100000001000000265010200074870000
+[11:51:18.781] [bmv2] [D] [thread 758025] Entry 0 added to table 'MyIngress.connections'
+[11:51:18.782] [bmv2] [D] [thread 758025] Dumping entry 0
+Match key:
+* meta.connectionHash : EXACT     00009d9e
+Action entry: MyIngress.saveDifferenceValue - 78fffff0,
+
+[11:51:18.782] [bmv2] [D] [thread 758025] Entry 1 added to table 'MyIngress.connections'
+[11:51:18.782] [bmv2] [I] [thread 757990] Received packet of length 98 on port 1: 00010a00010100000a00010108004500005400010000400664a00a0001010a00010304d200510000000179000016501820007ad30000474554202f696e6465782e68746d6c20485454502f312e310d0a486f73743a2031302e302e312e330d0a0d0a
+[11:51:18.782] [bmv2] [D] [thread 758025] Dumping entry 1
+Match key:
+* meta.connectionHash : EXACT     000016e1
+Action entry: MyIngress.saveDifferenceValue - 87000010,
+
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Processing packet received on port 1
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser 'parser': start
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Bytes parsed: 14
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Bytes parsed: 34
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Bytes parsed: 54
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Checksum 'cksum_1': computed 0x64a0 - actual 0x64a0
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Parser 'parser': end
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Looking up key:
+
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Action entry is act - 
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Action act
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Primitive (no source info)
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Looking up key:
+
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.782] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.782] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] hash(base=0, max=65535) = 5857
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] hash(base=0, max=65535) = 40350
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Looking up key:
+* meta.connectionHash : 000016e1
+
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Table 'MyIngress.connections': hit with handle 1
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Dumping entry 1
+Match key:
+* meta.connectionHash : EXACT     000016e1
+Action entry: MyIngress.saveDifferenceValue - 87000010,
+
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Action entry is MyIngress.saveDifferenceValue - 87000010,
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Action MyIngress.saveDifferenceValue
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(485) Primitive meta.tempDiff = difference
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Applying table 'tbl_proxy589'
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Looking up key:
+
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Table 'tbl_proxy589': miss
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Action entry is proxy589 - 
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Action proxy589
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(589) Primitive meta.is_connection_established = 1
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is true
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Applying table 'tbl_forward_request'
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Looking up key:
+
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Table 'tbl_forward_request': miss
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Action entry is MyIngress.forward_request - 
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Action MyIngress.forward_request
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(533) Primitive if
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(537) Primitive meta.debug_bool=0
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(538) Primitive hdr.tcp.ackNo = acknowledgment + meta.tempDiff
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000103
+
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 0
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Dumping entry 0
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000103/32
+Action entry: MyIngress.ipv4_forward - a000103,3,
+
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000103,3,
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Looking up key:
+
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.783] [bmv2] [T] [thread 757991] [3.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.783] [bmv2] [D] [thread 757991] [3.0] [cxt 0] Egress port is 3
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.783] [bmv2] [D] [thread 757995] [3.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.783] [bmv2] [D] [thread 757996] [3.0] [cxt 0] Transmitting packet of size 98 out of port 3
+[11:51:18.783] [bmv2] [I] [thread 757996] Sending packet of length 98 on port 3: 00000a00010300010a000101080045000054000100003f0665a00a0001010a00010304d20051000000010000002650182000f3c30000474554202f696e6465782e68746d6c20485454502f312e310d0a486f73743a2031302e302e312e330d0a0d0a
+[11:51:18.784] [bmv2] [I] [thread 757990] Received packet of length 106 on port 3: 00010a00010300000a00010308004500005c00010000400664980a0001030a000101005104d20000002600000001501820006c040000485454502f312e3120323030204f4b0d0a436f6e74656e742d4c656e6774683a2031330d0a0d0a48656c6c6f2c20576f726c6421
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Processing packet received on port 3
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser 'parser': start
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Bytes parsed: 14
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Bytes parsed: 34
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Bytes parsed: 54
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Checksum 'cksum_1': computed 0x6498 - actual 0x6498
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Parser 'parser': end
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Looking up key:
+
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Action entry is act - 
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Action act
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Primitive (no source info)
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Looking up key:
+
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.784] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.784] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] hash(base=0, max=65535) = 40350
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] hash(base=0, max=65535) = 5857
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00009d9e
+
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Table 'MyIngress.connections': hit with handle 0
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Dumping entry 0
+Match key:
+* meta.connectionHash : EXACT     00009d9e
+Action entry: MyIngress.saveDifferenceValue - 78fffff0,
+
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Action entry is MyIngress.saveDifferenceValue - 78fffff0,
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Action MyIngress.saveDifferenceValue
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(485) Primitive meta.tempDiff = difference
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Applying table 'tbl_proxy589'
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Looking up key:
+
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Table 'tbl_proxy589': miss
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Action entry is proxy589 - 
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Action proxy589
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(589) Primitive meta.is_connection_established = 1
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is true
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Applying table 'tbl_forward_request'
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Looking up key:
+
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Table 'tbl_forward_request': miss
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Action entry is MyIngress.forward_request - 
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Action MyIngress.forward_request
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(533) Primitive if
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(534) Primitive meta.debug_bool=1
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(535) Primitive hdr.tcp.seqNo = sequence + meta.tempDiff
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(533) Primitive if
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000101
+
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 2
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Dumping entry 2
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000101/32
+Action entry: MyIngress.ipv4_forward - a000101,1,
+
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000101,1,
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Looking up key:
+
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.785] [bmv2] [T] [thread 757991] [4.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.785] [bmv2] [D] [thread 757991] [4.0] [cxt 0] Egress port is 1
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.785] [bmv2] [D] [thread 757993] [4.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.785] [bmv2] [D] [thread 757996] [4.0] [cxt 0] Transmitting packet of size 106 out of port 1
+[11:51:18.785] [bmv2] [I] [thread 757996] Sending packet of length 106 on port 1: 00000a00010100010a00010308004500005c000100003f0665980a0001030a000101005104d2790000160000000150182000f3130000485454502f312e3120323030204f4b0d0a436f6e74656e742d4c656e6774683a2031330d0a0d0a48656c6c6f2c20576f726c6421
+[11:51:18.786] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a00010208004500002800010000400664cb0a0001020a00010315b30051000003e800000000500220005ff20000
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Processing packet received on port 2
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser 'parser': start
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Bytes parsed: 14
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Bytes parsed: 34
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Bytes parsed: 54
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Checksum 'cksum_1': computed 0x64cb - actual 0x64cb
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Parser 'parser': end
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Looking up key:
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Action entry is act - 
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Action act
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Primitive (no source info)
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Looking up key:
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] hash(base=0, max=65535) = 38165
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] hash(base=0, max=65535) = 25640
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00009515
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Action entry is NoAction - 
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Action NoAction
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Looking up key:
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Action entry is proxy591 - 
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Action proxy591
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Looking up key:
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(270) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(271) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(286) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(289) Primitive hdr.ipv4.srcAddr = serverAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(290) Primitive hdr.ipv4.dstAddr = clientAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(294) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(295) Primitive hdr.tcp.dstPort = clientPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(296) Primitive hdr.tcp.srcPort = serverPort
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(303) Primitive hdr.tcp.syn = 1
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(304) Primitive hdr.tcp.ack = 1
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(307) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(326) Primitive clientIPAddress
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(327) Primitive clientPortNum
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(328) Primitive time
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(323) Primitive hash(hash_value, ...
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] hash(base=0, max=26) = 14
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(338) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000102
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000102/32
+Action entry: MyIngress.ipv4_forward - a000102,2,
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000102,2,
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Looking up key:
+
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.786] [bmv2] [T] [thread 757991] [5.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.786] [bmv2] [D] [thread 757991] [5.0] [cxt 0] Egress port is 2
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.787] [bmv2] [D] [thread 757994] [5.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.787] [bmv2] [D] [thread 757996] [5.0] [cxt 0] Transmitting packet of size 54 out of port 2
+[11:51:18.787] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 2: 00000a00010200010a000102080045000028000100003f0665cb0a0001030a000102005115b37900000e000003e950122000e6d20000
+[11:51:18.889] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a00010208004500002800010000400664cb0a0001020a00010315b40051000003e900000000500220005ff00000
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Processing packet received on port 2
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser 'parser': start
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Bytes parsed: 14
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Bytes parsed: 34
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Bytes parsed: 54
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Checksum 'cksum_1': computed 0x64cb - actual 0x64cb
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Parser 'parser': end
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Looking up key:
+
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Action entry is act - 
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Action act
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Primitive (no source info)
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Looking up key:
+
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.890] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.890] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] hash(base=0, max=65535) = 2577
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] hash(base=0, max=65535) = 1321
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00000a11
+
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Action entry is NoAction - 
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Action NoAction
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Looking up key:
+
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Action entry is proxy591 - 
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Action proxy591
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Looking up key:
+
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[11:51:18.891] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(270) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(271) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(286) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(289) Primitive hdr.ipv4.srcAddr = serverAddr
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(290) Primitive hdr.ipv4.dstAddr = clientAddr
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(294) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(295) Primitive hdr.tcp.dstPort = clientPort
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(296) Primitive hdr.tcp.srcPort = serverPort
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(303) Primitive hdr.tcp.syn = 1
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(304) Primitive hdr.tcp.ack = 1
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(307) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(326) Primitive clientIPAddress
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(327) Primitive clientPortNum
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(328) Primitive time
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(323) Primitive hash(hash_value, ...
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] hash(base=0, max=26) = 24
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(338) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.891] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000102
+
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000102/32
+Action entry: MyIngress.ipv4_forward - a000102,2,
+
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000102,2,
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Looking up key:
+
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.892] [bmv2] [T] [thread 757991] [6.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.892] [bmv2] [D] [thread 757991] [6.0] [cxt 0] Egress port is 2
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.892] [bmv2] [D] [thread 757994] [6.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.892] [bmv2] [D] [thread 757996] [6.0] [cxt 0] Transmitting packet of size 54 out of port 2
+[11:51:18.892] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 2: 00000a00010200010a000102080045000028000100003f0665cb0a0001030a000102005115b479000018000003ea50122000e6c60000
+[11:51:18.990] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a00010208004500002800010000400664cb0a0001020a00010315b50051000003ea00000000500220005fee0000
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Processing packet received on port 2
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser 'parser': start
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Extracting header 'ethernet'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Bytes parsed: 14
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Extracting header 'ipv4'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Bytes parsed: 34
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Extracting header 'tcp'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Bytes parsed: 54
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Checksum 'cksum_1': computed 0x64cb - actual 0x64cb
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Parser 'parser': end
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Pipeline 'ingress': start
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Applying table 'tbl_act'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Looking up key:
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Table 'tbl_act': miss
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Action entry is act - 
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Action act
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Primitive (no source info)
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Looking up key:
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] hash(base=0, max=65535) = 16794
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] hash(base=0, max=65535) = 2913
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000419a
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Action entry is NoAction - 
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Action NoAction
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Looking up key:
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Action entry is proxy591 - 
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Action proxy591
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Looking up key:
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(270) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(271) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(286) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(289) Primitive hdr.ipv4.srcAddr = serverAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(290) Primitive hdr.ipv4.dstAddr = clientAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(294) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(295) Primitive hdr.tcp.dstPort = clientPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(296) Primitive hdr.tcp.srcPort = serverPort
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(303) Primitive hdr.tcp.syn = 1
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(304) Primitive hdr.tcp.ack = 1
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(307) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(326) Primitive clientIPAddress
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(327) Primitive clientPortNum
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(328) Primitive time
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(323) Primitive hash(hash_value, ...
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] hash(base=0, max=26) = 3
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(338) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000102
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000102/32
+Action entry: MyIngress.ipv4_forward - a000102,2,
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000102,2,
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Looking up key:
+
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:18.991] [bmv2] [T] [thread 757991] [7.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Pipeline 'ingress': end
+[11:51:18.991] [bmv2] [D] [thread 757991] [7.0] [cxt 0] Egress port is 2
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Pipeline 'egress': start
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Pipeline 'egress': end
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Deparser 'deparser': start
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Updating checksum 'cksum'
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Deparsing header 'tcp'
+[11:51:18.991] [bmv2] [D] [thread 757994] [7.0] [cxt 0] Deparser 'deparser': end
+[11:51:18.991] [bmv2] [D] [thread 757996] [7.0] [cxt 0] Transmitting packet of size 54 out of port 2
+[11:51:18.991] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 2: 00000a00010200010a000102080045000028000100003f0665cb0a0001030a000102005115b579000003000003eb50122000e6d90000
+[11:51:19.093] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a00010208004500002800010000400664cb0a0001020a00010315b60051000003eb00000000500220005fec0000
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Processing packet received on port 2
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser 'parser': start
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Extracting header 'ethernet'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Bytes parsed: 14
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Extracting header 'ipv4'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Bytes parsed: 34
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Extracting header 'tcp'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Bytes parsed: 54
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Checksum 'cksum_1': computed 0x64cb - actual 0x64cb
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Parser 'parser': end
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Pipeline 'ingress': start
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Applying table 'tbl_act'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Looking up key:
+
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Table 'tbl_act': miss
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Action entry is act - 
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Action act
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Primitive (no source info)
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Looking up key:
+
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] hash(base=0, max=65535) = 48016
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] hash(base=0, max=65535) = 5301
+[11:51:19.093] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000bb90
+
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:19.093] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Action entry is NoAction - 
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Action NoAction
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Looking up key:
+
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Action entry is proxy591 - 
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Action proxy591
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Looking up key:
+
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(270) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(271) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(286) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(289) Primitive hdr.ipv4.srcAddr = serverAddr
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(290) Primitive hdr.ipv4.dstAddr = clientAddr
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(294) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(295) Primitive hdr.tcp.dstPort = clientPort
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(296) Primitive hdr.tcp.srcPort = serverPort
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(303) Primitive hdr.tcp.syn = 1
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(304) Primitive hdr.tcp.ack = 1
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(307) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(326) Primitive clientIPAddress
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(327) Primitive clientPortNum
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(328) Primitive time
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(323) Primitive hash(hash_value, ...
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] hash(base=0, max=26) = 5
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(338) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000102
+
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000102/32
+Action entry: MyIngress.ipv4_forward - a000102,2,
+
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000102,2,
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Looking up key:
+
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:19.094] [bmv2] [T] [thread 757991] [8.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Pipeline 'ingress': end
+[11:51:19.094] [bmv2] [D] [thread 757991] [8.0] [cxt 0] Egress port is 2
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Pipeline 'egress': start
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Pipeline 'egress': end
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Deparser 'deparser': start
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Updating checksum 'cksum'
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Deparsing header 'tcp'
+[11:51:19.094] [bmv2] [D] [thread 757994] [8.0] [cxt 0] Deparser 'deparser': end
+[11:51:19.094] [bmv2] [D] [thread 757996] [8.0] [cxt 0] Transmitting packet of size 54 out of port 2
+[11:51:19.094] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 2: 00000a00010200010a000102080045000028000100003f0665cb0a0001030a000102005115b679000005000003ec50122000e6d50000
+[11:51:19.196] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a00010208004500002800010000400664cb0a0001020a00010315b70051000003ec00000000500220005fea0000
+[11:51:19.196] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Processing packet received on port 2
+[11:51:19.196] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser 'parser': start
+[11:51:19.196] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:19.196] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Extracting header 'ethernet'
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Bytes parsed: 14
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Extracting header 'ipv4'
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Bytes parsed: 34
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Extracting header 'tcp'
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Bytes parsed: 54
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Checksum 'cksum_1': computed 0x64cb - actual 0x64cb
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Parser 'parser': end
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Pipeline 'ingress': start
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Applying table 'tbl_act'
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Looking up key:
+
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Table 'tbl_act': miss
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Action entry is act - 
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Action act
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Primitive (no source info)
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Looking up key:
+
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:19.197] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] hash(base=0, max=65535) = 41767
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:19.197] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] hash(base=0, max=65535) = 15113
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000a327
+
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Action entry is NoAction - 
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Action NoAction
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Looking up key:
+
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Action entry is proxy591 - 
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Action proxy591
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is true
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Applying table 'tbl_create_syn_cookie_packet'
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Looking up key:
+
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Table 'tbl_create_syn_cookie_packet': miss
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Action entry is MyIngress.create_syn_cookie_packet - 
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Action MyIngress.create_syn_cookie_packet
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(270) Primitive bit<32> clientIPAddress = hdr.ipv4.srcAddr
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(271) Primitive bit<16> clientPortNum = hdr.tcp.srcPort
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(286) Primitive bit<32> clientAddr = hdr.ipv4.srcAddr
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(289) Primitive hdr.ipv4.srcAddr = serverAddr
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(290) Primitive hdr.ipv4.dstAddr = clientAddr
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(294) Primitive bit<16> serverPort = hdr.tcp.dstPort
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(295) Primitive hdr.tcp.dstPort = clientPort
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(296) Primitive hdr.tcp.srcPort = serverPort
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(303) Primitive hdr.tcp.syn = 1
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(304) Primitive hdr.tcp.ack = 1
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(307) Primitive hdr.tcp.ackNo = hdr.tcp.seqNo + 1
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(326) Primitive clientIPAddress
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(327) Primitive clientPortNum
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(328) Primitive time
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(323) Primitive hash(hash_value, ...
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] hash(base=0, max=26) = 8
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(338) Primitive hdr.tcp.seqNo =tempSeqS | (bit<32>)hash_value
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Condition "node_27" (node_27) is false
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(646) Condition "hdr.ipv4.isValid()" (node_28) is true
+[11:51:19.198] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Applying table 'MyIngress.ipv4_lpm'
+[11:51:19.198] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Looking up key:
+* hdr.ipv4.dstAddr    : 0a000102
+
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Table 'MyIngress.ipv4_lpm': hit with handle 1
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Dumping entry 1
+Match key:
+* hdr.ipv4.dstAddr    : LPM       0a000102/32
+Action entry: MyIngress.ipv4_forward - a000102,2,
+
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Action entry is MyIngress.ipv4_forward - a000102,2,
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Action MyIngress.ipv4_forward
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(189) Primitive standard_metadata.egress_spec = port
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(190) Primitive hdr.ethernet.srcAddr = hdr.ethernet.dstAddr
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(191) Primitive hdr.ethernet.dstAddr = dstAddr
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(192) Primitive hdr.ipv4.ttl = hdr.ipv4.ttl - 1
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Applying table 'tbl_compute_tcp_length'
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Looking up key:
+
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Table 'tbl_compute_tcp_length': miss
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Action entry is MyIngress.compute_tcp_length - 
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] Action MyIngress.compute_tcp_length
+[11:51:19.199] [bmv2] [T] [thread 757991] [9.0] [cxt 0] syn-cookie/p4src/proxy.p4(430) Primitive meta.tcpLength = tcpLength
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Pipeline 'ingress': end
+[11:51:19.199] [bmv2] [D] [thread 757991] [9.0] [cxt 0] Egress port is 2
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Pipeline 'egress': start
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Pipeline 'egress': end
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Deparser 'deparser': start
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Updating checksum 'cksum'
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Updating checksum 'cksum_0'
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Deparsing header 'ethernet'
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Deparsing header 'ipv4'
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Deparsing header 'tcp'
+[11:51:19.199] [bmv2] [D] [thread 757994] [9.0] [cxt 0] Deparser 'deparser': end
+[11:51:19.199] [bmv2] [D] [thread 757996] [9.0] [cxt 0] Transmitting packet of size 54 out of port 2
+[11:51:19.199] [bmv2] [I] [thread 757996] Sending packet of length 54 on port 2: 00000a00010200010a000102080045000028000100003f0665cb0a0001030a000102005115b779000008000003ed50122000e6d00000
+[11:51:19.300] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a0001020800450000280001000040066bc7010203040a0001031a0a0051000007d0000003e7501820005ab20000
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Processing packet received on port 2
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser 'parser': start
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Extracting header 'ethernet'
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:19.300] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Bytes parsed: 14
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Extracting header 'ipv4'
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:19.300] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Bytes parsed: 34
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Extracting header 'tcp'
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:19.300] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Bytes parsed: 54
+[11:51:19.300] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Checksum 'cksum_1': computed 0x6bc7 - actual 0x6bc7
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Parser 'parser': end
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Pipeline 'ingress': start
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Applying table 'tbl_act'
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Looking up key:
+
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Table 'tbl_act': miss
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Action entry is act - 
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Action act
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Primitive (no source info)
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Looking up key:
+
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] hash(base=0, max=65535) = 42547
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] hash(base=0, max=65535) = 40261
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000a633
+
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Action entry is NoAction - 
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Action NoAction
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Looking up key:
+
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:19.301] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Action entry is proxy591 - 
+[11:51:19.301] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Action proxy591
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(612) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is true
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Applying table 'tbl_validate_syn_cookie'
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Looking up key:
+
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Table 'tbl_validate_syn_cookie': miss
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Action entry is MyIngress.validate_syn_cookie - 
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Action MyIngress.validate_syn_cookie
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(396) Primitive hdr.ipv4.srcAddr
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(397) Primitive hdr.tcp.srcPort
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(398) Primitive time
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(393) Primitive hash(hash_value, ...
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] hash(base=0, max=26) = 1
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(412) Primitive if
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(415) Primitive meta.is_valid_cookie = 0
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(616) Condition "meta.is_valid_cookie == 1" (node_14) is false
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Applying table 'tbl_drop'
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Looking up key:
+
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Table 'tbl_drop': miss
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Action entry is MyIngress.drop - 
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Action MyIngress.drop
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(185) Primitive mark_to_drop(standard_metadata)
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Applying table 'tbl_proxy627'
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Looking up key:
+
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Table 'tbl_proxy627': miss
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Action entry is proxy627 - 
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Action proxy627
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] syn-cookie/p4src/proxy.p4(627) Primitive return
+[11:51:19.302] [bmv2] [T] [thread 757991] [10.0] [cxt 0] Condition "node_27" (node_27) is true
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Pipeline 'ingress': end
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Egress port is 511
+[11:51:19.302] [bmv2] [D] [thread 757991] [10.0] [cxt 0] Dropping packet at the end of ingress
+[11:51:19.404] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a0001020800450000280001000040066bc7010203040a0001031a0a0051000007d1000003e7501820005ab10000
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Processing packet received on port 2
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser 'parser': start
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Extracting header 'ethernet'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Bytes parsed: 14
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Extracting header 'ipv4'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Bytes parsed: 34
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Extracting header 'tcp'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Bytes parsed: 54
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Checksum 'cksum_1': computed 0x6bc7 - actual 0x6bc7
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Parser 'parser': end
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Pipeline 'ingress': start
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Applying table 'tbl_act'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Looking up key:
+
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Table 'tbl_act': miss
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Action entry is act - 
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Action act
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Primitive (no source info)
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Looking up key:
+
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:19.404] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:19.404] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] hash(base=0, max=65535) = 42547
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] hash(base=0, max=65535) = 40261
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000a633
+
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Action entry is NoAction - 
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Action NoAction
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Looking up key:
+
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Action entry is proxy591 - 
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Action proxy591
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(612) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is true
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Applying table 'tbl_validate_syn_cookie'
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Looking up key:
+
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Table 'tbl_validate_syn_cookie': miss
+[11:51:19.405] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Action entry is MyIngress.validate_syn_cookie - 
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Action MyIngress.validate_syn_cookie
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(396) Primitive hdr.ipv4.srcAddr
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(397) Primitive hdr.tcp.srcPort
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(398) Primitive time
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(393) Primitive hash(hash_value, ...
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] hash(base=0, max=26) = 1
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(412) Primitive if
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(415) Primitive meta.is_valid_cookie = 0
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(616) Condition "meta.is_valid_cookie == 1" (node_14) is false
+[11:51:19.405] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Applying table 'tbl_drop'
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Looking up key:
+
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Table 'tbl_drop': miss
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Action entry is MyIngress.drop - 
+[11:51:19.406] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Action MyIngress.drop
+[11:51:19.406] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(185) Primitive mark_to_drop(standard_metadata)
+[11:51:19.406] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Applying table 'tbl_proxy627'
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Looking up key:
+
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Table 'tbl_proxy627': miss
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Action entry is proxy627 - 
+[11:51:19.406] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Action proxy627
+[11:51:19.406] [bmv2] [T] [thread 757991] [11.0] [cxt 0] syn-cookie/p4src/proxy.p4(627) Primitive return
+[11:51:19.406] [bmv2] [T] [thread 757991] [11.0] [cxt 0] Condition "node_27" (node_27) is true
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Pipeline 'ingress': end
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Egress port is 511
+[11:51:19.406] [bmv2] [D] [thread 757991] [11.0] [cxt 0] Dropping packet at the end of ingress
+[11:51:19.508] [bmv2] [I] [thread 757990] Received packet of length 54 on port 2: 00010a00010200000a0001020800450000280001000040066bc7010203040a0001031a0a0051000007d2000003e7501820005ab00000
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Processing packet received on port 2
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser 'parser': start
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Extracting header 'ethernet'
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:19.508] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Bytes parsed: 14
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Extracting header 'ipv4'
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:19.508] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Bytes parsed: 34
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Extracting header 'tcp'
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:19.508] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Bytes parsed: 54
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Checksum 'cksum_1': computed 0x6bc7 - actual 0x6bc7
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Parser 'parser': end
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Pipeline 'ingress': start
+[11:51:19.508] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Applying table 'tbl_act'
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Looking up key:
+
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Table 'tbl_act': miss
+[11:51:19.508] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Action entry is act - 
+[11:51:19.508] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Action act
+[11:51:19.508] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Primitive (no source info)
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Looking up key:
+
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] hash(base=0, max=65535) = 42547
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] hash(base=0, max=65535) = 40261
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Looking up key:
+* meta.connectionHash : 0000a633
+
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Action entry is NoAction - 
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Action NoAction
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Looking up key:
+
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Action entry is proxy591 - 
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Action proxy591
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(612) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is true
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Applying table 'tbl_validate_syn_cookie'
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Looking up key:
+
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Table 'tbl_validate_syn_cookie': miss
+[11:51:19.509] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Action entry is MyIngress.validate_syn_cookie - 
+[11:51:19.509] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Action MyIngress.validate_syn_cookie
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(396) Primitive hdr.ipv4.srcAddr
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(397) Primitive hdr.tcp.srcPort
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(398) Primitive time
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(393) Primitive hash(hash_value, ...
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] hash(base=0, max=26) = 1
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(412) Primitive if
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(415) Primitive meta.is_valid_cookie = 0
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(616) Condition "meta.is_valid_cookie == 1" (node_14) is false
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Applying table 'tbl_drop'
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Looking up key:
+
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Table 'tbl_drop': miss
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Action entry is MyIngress.drop - 
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Action MyIngress.drop
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(185) Primitive mark_to_drop(standard_metadata)
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Applying table 'tbl_proxy627'
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Looking up key:
+
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Table 'tbl_proxy627': miss
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Action entry is proxy627 - 
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Action proxy627
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] syn-cookie/p4src/proxy.p4(627) Primitive return
+[11:51:19.510] [bmv2] [T] [thread 757991] [12.0] [cxt 0] Condition "node_27" (node_27) is true
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Pipeline 'ingress': end
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Egress port is 511
+[11:51:19.510] [bmv2] [D] [thread 757991] [12.0] [cxt 0] Dropping packet at the end of ingress
+[11:51:19.610] [bmv2] [I] [thread 757990] Received packet of length 98 on port 1: 00010a00010100000a00010108004500005400010000400664a00a0001010a00010304d300510000000179000016501820007ad20000474554202f696e6465782e68746d6c20485454502f312e310d0a486f73743a2031302e302e312e330d0a0d0a
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Processing packet received on port 1
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser 'parser': start
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser 'parser' entering state 'start'
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Extracting header 'ethernet'
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser state 'start': key is 0800
+[11:51:19.610] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Bytes parsed: 14
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser 'parser' entering state 'parse_ipv4'
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Extracting header 'ipv4'
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser state 'parse_ipv4': key is 06
+[11:51:19.610] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Bytes parsed: 34
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser 'parser' entering state 'parse_tcp'
+[11:51:19.610] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Extracting header 'tcp'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser state 'parse_tcp' has no switch, going to default next state
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Bytes parsed: 54
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Checksum 'cksum_1': computed 0x64a0 - actual 0x64a0
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Verified checksum 'cksum_1': passed
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Parser 'parser': end
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Pipeline 'ingress': start
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Applying table 'tbl_act'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Looking up key:
+
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Table 'tbl_act': miss
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Action entry is act - 
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Action act
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Primitive (no source info)
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(583) Condition "hdr.ipv4.isValid() && hdr.tcp.isValid()" (node_3) is true
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Applying table 'tbl_compute_connection_hash'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Looking up key:
+
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Table 'tbl_compute_connection_hash': miss
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Action entry is MyIngress.compute_connection_hash - 
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Action MyIngress.compute_connection_hash
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(247) Primitive meta.seqDiff = meta.cookieValue - hdr.tcp.seqNo
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hdr.ipv4.srcAddr
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(249) Primitive hdr.ipv4.dstAddr
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(250) Primitive hdr.tcp.srcPort
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(251) Primitive hdr.tcp.dstPort
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(252) Primitive hdr.ipv4.protocol
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(248) Primitive hash(meta.connectionHash, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.srcAddr, ...
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] hash(base=0, max=65535) = 17233
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(254) Primitive meta.seqDiff_rev = hdr.tcp.seqNo - meta.cookieValue
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hdr.ipv4.dstAddr
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(256) Primitive hdr.ipv4.srcAddr
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(257) Primitive hdr.tcp.dstPort
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(258) Primitive hdr.tcp.srcPort
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(259) Primitive hdr.ipv4.protocol
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(255) Primitive hash(meta.connectionHash_rev, HashAlgorithm.crc32, (bit<32>)0, {hdr.ipv4.dstAddr, ...
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] hash(base=0, max=65535) = 46452
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Applying table 'MyIngress.connections'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Looking up key:
+* meta.connectionHash : 00004351
+
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Table 'MyIngress.connections': miss
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Action entry is NoAction - 
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Action NoAction
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Applying table 'tbl_proxy591'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Looking up key:
+
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Table 'tbl_proxy591': miss
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Action entry is proxy591 - 
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Action proxy591
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(591) Primitive meta.is_connection_established = 0
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(595) Condition "meta.is_connection_established == 1" (node_8) is false
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(600) Condition "hdr.tcp.syn == 1 && hdr.tcp.ack == 0" (node_10) is false
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(612) Condition "hdr.tcp.ack == 1 && hdr.tcp.syn == 0" (node_12) is true
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Applying table 'tbl_validate_syn_cookie'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Looking up key:
+
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Table 'tbl_validate_syn_cookie': miss
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Action entry is MyIngress.validate_syn_cookie - 
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Action MyIngress.validate_syn_cookie
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(396) Primitive hdr.ipv4.srcAddr
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(397) Primitive hdr.tcp.srcPort
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(398) Primitive time
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(393) Primitive hash(hash_value, ...
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] hash(base=0, max=26) = 14
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(412) Primitive if
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(415) Primitive meta.is_valid_cookie = 0
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(616) Condition "meta.is_valid_cookie == 1" (node_14) is false
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Applying table 'tbl_drop'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Looking up key:
+
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Table 'tbl_drop': miss
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Action entry is MyIngress.drop - 
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Action MyIngress.drop
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(185) Primitive mark_to_drop(standard_metadata)
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Applying table 'tbl_proxy627'
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Looking up key:
+
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Table 'tbl_proxy627': miss
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Action entry is proxy627 - 
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Action proxy627
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] syn-cookie/p4src/proxy.p4(627) Primitive return
+[11:51:19.611] [bmv2] [T] [thread 757991] [13.0] [cxt 0] Condition "node_27" (node_27) is true
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Pipeline 'ingress': end
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Egress port is 511
+[11:51:19.611] [bmv2] [D] [thread 757991] [13.0] [cxt 0] Dropping packet at the end of ingress

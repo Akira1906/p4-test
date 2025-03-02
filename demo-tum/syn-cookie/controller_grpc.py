@@ -1,14 +1,16 @@
 import struct
 from p4utils.utils.sswitch_p4runtime_API import SimpleSwitchP4RuntimeAPI
 from p4utils.utils.helper import load_topo
-
+from time import sleep
+import os
+import argparse
 
 class DigestController():
 
     def __init__(self):
-        topo = load_topo("topology.json")
+        script_dir = os.path.dirname(__file__)
+        topo = load_topo(os.path.join(script_dir, "integration-test/topology.json"))
         nodes = topo.get_nodes()
-
         self.ss = SimpleSwitchP4RuntimeAPI(
             nodes['s1']['device_id'],
             nodes['s1']['grpc_port'],
@@ -94,6 +96,21 @@ class DigestController():
 
 
 def main():
+    
+    # Create the parser
+    parser = argparse.ArgumentParser(description="Syn Cookie Control Plane Application.")
+
+    # Add arguments
+    parser.add_argument('--delay', type=int, required=False, help='Delay before starting the application in seconds')
+
+    # Parse the arguments
+    args = parser.parse_args()
+
+    # Access the arguments
+    delay = args.delay
+    if delay:
+        sleep(delay)
+    
     controller = DigestController()
     controller.run_digest_loop()
 

@@ -1,14 +1,12 @@
-Traceback (most recent call last):
-  File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4-utils/p4utils/utils/task_scheduler.py", line 17, in <module>
-    import p4utils.utils.task_scheduler
-  File "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4-utils/p4utils/utils/task_scheduler.py", line 18, in <module>
-    from p4utils.utils.helper import WrapFunc
-  File "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4-utils/p4utils/utils/helper.py", line 21, in <module>
-    from p4utils.mininetlib.log import info, output, error, warning, debug
-  File "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4-utils/p4utils/mininetlib/log.py", line 65, in <module>
-    LEVELS['warn']: ShellStyles.bold + ShellFGColors.yellow,
-KeyError: 'warn'
+
+Sun Mar  2 15:08:23 2025: new connection (139643932628736) opened!
+
+Schedule time wait: 4.918955564498901
+
+Sun Mar  2 15:08:23 2025: task received!
+Task(python3, {'start': 1740899307.9466314, 'duration': 30.0, 'args': ('-m', 'http.server', '8080', '&'), 'kwargs': {}})
+Scheduler 139643924236032 started!
+
+
+Sun Mar  2 15:08:23 2025: connection 139643932628736 closed!
+

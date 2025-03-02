@@ -1,0 +1,25 @@
+
+Sun Mar  2 17:36:15 2025: new connection (139989149017856) opened!
+
+Schedule time wait: 11.919676303863525
+
+Sun Mar  2 17:36:15 2025: task received!
+Task(curl http://10.0.1.3:8081, {'start': 1740908187.3474898, 'duration': 10.0, 'args': (), 'kwargs': {}})
+Scheduler 139989140625152 started!
+
+
+Sun Mar  2 17:36:15 2025: connection 139989149017856 closed!
+
+
+Sun Mar  2 17:36:27 2025: task started with PID 815636!
+Task(curl http://10.0.1.3:8081, {'start': 1740908187.3474898, 'duration': 10.0, 'args': (), 'kwargs': {}})
+
+
+Sun Mar  2 17:36:27 2025: task with PID 815636 stopped!
+
+
+Sun Mar  2 17:36:27 2025: task with PID 815636 exited with code 0.
+
+
+Sun Mar  2 17:36:27 2025: scheduler 139989140625152 closed!
+

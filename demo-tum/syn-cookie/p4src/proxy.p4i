@@ -1,7 +1,7 @@
-# 1 "syn-cookie/p4src/proxy.p4"
+# 1 "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4src/proxy.p4"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "syn-cookie/p4src/proxy.p4"
+# 1 "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4src/proxy.p4"
 /* -*- P4_16 -*- */
 # 1 "/usr/local/share/p4c/p4include/core.p4" 1
 /*
@@ -97,7 +97,7 @@ extern bool static_assert(bool check, string message);
 
 /// Like the above but using a default message.
 extern bool static_assert(bool check);
-# 3 "syn-cookie/p4src/proxy.p4" 2
+# 3 "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4src/proxy.p4" 2
 # 1 "/usr/local/share/p4c/p4include/v1model.p4" 1
 /*
 Copyright 2013-present Barefoot Networks, Inc.
@@ -883,7 +883,7 @@ package V1Switch<H, M>(Parser<H, M> p,
                        ComputeChecksum<H, M> ck,
                        Deparser<H> dep
                        );
-# 4 "syn-cookie/p4src/proxy.p4" 2
+# 4 "/home/tristan/Desktop/p4-test/demo-tum/syn-cookie/p4src/proxy.p4" 2
 
 const bit<16> TYPE_IPV4 = 0x800;
 const bit<16> TYPE_BROADCAST = 0x1234;
@@ -1154,6 +1154,7 @@ control MyIngress(inout headers hdr,
         bit<16> clientPortNum = hdr.tcp.srcPort;
 
         // reverse MAC address
+        // commented the following out because this causes mac address issues, since it is already reversed in ipv4_forward
         // bit<48> srcMAC = hdr.ethernet.srcAddr;
         // bit<48> dstMAC = hdr.ethernet.dstAddr;
         // hdr.ethernet.dstAddr = srcMAC;
