@@ -1,0 +1,6 @@
+/demo-tum/syn-cookie/integration-test/log/
+/demo-tum/syn-cookie/integration-test/__pycache__/
+/demo-tum/syn-cookie/integration-test/pcap/
+# ignore ALL .log files
+*.log
+*.pcap
