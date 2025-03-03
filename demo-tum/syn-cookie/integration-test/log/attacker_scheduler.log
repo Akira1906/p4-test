@@ -1,25 +1,52 @@
 
-Sun Mar  2 16:14:12 2025: new connection (140007510578944) opened!
+Mon Mar  3 10:39:44 2025: new connection (139872436725504) opened!
 
-Schedule time wait: 12.919262170791626
+Schedule time wait: 12.915507555007935
 
-Sun Mar  2 16:14:12 2025: task received!
-Task(curl http://10.0.0.3:8080, {'start': 1740903265.2113364, 'duration': 10.0, 'args': (), 'kwargs': {}})
-Scheduler 140007502186240 started!
+Mon Mar  3 10:39:44 2025: task received!
+Task(function custom_tasks.syn_flood_attack, {'start': 1740969597.2507572, 'duration': 10.0, 'args': (), 'kwargs': {}})
+Scheduler 139872428332800 started!
 
+Schedule time wait: 13.915420532226562
 
-Sun Mar  2 16:14:12 2025: connection 140007510578944 closed!
-
-
-Sun Mar  2 16:14:25 2025: task started with PID 797275!
-Task(curl http://10.0.0.3:8080, {'start': 1740903265.2113364, 'duration': 10.0, 'args': (), 'kwargs': {}})
-
-
-Sun Mar  2 16:14:25 2025: task with PID 797275 stopped!
+Mon Mar  3 10:39:44 2025: task received!
+Task(function custom_tasks.ack_flood_attack, {'start': 1740969598.2507572, 'duration': 10.0, 'args': (), 'kwargs': {}})
+Scheduler 139872419940096 started!
 
 
-Sun Mar  2 16:14:25 2025: task with PID 797275 exited with code 7.
+Mon Mar  3 10:39:44 2025: connection 139872436725504 closed!
 
 
-Sun Mar  2 16:14:25 2025: scheduler 140007502186240 closed!
+Mon Mar  3 10:39:57 2025: task started with PID 840556!
+Task(function custom_tasks.syn_flood_attack, {'start': 1740969597.2507572, 'duration': 10.0, 'args': (), 'kwargs': {}})
+
+attacker_ip: 10.0.1.2
+attacker_mac: 00:00:0a:00:01:02
+server_ip: 10.0.1.3
+switch_mac: 00:01:0a:00:01:02
+🚀 SYN Flood Attack: 10.0.1.2 -> 10.0.1.3:8081 via 00:01:0a:00:01:02
+
+Mon Mar  3 10:39:58 2025: task started with PID 840561!
+Task(function custom_tasks.ack_flood_attack, {'start': 1740969598.2507572, 'duration': 10.0, 'args': (), 'kwargs': {}})
+
+🚀 ACK Flood Attack: 10.0.1.2 -> 10.0.1.3:8081 via 00:01:0a:00:01:02
+✅ SYN Flood Attack Completed!
+
+Mon Mar  3 10:39:58 2025: task with PID 840556 stopped!
+
+
+Mon Mar  3 10:39:58 2025: task with PID 840556 exited with code 0.
+
+
+Mon Mar  3 10:39:58 2025: scheduler 139872428332800 closed!
+
+✅ ACK Flood Attack Completed!
+
+Mon Mar  3 10:39:59 2025: task with PID 840561 stopped!
+
+
+Mon Mar  3 10:39:59 2025: task with PID 840561 exited with code 0.
+
+
+Mon Mar  3 10:39:59 2025: scheduler 139872419940096 closed!
 

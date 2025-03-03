@@ -1,8 +1,7 @@
 from p4utils.mininetlib.network_API import NetworkAPI
 # import controller_grpc as controller
 import os
-import threading
-import time
+from time import sleep
 
 # def run_controller():
 #     sleep(5)
@@ -44,8 +43,11 @@ def setup_network():
     net.enableLogAll()
     net.enablePcapDump('s1')
     # net.enableCli()
+    net.disableCli()
     net.addTaskFile(os.path.join(script_dir,'tasks.txt'))
     net.startNetwork()
+    sleep(30)
+    net.stopNetwork()
     
 if __name__ == "__main__":
     # t2 = threading.Thread(target=run_controller, name='controller')

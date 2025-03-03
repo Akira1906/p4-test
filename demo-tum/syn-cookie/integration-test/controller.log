@@ -54,44 +54,44 @@ data {
       bitstring: "\002"
     }
     members {
-      bitstring: " \233"
+      bitstring: "\234\261"
     }
     members {
-      bitstring: "\357fgJ"
+      bitstring: "3H?\273"
     }
     members {
-      bitstring: "\360\203"
+      bitstring: "\227m"
     }
     members {
-      bitstring: "\020\231\230\266"
+      bitstring: "\314\267\300E"
     }
   }
 }
-timestamp: 541771996667883
+timestamp: 603180899110623
 
-message type: 2, connection added with Hash: 8347, diff: 4016465738
+message type: 2, connection added with Hash: 40113, diff: 860372923
 Adding entry to: connections
 match:
 field_id: 1
 exact {
-  value: "\000\000 \233"
+  value: "\000\000\234\261"
 }
 
 action: saveDifferenceValue
 param_id: 1
-value: "\357fgJ"
+value: "3H?\273"
 
-message type: 2, connection added with Hash: 61571, diff: 278501558
+message type: 2, connection added with Hash: 38765, diff: 3434594373
 Adding entry to: connections
 match:
 field_id: 1
 exact {
-  value: "\000\000\360\203"
+  value: "\000\000\227m"
 }
 
 action: saveDifferenceValue
 param_id: 1
-value: "\020\231\230\266"
+value: "\314\267\300E"
 
 Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 394698674
 list_id: 2
@@ -101,50 +101,554 @@ data {
       bitstring: "\002"
     }
     members {
-      bitstring: " \233"
+      bitstring: "\234\261"
     }
     members {
-      bitstring: "\357fgJ"
+      bitstring: "3H?\273"
     }
     members {
-      bitstring: "\360\203"
+      bitstring: "\227m"
     }
     members {
-      bitstring: "\020\231\230\266"
+      bitstring: "\314\267\300E"
     }
   }
 }
-timestamp: 541771997491350
+timestamp: 603180900020947
 
-message type: 2, connection added with Hash: 8347, diff: 4016465738
+message type: 2, connection added with Hash: 40113, diff: 860372923
 Adding entry to: connections
 match:
 field_id: 1
 exact {
-  value: "\000\000 \233"
+  value: "\000\000\234\261"
 }
 
 action: saveDifferenceValue
 param_id: 1
-value: "\357fgJ"
+value: "3H?\273"
 
 Error(s) during Write:
 	* At index 0: ALREADY_EXISTS, 'Match entry exists, use MODIFY if you wish to change action'
 
-message type: 2, connection added with Hash: 61571, diff: 278501558
+message type: 2, connection added with Hash: 38765, diff: 3434594373
 Adding entry to: connections
 match:
 field_id: 1
 exact {
-  value: "\000\000\360\203"
+  value: "\000\000\227m"
 }
 
 action: saveDifferenceValue
 param_id: 1
-value: "\020\231\230\266"
+value: "\314\267\300E"
 
 Error(s) during Write:
 	* At index 0: ALREADY_EXISTS, 'Match entry exists, use MODIFY if you wish to change action'
 
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 1
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182218074408
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 2
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182253903693
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 3
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182303480852
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 4
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182351633404
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 5
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182390825959
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 6
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182439662515
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 7
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182499639630
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 8
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182539766547
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 9
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182603953478
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 10
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182675980116
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 11
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182724299711
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 12
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182771640662
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 13
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182819676991
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 14
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182871636671
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 15
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182935624555
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 16
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603182987642780
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 17
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603183043560741
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 18
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603183091536967
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 19
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603183115812437
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 20
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603183175516475
+
+Error processing digests: unpack requires a buffer of 4 bytes
+Digest Message received: <class 'p4.v1.p4runtime_pb2.DigestList'>digest_id: 391797020
+list_id: 21
+data {
+  struct {
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+    members {
+      bitstring: "\000"
+    }
+  }
+}
+timestamp: 603183215699424
+
+Error processing digests: unpack requires a buffer of 4 bytes
 CRITICAL:root:StreamChannel error, closing stream
 CRITICAL:root:P4Runtime RPC error (UNAVAILABLE): Socket closed

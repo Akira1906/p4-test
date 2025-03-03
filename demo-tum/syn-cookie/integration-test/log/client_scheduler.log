@@ -1,25 +1,25 @@
 
-Sun Mar  2 17:36:15 2025: new connection (139989149017856) opened!
+Mon Mar  3 10:39:44 2025: new connection (140017729001216) opened!
 
-Schedule time wait: 11.919676303863525
+Schedule time wait: 11.91571044921875
 
-Sun Mar  2 17:36:15 2025: task received!
-Task(curl http://10.0.1.3:8081, {'start': 1740908187.3474898, 'duration': 10.0, 'args': (), 'kwargs': {}})
-Scheduler 139989140625152 started!
-
-
-Sun Mar  2 17:36:15 2025: connection 139989149017856 closed!
+Mon Mar  3 10:39:44 2025: task received!
+Task(curl http://10.0.1.3:8081, {'start': 1740969596.2507572, 'duration': 10.0, 'args': (), 'kwargs': {}})
+Scheduler 140017720608512 started!
 
 
-Sun Mar  2 17:36:27 2025: task started with PID 815636!
-Task(curl http://10.0.1.3:8081, {'start': 1740908187.3474898, 'duration': 10.0, 'args': (), 'kwargs': {}})
+Mon Mar  3 10:39:44 2025: connection 140017729001216 closed!
 
 
-Sun Mar  2 17:36:27 2025: task with PID 815636 stopped!
+Mon Mar  3 10:39:56 2025: task started with PID 840555!
+Task(curl http://10.0.1.3:8081, {'start': 1740969596.2507572, 'duration': 10.0, 'args': (), 'kwargs': {}})
 
 
-Sun Mar  2 17:36:27 2025: task with PID 815636 exited with code 0.
+Mon Mar  3 10:39:56 2025: task with PID 840555 stopped!
 
 
-Sun Mar  2 17:36:27 2025: scheduler 139989140625152 closed!
+Mon Mar  3 10:39:56 2025: task with PID 840555 exited with code 0.
+
+
+Mon Mar  3 10:39:56 2025: scheduler 140017720608512 closed!
 
